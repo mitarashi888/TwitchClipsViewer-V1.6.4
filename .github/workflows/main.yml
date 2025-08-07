@@ -1,0 +1,41 @@
+name: Generate Popular Clips Ranking
+
+# 実行のタイミング: 3時間ごとに自動実行
+on:
+  schedule:
+    - cron: '0 */3 * * *' # UTC（協定世界時）での指定
+  # 手動でも実行できるようにする
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. リポジトリのコードをチェックアウト
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 2. Node.js環境をセットアップ
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # 3. 必要なライブラリをインストール
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. ランキング集計スクリプトを実行
+      - name: Run Ranking Script
+        run: node rank_clips.js
+        env:
+          # GitHub Secretsから認証情報をスクリプトに渡す
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+
+      # 5. 生成されたJSONファイルをGitHub Pagesとして公開
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public # 公開するフォルダを指定
