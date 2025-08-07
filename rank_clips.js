@@ -21,6 +21,7 @@ const POPULAR_CATEGORIES = [
     { name: 'Apex', id: '511224', type: 'game_id' },
     { name: 'スト6', id: '55453844', type: 'game_id' },
     { name: 'GTA5', id: '32982', type: 'game_id' },
+    { name: 'イベント：FF14（the k4sen）', id: '24241', type: 'game_id' },
 ];
 
 // --- userlist.txt から読み込んだ配信者リスト ---
@@ -183,20 +184,75 @@ async function main() {
     // streamer_listタイプのカテゴリで使う配信者IDを一度だけ取得
     const broadcasterIds = await getBroadcasterIds(TARGET_STREAMER_LOGINS, accessToken);
 
+    // ... main関数の中
     const finalData = { last_updated: new Date().toISOString() };
-    const periods = [{ key: '1day', days: 1 }, { key: '3days', days: 3 }, { key: '1week', days: 7 }];
 
+    // --- 集計期間の定義を拡張 ---
+    const periods = [];
+    const today = new Date();
+
+    // 過去7日間の日別データを生成するための定義
+    for (let i = 0; i < 7; i++) {
+        const targetDate = new Date();
+        targetDate.setDate(today.getDate() - i);
+        const year = targetDate.getFullYear();
+        const month = String(targetDate.getMonth() + 1).padStart(2, '0');
+        const day = String(targetDate.getDate()).padStart(2, '0');
+        const key = `${year}-${month}-${day}`; // 'YYYY-MM-DD' 形式のキー
+
+        const startDate = new Date(targetDate);
+        startDate.setHours(0, 0, 0, 0);
+        const endDate = new Date(targetDate);
+        endDate.setHours(23, 59, 59, 999);
+
+        periods.push({
+            key: key,
+            started_at: startDate.toISOString(),
+            ended_at: endDate.toISOString()
+        });
+    }
+    // 週、月のデータを追加
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(today.getDate() - 7);
+    periods.push({ key: '1week', started_at: oneWeekAgo.toISOString(), ended_at: today.toISOString() });
+
+    const oneMonthAgo = new Date();
+    oneMonthAgo.setMonth(today.getMonth() - 1);
+    periods.push({ key: '1month', started_at: oneMonthAgo.toISOString(), ended_at: today.toISOString() });
+
+    // --- 新しいループ処理 ---
     for (const category of POPULAR_CATEGORIES) {
         console.log(`カテゴリ 「${category.name}」(${category.type}) の集計を開始...`);
         finalData[category.id] = {};
+
         for (const period of periods) {
+            console.log(`  - 期間: ${period.key} のクリップを取得中...`);
             let clips = [];
-            // ★★★ カテゴリのタイプに応じて呼び出す関数を切り替える ★★★
-            if (category.type === 'streamer_list') {
-                clips = await getRankedClipsForStreamers(broadcasterIds, period.days, accessToken, category.gameId);
-            } else if (category.type === 'game_id') {
-                clips = await getRankedClipsByGameId(category.id, period.days, accessToken);
+            // getRankedClipsForStreamersとgetRankedClipsByGameIdを新しい期間定義で呼び出すように修正
+            // これらの関数は開始・終了時刻を引数に取るように事前に修正されている必要があります。
+            // getRankedClipsForStreamersとgetRankedClipsByGameIdの引数を修正
+            const fetchAndRank = async (days) => {
+                if (category.type === 'streamer_list') {
+                    return await getRankedClipsForStreamers(broadcasterIds, days, accessToken, category.gameId);
+                } else if (category.type === 'game_id') {
+                    return await getRankedClipsByGameId(category.id, days, accessToken);
+                }
+                return [];
             }
+
+            // 1ヶ月分のデータを一度だけ取得し、そこから日別、週別のデータを作成する
+            const monthlyClips = await fetchAndRank(30);
+
+            if (period.key.includes('-')) { // 日別データ
+                clips = monthlyClips.filter(c => c.created_at.startsWith(period.key)).sort((a, b) => b.view_count - a.view_count).slice(0, 30);
+            } else if (period.key === '1week') {
+                const weekAgo = new Date();
+                weekAgo.setDate(weekAgo.getDate() - 7);
+                clips = monthlyClips.filter(c => new Date(c.created_at) >= weekAgo).sort((a, b) => b.view_count - a.view_count).slice(0, 30);
+            } else if (period.key === '1month') {
+                clips = monthlyClips.sort((a, b) => b.view_count - a.view_count).slice(0, 30);
+            }
+
             finalData[category.id][`clips_${period.key}`] = clips;
         }
         console.log(`カテゴリ 「${category.name}」の集計が完了しました。`);
