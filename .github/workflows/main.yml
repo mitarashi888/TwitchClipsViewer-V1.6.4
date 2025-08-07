@@ -32,8 +32,12 @@ jobs:
           # GitHub Secretsから認証情報をスクリプトに渡す
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+      
+      # 5. (デバッグ用) ファイルの存在を確認するステップを追加
+      - name: Check file existence
+        run: ls -R
 
-      # 5. 生成されたJSONファイルをGitHub Pagesとして公開
+      # 6. 生成されたJSONファイルをGitHub Pagesとして公開
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
