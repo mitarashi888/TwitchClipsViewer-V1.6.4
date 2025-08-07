@@ -563,7 +563,7 @@ function renderClipsToContainer(clipsToRender, container, videoDetailsMap) {
         clipLink.target = '_blank';
         clipLink.addEventListener('click', () => {
             const clipDetailsForLog = { ...clip };
-            clipDetailsForLog.game_name = clip.game_id && cachedGameDetails.has(clip.game_id) ? cachedGameDetails.get(clip.game_id) : '';
+            clipDetailsForLog.game_name = clip.game_name || (clip.game_id && cachedGameDetails.has(clip.game_id) ? cachedGameDetails.get(clip.game_id) : '');
             logEvent('clip_played', { clipId: clip.id, details: clipDetailsForLog });
         });
         const thumbnailWrapper = document.createElement('div');
@@ -626,7 +626,8 @@ function renderClipsToContainer(clipsToRender, container, videoDetailsMap) {
                     }
                 });
             } else {
-                const clipDetails = { id: clip.id, title: clip.title, url: clip.url, creator_name: clip.creator_name, broadcaster_name: clip.broadcaster_name, view_count: clip.view_count, created_at: clip.created_at, game_name: cachedGameDetails.has(clip.game_id) ? cachedGameDetails.get(clip.game_id) : '' };
+                const gameName = clip.game_name || (clip.game_id && cachedGameDetails.has(clip.game_id) ? cachedGameDetails.get(clip.game_id) : '');
+                const clipDetails = { ...clip, game_name: gameName };
                 chrome.runtime.sendMessage({ action: 'addClipToFavorites', clipDetails: clipDetails });
                 favoriteClips[clip.id] = [];
                 updateButtonState(favoriteButton, true);
@@ -642,19 +643,21 @@ function renderClipsToContainer(clipsToRender, container, videoDetailsMap) {
         const metadata = document.createElement('div');
         metadata.classList.add('clip-metadata');
 
-        if (clip.game_id && cachedGameDetails.has(clip.game_id)) {
+        // ★★★★★ 表示順を修正した部分 ★★★★★
+        // 1. ゲーム名
+        const gameName = clip.game_name || (clip.game_id && cachedGameDetails.has(clip.game_id) ? cachedGameDetails.get(clip.game_id) : '');
+        if (gameName) {
             const gameDisplay = document.createElement('span');
-            gameDisplay.textContent = `ゲーム: ${cachedGameDetails.get(clip.game_id)}`;
+            gameDisplay.textContent = `ゲーム: ${gameName}`;
             metadata.appendChild(gameDisplay);
         }
 
+        // 配信者名
         const channelNameContainer = document.createElement('span');
         channelNameContainer.classList.add('clip-channel-name');
         channelNameContainer.style.whiteSpace = 'nowrap';
-        channelNameContainer.style.cursor = 'pointer'; // カーソルをポインターに変更
-        channelNameContainer.title = 'この配信者の他のクリップを検索する'; // ツールチップをコンテナに設定
-
-        // クリックイベントを、中のリンク(a)から外のコンテナ(span)に移動
+        channelNameContainer.style.cursor = 'pointer';
+        channelNameContainer.title = 'この配信者の他のクリップを検索する';
         channelNameContainer.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -663,39 +666,37 @@ function renderClipsToContainer(clipsToRender, container, videoDetailsMap) {
             messageElement.textContent = `配信者「${clip.broadcaster_name}」が入力されました。期間などを確認し「クリップを取得」ボタンを押してください。`;
             window.scrollTo(0, 0);
         });
-
-        // 配信者名の部分は、単なるテキスト表示用のspanに変更
         const namePart = document.createElement('span');
         namePart.textContent = clip.broadcaster_name;
         namePart.style.color = 'var(--link-color)';
         namePart.style.textDecoration = 'none';
-
-        // マウスが乗った時に下線を表示する効果を追加
         channelNameContainer.addEventListener('mouseover', () => { namePart.style.textDecoration = 'underline'; });
         channelNameContainer.addEventListener('mouseout', () => { namePart.style.textDecoration = 'none'; });
-
-        channelNameContainer.append('配信者: ', namePart); // ラベルと名前を追加
+        channelNameContainer.append('配信者: ', namePart);
         metadata.appendChild(channelNameContainer);
 
+        // 3. 作成者名
         const authorNameDisplay = document.createElement('span');
         authorNameDisplay.classList.add('clip-author');
         authorNameDisplay.textContent = `作成者: ${clip.creator_name}`;
+        metadata.appendChild(authorNameDisplay);
 
+        // 4. 視聴回数
         const views = document.createElement('div');
         views.classList.add('clip-views');
         views.textContent = `${clip.view_count.toLocaleString()} 回の視聴`;
+        metadata.appendChild(views);
 
+        // 5. 作成日
         const dateDisplay = document.createElement('span');
         dateDisplay.classList.add('clip-date-display');
         dateDisplay.textContent = `作成日: ${getFormattedDateWithoutDay(new Date(clip.created_at))}`;
-
-        metadata.appendChild(authorNameDisplay);
-        metadata.appendChild(views);
         metadata.appendChild(dateDisplay);
 
+        // 6. 元配信情報
         if (clip.video_id) {
-            const vodObject = videoDetailsMap.get(clip.video_id);
-            const vodOffsetStart = Math.floor(Math.max(0, clip.vod_offset - clip.duration));
+            const vodObject = videoDetailsMap.get(String(clip.video_id));
+            const vodOffsetStart = Math.floor(Math.max(0, (clip.vod_offset || 0) - (clip.duration || 0)));
             const vodInfoDiv = document.createElement('div');
             vodInfoDiv.classList.add('clip-vod-info');
             if (vodObject) {
@@ -705,16 +706,14 @@ function renderClipsToContainer(clipsToRender, container, videoDetailsMap) {
                 vodLink.href = `https://www.twitch.tv/videos/${clip.video_id}?t=${vodOffsetStart}s`;
                 vodLink.target = '_blank';
                 vodLink.title = '元配信アーカイブへ';
-
                 vodLink.innerHTML = `元配信: ${vodObject.title}〈${vodStartDateFormatted}〉 （${formatSecondsToHMS(vodOffsetStart)}～）`;
-
-
                 vodInfoDiv.appendChild(vodLink);
             } else {
                 vodInfoDiv.textContent = `元配信ID: ${clip.video_id} （${formatSecondsToHMS(vodOffsetStart)}～）`;
             }
             metadata.appendChild(vodInfoDiv);
         }
+        // ★★★★★ ここまで ★★★★★
 
         clipInfoDiv.appendChild(title);
         clipInfoDiv.appendChild(metadata);
@@ -871,27 +870,30 @@ async function updateGameFilter(clips) {
     targetContainer.style.display = 'flex';
 }
 
-async function fetchAndCacheGameDetails(gameIds) {
-    const idsToFetch = gameIds.filter(id => id && !cachedGameDetails.has(id));
-    if (idsToFetch.length > 0) {
-        const token = await getAccessToken();
-        if (!token) return;
-        const idChunks = [];
-        for (let i = 0; i < idsToFetch.length; i += 100) idChunks.push(idsToFetch.slice(i, i + 100));
-        for (const chunk of idChunks) {
-            const gameIdsParam = chunk.map(id => `id=${id}`).join('&');
-            try {
-                const response = await fetch(`https://api.twitch.tv/helix/games?${gameIdsParam}`, { headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` } });
-                if (!response.ok) {
-                    const err = new Error('API Error: Game Fetch');
-                    err.status = response.status;
-                    throw err;
-                };
-                const data = await response.json();
-                if (data.data) data.data.forEach(game => cachedGameDetails.set(game.id, game.name));
-            } catch (error) { console.error('Error fetching game details:', error); }
+async function fetchAndCacheVideoDetailsForClips(clips) {
+    const videoDetails = new Map();
+    if (!accessToken) accessToken = await getAccessToken();
+    if (!accessToken) return videoDetails;
+
+    const videoIds = [...new Set(clips.map(c => c.video_id).filter(Boolean))];
+    if (videoIds.length === 0) return videoDetails;
+
+    for (let i = 0; i < videoIds.length; i += 100) {
+        const chunk = videoIds.slice(i, i + 100);
+        const videoIdsParam = chunk.map(id => `id=${id}`).join('&');
+        try {
+            const videoResponse = await fetch(`https://api.twitch.tv/helix/videos?${videoIdsParam}`, {
+                headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
+            });
+            if (videoResponse.ok) {
+                const videoData = await videoResponse.json();
+                videoData.data?.forEach(video => videoDetails.set(video.id, video));
+            }
+        } catch (error) {
+            console.error('Error fetching VOD details:', error);
         }
     }
+    return videoDetails;
 }
 
 function processAndRenderClips() {
@@ -1489,43 +1491,46 @@ async function fetchPopularClips() {
     logEvent('fetch_popular_clips', { category: selectedCategory.id });
     const popularClipsGrid = document.getElementById('popularClipsGrid');
 
-    // 「総合」タブ専用のレンダリング関数
-    const renderOverallClips = () => {
-        if (!popularClipsCache.overall_data) return; // データがなければ何もしない
+    const renderOverallClips = async () => {
+        if (!popularClipsCache.overall_data) return;
 
         const dateRange = popularDateRangeFilter.value;
-        const clipsToShow = popularClipsCache.overall_data[`clips_${dateRange}`] || [];
+        const key = `clips_${dateRange}`;
+        const clipsToShow = popularClipsCache.overall_data[key] || [];
 
-        popularClipsGrid.innerHTML = ''; // グリッドをクリア
+        popularClipsGrid.innerHTML = '';
         if (clipsToShow.length > 0) {
-            renderClipsToContainer(clipsToShow, popularClipsGrid, new Map()); // VOD情報は今回は表示しない
+            // ★★★★★ 変更点2: 「総合」タブでもVOD情報を取得する ★★★★★
+            let videoDetails = popularClipsCache.overall_vods && popularClipsCache.overall_vods[key]
+                ? popularClipsCache.overall_vods[key]
+                : await fetchAndCacheVideoDetailsForClips(clipsToShow);
+
+            if (!popularClipsCache.overall_vods) popularClipsCache.overall_vods = {};
+            popularClipsCache.overall_vods[key] = videoDetails;
+
+            renderClipsToContainer(clipsToShow, popularClipsGrid, videoDetails);
             messageElement.textContent = `人気クリップを${clipsToShow.length}件表示しました。`;
         } else {
             messageElement.textContent = 'この期間のクリップは見つかりませんでした。';
         }
     };
 
-    // --- メイン処理 ---
     loadingSpinner.style.display = 'flex';
     popularClipsGrid.innerHTML = '';
     messageElement.textContent = `「${selectedCategory.name}」の人気クリップを取得中...`;
 
     try {
         if (selectedCategory.id === 'overall') {
-            // 総合タブの場合: 新しいサーバーサイドJSONを取得
             if (popularClipsCache.overall_data) {
-                // 既にデータがあれば再利用
-                renderOverallClips();
+                await renderOverallClips();
             } else {
                 const response = await fetch('https://mitarashi888.github.io/TwitchClipsViewer-V1.6.4/popular_clips.json');
-                if (!response.ok) {
-                    throw new Error('人気クリップリストの取得に失敗しました。');
-                }
+                if (!response.ok) throw new Error('人気クリップリストの取得に失敗しました。');
                 popularClipsCache.overall_data = await response.json();
-                renderOverallClips();
+                await renderOverallClips();
             }
         } else {
-            // 総合以外のタブの場合: これまで通りの処理
+            // ★★★★★ 変更点3: カテゴリ検索で最大500件取得する ★★★★★
             const token = await getAccessToken();
             if (!token) { messageElement.textContent = 'Twitch認証が必要です。'; return; }
 
@@ -1537,15 +1542,33 @@ async function fetchPopularClips() {
             else startDate.setDate(endDate.getDate() - 7);
             const startedAtISO = startDate.toISOString();
 
-            const response = await fetch(`https://api.twitch.tv/helix/clips?first=30&started_at=${startedAtISO}&game_id=${selectedCategory.id}`, {
-                headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` }
-            });
+            let allClips = [];
+            let cursor = null;
+            const maxPages = 5; // 100件 * 5ページ = 500件
 
-            if (!response.ok) throw new Error('APIからのクリップ取得に失敗しました。');
-            const data = await response.json();
-            const clips = (data.data || []).filter(c => c.language === 'ja').sort((a, b) => b.view_count - a.view_count);
+            for (let i = 0; i < maxPages; i++) {
+                let url = `https://api.twitch.tv/helix/clips?first=100&started_at=${startedAtISO}&game_id=${selectedCategory.id}`;
+                if (cursor) url += `&after=${cursor}`;
 
-            renderClipsToContainer(clips, popularClipsGrid, new Map());
+                const response = await fetch(url, { headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` } });
+                if (!response.ok) break;
+
+                const data = await response.json();
+                if (data.data?.length > 0) {
+                    allClips.push(...data.data);
+                    cursor = data.pagination.cursor;
+                    if (!cursor) break; // 次のページがなければ終了
+                } else {
+                    break; // データがなければ終了
+                }
+            }
+
+            const clips = allClips.filter(c => c.language === 'ja').sort((a, b) => b.view_count - a.view_count).slice(0, 30);
+
+            // VOD情報とゲーム情報を取得してから描画
+            await fetchAndCacheGameDetails(clips.map(c => c.game_id));
+            const videoDetails = await fetchAndCacheVideoDetailsForClips(clips);
+            renderClipsToContainer(clips, popularClipsGrid, videoDetails);
             messageElement.textContent = `「${selectedCategory.name}」の人気クリップを${clips.length}件表示しました。`;
         }
     } catch (error) {
@@ -1555,6 +1578,7 @@ async function fetchPopularClips() {
         loadingSpinner.style.display = 'none';
     }
 }
+
 async function updateMyChannelIdDisplay() {
     const data = await chrome.storage.sync.get(['myChannelId', 'myChannelDisplayName', 'userChannelId', 'userDisplayName', 'isMyChannelSelf']);
 
@@ -1914,18 +1938,25 @@ document.addEventListener('DOMContentLoaded', () => {
     popularDateRangeFilter.addEventListener('change', () => {
         const selectedCategory = POPULAR_CATEGORIES.find(cat => cat.id === selectedPopularCategory);
         if (selectedCategory.id === 'overall') {
-            // 総合タブの場合は、キャッシュから表示を切り替えるだけ
-            const renderOverallClips = () => {
+            const renderOverallClips = async () => {
                 if (!popularClipsCache.overall_data) {
-                    fetchPopularClips(); // データがなければ初回取得
+                    await fetchPopularClips();
                     return;
                 }
                 const dateRange = popularDateRangeFilter.value;
-                const clipsToShow = popularClipsCache.overall_data[`clips_${dateRange}`] || [];
+                const key = `clips_${dateRange}`;
+                const clipsToShow = popularClipsCache.overall_data[key] || [];
                 const popularClipsGrid = document.getElementById('popularClipsGrid');
                 popularClipsGrid.innerHTML = '';
                 if (clipsToShow.length > 0) {
-                    renderClipsToContainer(clipsToShow, popularClipsGrid, new Map());
+                    let videoDetails = popularClipsCache.overall_vods && popularClipsCache.overall_vods[key]
+                        ? popularClipsCache.overall_vods[key]
+                        : await fetchAndCacheVideoDetailsForClips(clipsToShow);
+
+                    if (!popularClipsCache.overall_vods) popularClipsCache.overall_vods = {};
+                    popularClipsCache.overall_vods[key] = videoDetails;
+
+                    renderClipsToContainer(clipsToShow, popularClipsGrid, videoDetails);
                     messageElement.textContent = `人気クリップを${clipsToShow.length}件表示しました。`;
                 } else {
                     messageElement.textContent = 'この期間のクリップは見つかりませんでした。';
@@ -1933,7 +1964,6 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             renderOverallClips();
         } else {
-            // 総合以外はこれまで通りAPIを叩く
             fetchPopularClips();
         }
     });
