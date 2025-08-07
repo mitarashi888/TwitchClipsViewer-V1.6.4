@@ -18,6 +18,6 @@
   "homepage": "https://github.com/mitarashi888/TwitchClipsViewer-V1.6.4#readme",
   "description": "",
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.7.0"
   }
 }
