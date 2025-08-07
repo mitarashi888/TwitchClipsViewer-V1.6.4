@@ -24,44 +24,50 @@ async function getRankedClipsForPeriod(broadcasterIds, days, accessToken) {
     const allClipsNested = await Promise.all(clipPromises);
     const allClips = allClipsNested.flat().filter(clip => clip && clip.language === 'ja');
 
-    // ★★★★★ 以下、ゲーム名取得の処理を追加 ★★★★★
-    const gameIds = [...new Set(allClips.map(clip => clip.game_id).filter(Boolean))];
-    const gameDetails = new Map();
-    if (gameIds.length > 0) {
-        const gameChunks = [];
-        for (let i = 0; i < gameIds.length; i += 100) {
-            gameChunks.push(gameIds.slice(i, i + 100));
-        }
-        for (const chunk of gameChunks) {
-            const gameIdsParam = chunk.map(id => `id=${id}`).join('&');
-            const gamesResponse = await fetch(`https://api.twitch.tv/helix/games?${gameIdsParam}`, {
-                headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
-            });
-            if (gamesResponse.ok) {
-                const gamesData = await gamesResponse.json();
-                gamesData.data.forEach(game => gameDetails.set(game.id, game.name));
-            }
-        }
-    }
-
     const rankedClips = allClips
         .sort((a, b) => b.view_count - a.view_count)
         .slice(0, 30);
 
-    return rankedClips.map(clip => ({
-        id: clip.id,
-        url: clip.url,
-        title: clip.title,
-        broadcaster_name: clip.broadcaster_name,
-        creator_name: clip.creator_name,
-        view_count: clip.view_count,
-        created_at: clip.created_at,
-        thumbnail_url: clip.thumbnail_url,
-        duration: clip.duration,
-        video_id: clip.video_id,
-        vod_offset: clip.vod_offset,
-        game_name: gameDetails.get(clip.game_id) || '' // ゲーム名を追加
-    }));
+    // ★★★★★ 以下、VOD情報とゲーム名取得の処理を追加 ★★★★★
+    const videoIds = [...new Set(rankedClips.map(c => c.video_id).filter(Boolean))];
+    const gameIds = [...new Set(rankedClips.map(c => c.game_id).filter(Boolean))];
+
+    const videoDetails = new Map();
+    const gameDetails = new Map();
+
+    // VOD情報を並行して取得
+    if (videoIds.length > 0) {
+        const videoResponse = await fetch(`https://api.twitch.tv/helix/videos?id=${videoIds.join('&id=')}`, {
+            headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
+        });
+        if (videoResponse.ok) {
+            const videoData = await videoResponse.json();
+            videoData.data.forEach(video => videoDetails.set(video.id, video));
+        }
+    }
+
+    // ゲーム情報を並行して取得
+    if (gameIds.length > 0) {
+        const gamesResponse = await fetch(`https://api.twitch.tv/helix/games?id=${gameIds.join('&id=')}`, {
+            headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
+        });
+        if (gamesResponse.ok) {
+            const gamesData = await gamesResponse.json();
+            gamesData.data.forEach(game => gameDetails.set(game.id, game.name));
+        }
+    }
+
+    return rankedClips.map(clip => {
+        const vod = videoDetails.get(clip.video_id);
+        return {
+            ...clip, // 元のクリップ情報をすべて含める
+            game_name: gameDetails.get(clip.game_id) || '',
+            vod_info: vod ? {
+                title: vod.title,
+                published_at: vod.published_at
+            } : null
+        };
+    });
 }
 
 async function main() {
