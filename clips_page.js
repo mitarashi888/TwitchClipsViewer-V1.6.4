@@ -1828,38 +1828,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuClipInfo.addEventListener('click', (e) => { e.preventDefault(); updateView('clipInfo'); });
     menuSettings.addEventListener('click', (e) => { e.preventDefault(); updateView('settings'); });
 
-    popularDateRangeFilter.addEventListener('change', () => {
-        const selectedCategory = POPULAR_CATEGORIES.find(cat => cat.id === selectedPopularCategory);
-        if (selectedCategory.id === 'overall') {
-            const renderOverallClips = async () => {
-                if (!popularClipsCache.overall_data) {
-                    await fetchPopularClips();
-                    return;
-                }
-                const dateRange = popularDateRangeFilter.value;
-                const key = `clips_${dateRange}`;
-                const clipsToShow = popularClipsCache.overall_data[key] || [];
-                const popularClipsGrid = document.getElementById('popularClipsGrid');
-                popularClipsGrid.innerHTML = '';
-                if (clipsToShow.length > 0) {
-                    let videoDetails = popularClipsCache.overall_vods && popularClipsCache.overall_vods[key]
-                        ? popularClipsCache.overall_vods[key]
-                        : await fetchAndCacheVideoDetailsForClips(clipsToShow);
-
-                    if (!popularClipsCache.overall_vods) popularClipsCache.overall_vods = {};
-                    popularClipsCache.overall_vods[key] = videoDetails;
-
-                    renderClipsToContainer(clipsToShow, popularClipsGrid, videoDetails);
-                    messageElement.textContent = `人気クリップを${clipsToShow.length}件表示しました。`;
-                } else {
-                    messageElement.textContent = 'この期間のクリップは見つかりませんでした。';
-                }
-            };
-            renderOverallClips();
-        } else {
-            fetchPopularClips();
-        }
-    });
 
     popularDateRangeFilter.addEventListener('change', renderPopularClipsFromCache);
 
