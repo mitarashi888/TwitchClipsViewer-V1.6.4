@@ -26,7 +26,7 @@ const MADTOWN_GTA5_STREAMERS = [
 
 const POPULAR_CATEGORIES = [
     { name: '総合', id: 'overall', group: '総合' },
-    { name: '雑談', id: '509658', group: '雑談' },
+    { name: '雑談', id: '509658', group: '総合' },
     { name: 'VALO', id: '516575', group: 'ゲーム' },
     { name: 'LOL', id: '21779', group: 'ゲーム' },
     { name: 'Apex', id: '511224', group: 'ゲーム' },
