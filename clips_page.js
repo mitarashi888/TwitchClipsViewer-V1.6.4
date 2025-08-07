@@ -1542,15 +1542,14 @@ async function fetchPopularClips() {
             fetchedClips = clipsFromAllStreamers.flat();
 
         } else if (selectedCategory.id === 'overall') {
-            const gameIdsToFetch = [...new Set(FIXED_POPULAR_GAME_IDS)];
-            const clipsFromAllGames = await Promise.all(
-                gameIdsToFetch.map(gameId =>
-                    fetch(`https://api.twitch.tv/helix/clips?first=25&started_at=${startedAtISO}&ended_at=${endedAtISO}&game_id=${gameId}`, {
-                        headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` }
-                    }).then(res => res.ok ? res.json() : { data: null }).then(data => data.data || [])
-                )
-            );
-            fetchedClips = clipsFromAllGames.flat();
+            messageElement.textContent = `日本の人気クリップを取得中...`;
+            // 開発者のサーバーから完成したランキングJSONを取得
+            const response = await fetch('https://<あなたのGitHubユーザー名>.github.io/<リポジトリ名>/popular_clips.json');
+            if (!response.ok) {
+                throw new Error('人気クリップリストの取得に失敗しました。');
+            }
+            const data = await response.json();
+            fetchedClips = data.clips;
         } else {
             let cursor = null;
             do {

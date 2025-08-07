@@ -13,7 +13,8 @@
         "https://api.twitch.tv/*",
         "https://asia-northeast1-my-extension-analytics.cloudfunctions.net/log",
         "https://id.twitch.tv/*",
-        "https://*.twitch.tv/*"
+        "https://*.twitch.tv/*",
+        "https://mitarashi888.github.io/*"
     ],
     "action": {
         "default_icon": {

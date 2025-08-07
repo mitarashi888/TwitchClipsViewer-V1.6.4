@@ -1,0 +1,23 @@
+{
+  "name": "twitchclipsviewer-v1.6.4",
+  "version": "1.0.0",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitarashi888/TwitchClipsViewer-V1.6.4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitarashi888/TwitchClipsViewer-V1.6.4/issues"
+  },
+  "homepage": "https://github.com/mitarashi888/TwitchClipsViewer-V1.6.4#readme",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
