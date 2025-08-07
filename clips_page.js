@@ -1487,112 +1487,67 @@ async function fetchPopularClips() {
     if (!selectedCategory) return;
 
     logEvent('fetch_popular_clips', { category: selectedCategory.id });
-
-    const dateRange = popularDateRangeFilter.value;
-    const cacheKey = `popular_${selectedCategory.id}_${dateRange}`;
     const popularClipsGrid = document.getElementById('popularClipsGrid');
 
-    if (popularClipsCache[cacheKey]) {
-        const { clips, videoDetails } = popularClipsCache[cacheKey];
-        popularClipsGrid.innerHTML = '';
-        renderClipsToContainer(clips, popularClipsGrid, videoDetails);
-        messageElement.textContent = `キャッシュから「${selectedCategory.name}」の人気クリップを${clips.length}件表示しました。`;
-        return;
-    }
+    // 「総合」タブ専用のレンダリング関数
+    const renderOverallClips = () => {
+        if (!popularClipsCache.overall_data) return; // データがなければ何もしない
 
+        const dateRange = popularDateRangeFilter.value;
+        const clipsToShow = popularClipsCache.overall_data[`clips_${dateRange}`] || [];
+
+        popularClipsGrid.innerHTML = ''; // グリッドをクリア
+        if (clipsToShow.length > 0) {
+            renderClipsToContainer(clipsToShow, popularClipsGrid, new Map()); // VOD情報は今回は表示しない
+            messageElement.textContent = `人気クリップを${clipsToShow.length}件表示しました。`;
+        } else {
+            messageElement.textContent = 'この期間のクリップは見つかりませんでした。';
+        }
+    };
+
+    // --- メイン処理 ---
     loadingSpinner.style.display = 'flex';
     popularClipsGrid.innerHTML = '';
     messageElement.textContent = `「${selectedCategory.name}」の人気クリップを取得中...`;
 
     try {
-        const token = await getAccessToken();
-        if (!token) { messageElement.textContent = 'Twitch認証が必要です。'; return; }
+        if (selectedCategory.id === 'overall') {
+            // 総合タブの場合: 新しいサーバーサイドJSONを取得
+            if (popularClipsCache.overall_data) {
+                // 既にデータがあれば再利用
+                renderOverallClips();
+            } else {
+                const response = await fetch('https://mitarashi888.github.io/TwitchClipsViewer-V1.6.4/popular_clips.json');
+                if (!response.ok) {
+                    throw new Error('人気クリップリストの取得に失敗しました。');
+                }
+                popularClipsCache.overall_data = await response.json();
+                renderOverallClips();
+            }
+        } else {
+            // 総合以外のタブの場合: これまで通りの処理
+            const token = await getAccessToken();
+            if (!token) { messageElement.textContent = 'Twitch認証が必要です。'; return; }
 
-        const endDate = new Date();
-        const startDate = new Date();
-        if (dateRange === '1day') startDate.setDate(endDate.getDate() - 1);
-        else if (dateRange === '3days') startDate.setDate(endDate.getDate() - 3);
-        else if (dateRange === '1week') startDate.setDate(endDate.getDate() - 7);
-        const startedAtISO = startDate.toISOString();
-        const endedAtISO = endDate.toISOString();
+            const dateRange = popularDateRangeFilter.value;
+            const endDate = new Date();
+            const startDate = new Date();
+            if (dateRange === '1day') startDate.setDate(endDate.getDate() - 1);
+            else if (dateRange === '3days') startDate.setDate(endDate.getDate() - 3);
+            else startDate.setDate(endDate.getDate() - 7);
+            const startedAtISO = startDate.toISOString();
 
-        let fetchedClips = [];
-
-        // --- 新しいイベントカテゴリの処理分岐 ---
-        if (selectedCategory.type === 'streamer_list_event') {
-            messageElement.textContent = '対象配信者のIDを取得中...';
-            const userLoginsParam = selectedCategory.streamerLogins.map(login => `login=${login}`).join('&');
-            const usersResponse = await fetch(`https://api.twitch.tv/helix/users?${userLoginsParam}`, {
+            const response = await fetch(`https://api.twitch.tv/helix/clips?first=30&started_at=${startedAtISO}&game_id=${selectedCategory.id}`, {
                 headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` }
             });
 
-            if (!usersResponse.ok) throw new Error('配信者IDの取得に失敗しました。');
-
-            const usersData = await usersResponse.json();
-            const broadcasterIds = usersData.data.map(user => user.id);
-
-            messageElement.textContent = `「${selectedCategory.name}」のクリップを取得中...`;
-            const clipsPromises = broadcasterIds.map(id =>
-                fetch(`https://api.twitch.tv/helix/clips?broadcaster_id=${id}&game_id=${selectedCategory.gameId}&started_at=${startedAtISO}&ended_at=${endedAtISO}&first=25`, {
-                    headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` }
-                }).then(res => res.ok ? res.json() : { data: null }).then(data => data.data || [])
-            );
-
-            const clipsFromAllStreamers = await Promise.all(clipsPromises);
-            fetchedClips = clipsFromAllStreamers.flat();
-
-        } else if (selectedCategory.id === 'overall') {
-            messageElement.textContent = `日本の人気クリップを取得中...`;
-            // 開発者のサーバーから完成したランキングJSONを取得
-            const response = await fetch('https://<あなたのGitHubユーザー名>.github.io/<リポジトリ名>/popular_clips.json');
-            if (!response.ok) {
-                throw new Error('人気クリップリストの取得に失敗しました。');
-            }
+            if (!response.ok) throw new Error('APIからのクリップ取得に失敗しました。');
             const data = await response.json();
-            fetchedClips = data.clips;
-        } else {
-            let cursor = null;
-            do {
-                let url = `https://api.twitch.tv/helix/clips?first=100&started_at=${startedAtISO}&ended_at=${endedAtISO}&game_id=${selectedCategory.id}`;
-                if (cursor) url += `&after=${cursor}`;
-                const response = await fetch(url, { headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` } });
-                if (response.ok) {
-                    const data = await response.json();
-                    if (data.data?.length > 0) {
-                        fetchedClips.push(...data.data);
-                        cursor = data.pagination.cursor;
-                    } else {
-                        cursor = null;
-                    }
-                } else {
-                    cursor = null;
-                }
-            } while (cursor && fetchedClips.length < 500);
+            const clips = (data.data || []).filter(c => c.language === 'ja').sort((a, b) => b.view_count - a.view_count);
+
+            renderClipsToContainer(clips, popularClipsGrid, new Map());
+            messageElement.textContent = `「${selectedCategory.name}」の人気クリップを${clips.length}件表示しました。`;
         }
-
-        const clips = fetchedClips.filter(c => c.language === 'ja').sort((a, b) => b.view_count - a.view_count).slice(0, 30);
-
-        messageElement.textContent = 'VOD情報を取得中...';
-        const videoIds = [...new Set(clips.map(c => c.video_id).filter(Boolean))];
-        const videoDetails = new Map();
-        if (videoIds.length > 0) {
-            for (let i = 0; i < videoIds.length; i += 100) {
-                const chunk = videoIds.slice(i, i + 100);
-                const videoIdsParam = chunk.map(id => `id=${id}`).join('&');
-                const videoResponse = await fetch(`https://api.twitch.tv/helix/videos?${videoIdsParam}`, { headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` } });
-                if (videoResponse.ok) {
-                    const videoData = await videoResponse.json();
-                    videoData.data?.forEach(video => videoDetails.set(video.id, video));
-                }
-            }
-        }
-
-        await fetchAndCacheGameDetails([...new Set(clips.map(c => c.game_id).filter(Boolean))]);
-
-        popularClipsCache[cacheKey] = { clips, videoDetails };
-        renderClipsToContainer(clips, popularClipsGrid, videoDetails);
-        messageElement.textContent = `「${selectedCategory.name}」の人気クリップを${clips.length}件表示しました。`;
-
     } catch (error) {
         console.error('Error fetching popular clips:', error);
         messageElement.textContent = '人気クリップの取得中にエラーが発生しました。';
@@ -1956,7 +1911,32 @@ document.addEventListener('DOMContentLoaded', () => {
     menuClipInfo.addEventListener('click', (e) => { e.preventDefault(); updateView('clipInfo'); });
     menuSettings.addEventListener('click', (e) => { e.preventDefault(); updateView('settings'); });
 
-    popularDateRangeFilter.addEventListener('change', fetchPopularClips);
+    popularDateRangeFilter.addEventListener('change', () => {
+        const selectedCategory = POPULAR_CATEGORIES.find(cat => cat.id === selectedPopularCategory);
+        if (selectedCategory.id === 'overall') {
+            // 総合タブの場合は、キャッシュから表示を切り替えるだけ
+            const renderOverallClips = () => {
+                if (!popularClipsCache.overall_data) {
+                    fetchPopularClips(); // データがなければ初回取得
+                    return;
+                }
+                const dateRange = popularDateRangeFilter.value;
+                const clipsToShow = popularClipsCache.overall_data[`clips_${dateRange}`] || [];
+                const popularClipsGrid = document.getElementById('popularClipsGrid');
+                popularClipsGrid.innerHTML = '';
+                if (clipsToShow.length > 0) {
+                    renderClipsToContainer(clipsToShow, popularClipsGrid, new Map());
+                    messageElement.textContent = `人気クリップを${clipsToShow.length}件表示しました。`;
+                } else {
+                    messageElement.textContent = 'この期間のクリップは見つかりませんでした。';
+                }
+            };
+            renderOverallClips();
+        } else {
+            // 総合以外はこれまで通りAPIを叩く
+            fetchPopularClips();
+        }
+    });
 
     const popularCategoryButtonsContainer = document.getElementById('popularCategoryButtons');
     popularCategoryButtonsContainer.innerHTML = ''; // コンテナをクリア

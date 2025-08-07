@@ -5,8 +5,56 @@ const fetch = require('node-fetch');
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
 
-// コアなゲームリスト（固定）
-const CORE_GAME_IDS = ['509658', '516575', '511224', '21779', '32982'];
+// ★★★★★ 対象となる配信者のリスト ★★★★★
+const TARGET_STREAMER_LOGINS = [
+    'euriece', 'evinmotv', 'exalbio_2434', 'fantasista_jp', 'fenio_twitch',
+    'fmlch', 'foxrabbit', 'fps__saku', 'fps_shaka', 'franciscoow'
+];
+
+/**
+ * 指定された期間と配信者リストに基づいて人気クリップを取得・整形する関数
+ * @param {string[]} broadcasterIds - 配信者のIDリスト
+ * @param {number} days - 遡る日数 (1, 3, 7など)
+ * @param {string} accessToken - Twitch APIのアクセストークン
+ * @returns {Promise<object[]>} 整形済みのクリップデータ配列
+ */
+async function getRankedClipsForPeriod(broadcasterIds, days, accessToken) {
+    console.log(`過去${days}日間のクリップを取得中...`);
+
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - days);
+    const startedAtISO = startDate.toISOString();
+
+    // 各配信者から人気クリップを並行して取得 (上位20件を取得して後でまとめる)
+    const clipPromises = broadcasterIds.map(id =>
+        fetch(`https://api.twitch.tv/helix/clips?broadcaster_id=${id}&started_at=${startedAtISO}&first=20`, {
+            headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
+        })
+            .then(res => res.json())
+            .then(data => data.data || [])
+    );
+    const allClipsNested = await Promise.all(clipPromises);
+    const allClips = allClipsNested.flat();
+
+    // 日本語クリップを抽出し、視聴回数順に並び替え、上位30件に絞る
+    const rankedClips = allClips
+        .filter(clip => clip && clip.language === 'ja')
+        .sort((a, b) => b.view_count - a.view_count)
+        .slice(0, 30);
+
+    // 拡張機能で必要なデータだけに整形して返す
+    return rankedClips.map(clip => ({
+        id: clip.id,
+        url: clip.url,
+        title: clip.title,
+        broadcaster_name: clip.broadcaster_name,
+        creator_name: clip.creator_name,
+        view_count: clip.view_count,
+        created_at: clip.created_at,
+        thumbnail_url: clip.thumbnail_url,
+        duration: clip.duration
+    }));
+}
 
 // メインの非同期処理
 async function main() {
@@ -17,51 +65,31 @@ async function main() {
     const authData = await authResponse.json();
     const accessToken = authData.access_token;
 
-    // 2. 現在人気のゲームトップ30を取得
-    const topGamesResponse = await fetch('https://api.twitch.tv/helix/games/top?first=30', {
+    // 2. 配信者名リストをユーザーIDリストに変換
+    const userLoginsParam = TARGET_STREAMER_LOGINS.map(login => `login=${login}`).join('&');
+    const usersResponse = await fetch(`https://api.twitch.tv/helix/users?${userLoginsParam}`, {
         headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
     });
-    const topGamesData = await topGamesResponse.json();
-    const topGameIds = topGamesData.data.map(game => game.id);
+    const usersData = await usersResponse.json();
+    const broadcasterIds = usersData.data.map(user => user.id);
+    console.log(`${broadcasterIds.length}名の配信者IDを取得しました。`);
 
-    // 3. 固定リストと合体させ、重複を除外
-    const gameIdsToFetch = [...new Set([...CORE_GAME_IDS, ...topGameIds])];
-    console.log(`合計 ${gameIdsToFetch.length} 個のゲームカテゴリからクリップを取得します。`);
+    // 3. 1日、3日、1週間の各期間でランキングを生成
+    const [clips1day, clips3days, clips1week] = await Promise.all([
+        getRankedClipsForPeriod(broadcasterIds, 1, accessToken),
+        getRankedClipsForPeriod(broadcasterIds, 3, accessToken),
+        getRankedClipsForPeriod(broadcasterIds, 7, accessToken)
+    ]);
 
-    // 4. 各ゲームの人気クリップを並行して取得
-    const clipPromises = gameIdsToFetch.map(gameId =>
-        fetch(`https://api.twitch.tv/helix/clips?game_id=${gameId}&first=25`, {
-            headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
-        })
-            .then(res => res.json())
-            .then(data => data.data || [])
-    );
-    const allClipsNested = await Promise.all(clipPromises);
-    const allClips = allClipsNested.flat();
-
-    // 5. 日本語クリップを抽出し、視聴回数順に並び替え、上位30件に絞る
-    const rankedJapaneseClips = allClips
-        .filter(clip => clip && clip.language === 'ja')
-        .sort((a, b) => b.view_count - a.view_count)
-        .slice(0, 30);
-
-    // 6. 拡張機能で必要なデータだけに整形
+    // 4. 最終的なデータを1つのオブジェクトにまとめる
     const finalData = {
         last_updated: new Date().toISOString(),
-        clips: rankedJapaneseClips.map(clip => ({
-            id: clip.id,
-            url: clip.url,
-            title: clip.title,
-            broadcaster_name: clip.broadcaster_name,
-            creator_name: clip.creator_name,
-            view_count: clip.view_count,
-            created_at: clip.created_at,
-            thumbnail_url: clip.thumbnail_url,
-            duration: clip.duration
-        }))
+        clips_1day: clips1day,
+        clips_3days: clips3days,
+        clips_1week: clips1week
     };
 
-    // 7. 結果をJSONファイルとして `public` フォルダに保存
+    // 5. 結果をJSONファイルとして `public` フォルダに保存
     if (!fs.existsSync('./public')) {
         fs.mkdirSync('./public');
     }
