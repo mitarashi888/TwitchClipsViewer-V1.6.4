@@ -1429,7 +1429,7 @@ async function fetchPopularClips() {
 
     try {
         // ※注意: このURLはあなたの環境に合わせて修正が必要な場合があります
-        const response = await fetch('https://mitarashi888.github.io/TwitchClipsViewer-V1.6.4/popular_clips.json');
+        const response = await fetch('https://raw.githubusercontent.com/mitarashi888/TwitchClipsViewer-V1.6.4/refs/heads/main/public/popular_clips.json');
 
         if (!response.ok) {
             throw new Error(`ランキングファイルの読み込みに失敗しました (ステータス: ${response.status})`);
