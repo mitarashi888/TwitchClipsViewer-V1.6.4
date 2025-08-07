@@ -1,4 +1,15 @@
 {
+  "19619": {
+    "clips_2025-08-07": [],
+    "clips_2025-08-06": [],
+    "clips_2025-08-05": [],
+    "clips_2025-08-04": [],
+    "clips_2025-08-03": [],
+    "clips_2025-08-02": [],
+    "clips_2025-08-01": [],
+    "clips_1week": [],
+    "clips_1month": []
+  },
   "21779": {
     "clips_2025-08-07": [],
     "clips_2025-08-06": [],
@@ -26,12 +37,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DeafCrypticSoybeanPupper-u3rpB5moucNQKS9r/d23ee037-8594-4f85-b824-de48fa0d8e88/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 10976,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "17時くらいからLTK",
-          "published_at": "2025-07-14T07:34:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ModernResourcefulMetalFutureMan-BS1_p8YxmzlbqiQN",
@@ -50,12 +56,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ModernResourcefulMetalFutureMan-BS1_p8YxmzlbqiQN/39a4b855-a701-49ba-8ec2-772abb1ef075/preview-480x272.jpg",
         "duration": 42,
         "vod_offset": 5173,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day.2 #DCWIN",
-          "published_at": "2025-07-14T08:12:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FurryInexpensiveMeatloafChefFrank-UbCfgdshwaLtUaVZ",
@@ -69,17 +70,12 @@
         "game_id": "21779",
         "language": "ja",
         "title": "AI字幕チェック◯んぽさん",
-        "view_count": 29904,
+        "view_count": 29905,
         "created_at": "2025-07-08T17:56:36Z",
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FurryInexpensiveMeatloafChefFrank-UbCfgdshwaLtUaVZ/9c5b3aa7-0964-4850-96b8-c397d3d69b2a/preview-480x272.jpg",
         "duration": 23.1,
         "vod_offset": 17470,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "高レートフレックス",
-          "published_at": "2025-07-08T13:04:18Z"
-        }
+        "is_featured": false
       },
       {
         "id": "VivaciousTriangularWolfPermaSmug-QIAt0BqecJUB18u0",
@@ -98,12 +94,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/VivaciousTriangularWolfPermaSmug-QIAt0BqecJUB18u0/bdbc7cf4-6f75-47df-aa88-77845d1cff53/preview-480x272.jpg",
         "duration": 17.6,
         "vod_offset": 11002,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day.2 #DCWIN",
-          "published_at": "2025-07-14T08:12:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TsunderePrettyPlumagePoooound-Hh4rCpjYhmfn_G4s",
@@ -122,12 +113,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TsunderePrettyPlumagePoooound-Hh4rCpjYhmfn_G4s/4c1ea909-21d9-4c9b-83a4-6add301c5d8d/preview-480x272.jpg",
         "duration": 37.9,
         "vod_offset": 13594,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "ぉおおおおおｌ",
-          "published_at": "2025-07-09T11:03:13Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CheerfulBrightBoarKappaPride-KiStk5hkEFnAJzGJ",
@@ -141,17 +127,12 @@
         "game_id": "21779",
         "language": "ja",
         "title": "MSIではどのチームも対戦相手にヴァルス、アニー、ウーコンを選ばせる勇気はありません。このコンボは非常に強力なので禁止にせざるを得ません。なぜカエルは禁止にしないのでしょうか。",
-        "view_count": 22252,
+        "view_count": 22253,
         "created_at": "2025-07-15T12:21:17Z",
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CheerfulBrightBoarKappaPride-KiStk5hkEFnAJzGJ/eda988b9-439c-41c6-a187-a772b6f134b7/preview-480x272.jpg",
         "duration": 28.3,
         "vod_offset": 14902,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK 本番日 スクリムから vs Resolve Regalia",
-          "published_at": "2025-07-15T08:11:18Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CrispyTenuousSlothBCouch-SzjZjHK2zz8WT42z",
@@ -170,12 +151,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CrispyTenuousSlothBCouch-SzjZjHK2zz8WT42z/7af9996a-f84e-4ab4-9a63-ef3b99a2766a/preview-480x272.jpg",
         "duration": 13.8,
         "vod_offset": 15826,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "17時くらいからLTK",
-          "published_at": "2025-07-14T07:34:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PricklyTawdryInternBabyRage-1BexLahkIQNodO83",
@@ -194,12 +170,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PricklyTawdryInternBabyRage-1BexLahkIQNodO83/2153164a-c293-469f-9ab5-e9f3036fd1fa/preview-480x272.jpg",
         "duration": 39.2,
         "vod_offset": 22357,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK 本番日 スクリムから",
-          "published_at": "2025-07-14T08:02:05Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SnappyAuspiciousSquidPanicVis-8QW_54Xc40uoNHJq",
@@ -218,12 +189,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SnappyAuspiciousSquidPanicVis-8QW_54Xc40uoNHJq/b5e06a8f-3689-4e76-89d7-cab5d80e7fb4/preview-480x272.jpg",
         "duration": 31,
         "vod_offset": 3354,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day3 #DCWIN",
-          "published_at": "2025-07-15T08:12:32Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DeadPowerfulAubergineCclamChamp-zwieF5hSl_O2b66b",
@@ -242,9 +208,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DeadPowerfulAubergineCclamChamp-zwieF5hSl_O2b66b/023ccc2e-089a-4162-9e41-448201875c9e/preview-480x272.jpg",
         "duration": 21.5,
         "vod_offset": null,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": null
+        "is_featured": false
       },
       {
         "id": "FantasticDrabAlligatorRaccAttack-KWlErMrydnYxzsn9",
@@ -263,12 +227,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FantasticDrabAlligatorRaccAttack-KWlErMrydnYxzsn9/a45fa54c-a424-46f1-9ae7-811b7b0522dd/preview-480x272.jpg",
         "duration": 24.7,
         "vod_offset": 9079,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "yoxo",
-          "published_at": "2025-07-15T08:43:34Z"
-        }
+        "is_featured": false
       },
       {
         "id": "GorgeousSoftPotKeepo-hePoSTvvVh3_RCl3",
@@ -287,12 +246,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/GorgeousSoftPotKeepo-hePoSTvvVh3_RCl3/77a55d33-c55d-4a9e-b8dc-40a47209de2a/preview-480x272.jpg",
         "duration": 28.2,
         "vod_offset": 13208,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "ぉおおおおおｌ",
-          "published_at": "2025-07-09T11:03:13Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DaintySlipperyJellyfishOptimizePrime-CP5UIdNieV7y5TTA",
@@ -311,12 +265,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DaintySlipperyJellyfishOptimizePrime-CP5UIdNieV7y5TTA/b68e12eb-2254-4fb6-b692-533e01a1c0d5/preview-480x272.jpg",
         "duration": 14.4,
         "vod_offset": 11714,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day.2 #DCWIN",
-          "published_at": "2025-07-14T08:12:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FrailBluePotatoMrDestructoid-07aFoBCrJzmK9i4i",
@@ -335,12 +284,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FrailBluePotatoMrDestructoid-07aFoBCrJzmK9i4i/42da7b00-dfdb-40b4-b037-494a7fea87bb/preview-480x272.jpg",
         "duration": 18.8,
         "vod_offset": 4678,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "スクリムから",
-          "published_at": "2025-07-15T09:19:27Z"
-        }
+        "is_featured": false
       },
       {
         "id": "AlluringAmusedPastaPrimeMe-6ItZ7ZcKzAWvqS0k",
@@ -359,12 +303,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AlluringAmusedPastaPrimeMe-6ItZ7ZcKzAWvqS0k/83b80474-cb13-4052-9854-1530983516cc/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 3071,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "DAY3本番！いくぞ！＃LTK",
-          "published_at": "2025-07-15T09:09:22Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DeliciousWiseMetalWholeWheat-i8tBo8nVxBR3jdew",
@@ -383,12 +322,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DeliciousWiseMetalWholeWheat-i8tBo8nVxBR3jdew/33747227-5acd-46a0-a027-4d561a0a5929/preview-480x272.jpg",
         "duration": 26.2,
         "vod_offset": 3423,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK 本番日 スクリムから vs Resolve Regalia",
-          "published_at": "2025-07-15T08:11:18Z"
-        }
+        "is_featured": false
       },
       {
         "id": "GorgeousTrappedTroutPunchTrees-t3i_mL5c7Xiplu5s",
@@ -407,12 +341,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/GorgeousTrappedTroutPunchTrees-t3i_mL5c7Xiplu5s/ff6ef4ab-6c62-4d21-b956-387102194b38/preview-480x272.jpg",
         "duration": 8.5,
         "vod_offset": 21481,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK 本番日 スクリムから",
-          "published_at": "2025-07-14T08:02:05Z"
-        }
+        "is_featured": false
       },
       {
         "id": "EnticingBraveOrcaNomNom-6uZVIF05CS0keCgq",
@@ -431,12 +360,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EnticingBraveOrcaNomNom-6uZVIF05CS0keCgq/1214da6e-123c-4db1-add7-7f3018c00976/preview-480x272.jpg",
         "duration": 47,
         "vod_offset": 3560,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day.2 #DCWIN",
-          "published_at": "2025-07-14T08:12:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ArtisticSlipperyPicklesLitty-XMwggnpTwG_hfga4",
@@ -455,12 +379,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ArtisticSlipperyPicklesLitty-XMwggnpTwG_hfga4/693e4b30-4086-404e-b352-37074dde321b/preview-480x272.jpg",
         "duration": 38.8,
         "vod_offset": 5757,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK 本番日 スクリムから",
-          "published_at": "2025-07-14T08:02:05Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ThankfulIgnorantWebRuleFive-aFeStfLecSDrlMBk",
@@ -479,12 +398,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ThankfulIgnorantWebRuleFive-aFeStfLecSDrlMBk/f5b0391a-33d3-49af-941f-15be2710e279/preview-480x272.jpg",
         "duration": 6.3,
         "vod_offset": 9412,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK scrimなりや",
-          "published_at": "2025-07-12T13:26:36Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PlausibleAgreeableWeaselSaltBae-ZgTxsiBXTdPYedGz",
@@ -503,12 +417,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PlausibleAgreeableWeaselSaltBae-ZgTxsiBXTdPYedGz/0ca822d8-502d-4f78-8671-83f9d50e09b3/preview-480x272.jpg",
         "duration": 35.8,
         "vod_offset": 8514,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "yoxo",
-          "published_at": "2025-07-15T08:43:34Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ArtsyYawningPanWOOP-xLImvljWq_KYHQOQ",
@@ -527,12 +436,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ArtsyYawningPanWOOP-xLImvljWq_KYHQOQ/00365cc7-7d70-4943-9e4c-d11dda31f99b/preview-480x272.jpg",
         "duration": 23.7,
         "vod_offset": 11739,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "ぉおおおおおｌ",
-          "published_at": "2025-07-09T11:03:13Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SavageClearGullChefFrank-RW2wQhTQ3wHec2Fs",
@@ -551,12 +455,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SavageClearGullChefFrank-RW2wQhTQ3wHec2Fs/7820ae40-ab8f-472e-bccc-386c58d1111e/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 32587,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day.2 #DCWIN",
-          "published_at": "2025-07-14T08:12:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "WiseGiantShrimpTheThing-yGVLoZk2IMQsjnoX",
@@ -575,12 +474,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/WiseGiantShrimpTheThing-yGVLoZk2IMQsjnoX/629b870c-f4d8-4524-8d69-316b3f8181d3/preview-480x272.jpg",
         "duration": 27.7,
         "vod_offset": 13991,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "勝負はこれからだろLTK",
-          "published_at": "2025-07-15T08:42:46Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DirtyAmazingTrollDendiFace-kn_RJacuJovkl155",
@@ -599,12 +493,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DirtyAmazingTrollDendiFace-kn_RJacuJovkl155/50d23ee5-5a03-4246-a22e-7c17acb56ff5/preview-480x272.jpg",
         "duration": 15.6,
         "vod_offset": 22234,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "#LTK Day.2 #DCWIN",
-          "published_at": "2025-07-14T08:12:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CoyBashfulCheesePanicVis-GPaqRvND0gOSxcAn",
@@ -623,12 +512,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CoyBashfulCheesePanicVis-GPaqRvND0gOSxcAn/3494e233-6a7b-4eb4-b545-d21f9372adbc/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 9455,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "yoxo",
-          "published_at": "2025-07-15T08:43:34Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ConsiderateDeadEggWholeWheat-9OaGmJDdIu8YHhgg",
@@ -647,12 +531,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ConsiderateDeadEggWholeWheat-9OaGmJDdIu8YHhgg/cea4d2c8-86c2-4bb9-b84f-e006928e5076/preview-480x272.jpg",
         "duration": 50,
         "vod_offset": 3645,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "LTK 本番日 スクリムから vs Resolve Regalia",
-          "published_at": "2025-07-15T08:11:18Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BashfulResoluteManateeCeilingCat-qLsOt99d2JdW5UCS",
@@ -671,12 +550,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BashfulResoluteManateeCeilingCat-qLsOt99d2JdW5UCS/08059a70-9fed-44c3-859f-78f173bc914f/preview-480x272.jpg",
         "duration": 19.4,
         "vod_offset": 5819,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "ぉおおおおおｌ",
-          "published_at": "2025-07-09T11:03:13Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BrainyPoisedDootPupper-SknN91asWygWWU-p",
@@ -690,17 +564,12 @@
         "game_id": "21779",
         "language": "ja",
         "title": "ま⚪︎こ取ってち⚪︎ち⚪︎付ける",
-        "view_count": 8333,
+        "view_count": 8334,
         "created_at": "2025-07-13T09:05:42Z",
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BrainyPoisedDootPupper-SknN91asWygWWU-p/3589325c-5cce-400c-ad1f-cdeca42e1a17/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 562,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "よくない発言をしてたらよくないよって教えてくださいがんばります",
-          "published_at": "2025-07-13T08:54:04Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TolerantSpicyFishDatSheffy-klZWnTI_HAMbp6Ie",
@@ -719,729 +588,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TolerantSpicyFishDatSheffy-klZWnTI_HAMbp6Ie/036a9d83-44aa-4189-a30c-e80cc9fa153d/preview-480x272.jpg",
         "duration": 12.8,
         "vod_offset": 7182,
-        "is_featured": false,
-        "game_name": "League of Legends",
-        "vod_info": {
-          "title": "予備校アマングアス3D",
-          "published_at": "2025-07-12T13:26:55Z"
-        }
-      }
-    ]
-  },
-  "24241": {
-    "clips_2025-08-07": [],
-    "clips_2025-08-06": [],
-    "clips_2025-08-05": [],
-    "clips_2025-08-04": [],
-    "clips_2025-08-03": [],
-    "clips_2025-08-02": [],
-    "clips_2025-08-01": [],
-    "clips_1week": [],
-    "clips_1month": [
-      {
-        "id": "AssiduousEntertainingLaptopHeyGirl-KisHF37ZNokqqtNE",
-        "url": "https://www.twitch.tv/turuturushiterune/clip/AssiduousEntertainingLaptopHeyGirl-KisHF37ZNokqqtNE",
-        "embed_url": "https://clips.twitch.tv/embed?clip=AssiduousEntertainingLaptopHeyGirl-KisHF37ZNokqqtNE",
-        "broadcaster_id": "970936597",
-        "broadcaster_name": "つるつるたすかる",
-        "creator_id": "970936597",
-        "creator_name": "つるつるたすかる",
-        "video_id": "2508384273",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "FF14暴言配信者つるつるたすかるですよろしくお願いします",
-        "view_count": 765,
-        "created_at": "2025-07-10T08:34:45Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AssiduousEntertainingLaptopHeyGirl-KisHF37ZNokqqtNE/c634fb08-ccf9-41fa-be4f-bf90fbb720be/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 4458,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "💜FF14💜はやおき💜かまってにゃん💜",
-          "published_at": "2025-07-10T02:24:46Z"
-        }
-      },
-      {
-        "id": "SpikySecretiveStarTTours-RomjYsMrzIjELvQ5",
-        "url": "https://www.twitch.tv/lu4949/clip/SpikySecretiveStarTTours-RomjYsMrzIjELvQ5",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SpikySecretiveStarTTours-RomjYsMrzIjELvQ5",
-        "broadcaster_id": "652605935",
-        "broadcaster_name": "るーしえる",
-        "creator_id": "652605935",
-        "creator_name": "るーしえる",
-        "video_id": "",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "死",
-        "view_count": 623,
-        "created_at": "2025-07-13T06:10:37Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SpikySecretiveStarTTours-RomjYsMrzIjELvQ5/360fe1d7-cef5-4755-bba5-1bc45f6cca45/preview-480x272.jpg",
-        "duration": 22.9,
-        "vod_offset": null,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": null
-      },
-      {
-        "id": "CovertEnjoyableStarFailFish-9Evq3V1koTYMK0x1",
-        "url": "https://www.twitch.tv/turuturushiterune/clip/CovertEnjoyableStarFailFish-9Evq3V1koTYMK0x1",
-        "embed_url": "https://clips.twitch.tv/embed?clip=CovertEnjoyableStarFailFish-9Evq3V1koTYMK0x1",
-        "broadcaster_id": "970936597",
-        "broadcaster_name": "つるつるたすかる",
-        "creator_id": "509005585",
-        "creator_name": "れいふぉん",
-        "video_id": "2512982662",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "見えない！見えない！",
-        "view_count": 217,
-        "created_at": "2025-07-15T09:24:55Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CovertEnjoyableStarFailFish-9Evq3V1koTYMK0x1/75ef2953-1d40-4b2e-b52b-c651a2debd6b/preview-480x272.jpg",
-        "duration": 16.7,
-        "vod_offset": 1726,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "💜ADHDIQ77零式消化💜FF14💜零式のこともおもいだしてください💜",
-          "published_at": "2025-07-15T08:52:41Z"
-        }
-      },
-      {
-        "id": "AltruisticPrettySkirretPoooound-HBa19TsTiYytF3pL",
-        "url": "https://www.twitch.tv/72ksz/clip/AltruisticPrettySkirretPoooound-HBa19TsTiYytF3pL",
-        "embed_url": "https://clips.twitch.tv/embed?clip=AltruisticPrettySkirretPoooound-HBa19TsTiYytF3pL",
-        "broadcaster_id": "885221139",
-        "broadcaster_name": "夏樹すず",
-        "creator_id": "88228926",
-        "creator_name": "ぷいあ",
-        "video_id": "2507843681",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "もうやだ畳嫌い！",
-        "view_count": 205,
-        "created_at": "2025-07-09T15:46:22Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AltruisticPrettySkirretPoooound-HBa19TsTiYytF3pL/9ae0fa70-8570-466f-b411-b46d7c14ec59/preview-480x272.jpg",
-        "duration": 22.6,
-        "vod_offset": 3312,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "真夜中のちるPvP",
-          "published_at": "2025-07-09T14:47:36Z"
-        }
-      },
-      {
-        "id": "HelplessCheerfulSlothDogFace-ntCUHGjaYZfjh5UD",
-        "url": "https://www.twitch.tv/zumumu/clip/HelplessCheerfulSlothDogFace-ntCUHGjaYZfjh5UD",
-        "embed_url": "https://clips.twitch.tv/embed?clip=HelplessCheerfulSlothDogFace-ntCUHGjaYZfjh5UD",
-        "broadcaster_id": "118350349",
-        "broadcaster_name": "ずむちゃ",
-        "creator_id": "1305770461",
-        "creator_name": "UKBurst",
-        "video_id": "",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "神かばう",
-        "view_count": 129,
-        "created_at": "2025-07-12T15:36:53Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HelplessCheerfulSlothDogFace-ntCUHGjaYZfjh5UD/ebad4060-5a04-444f-9a2a-2859e943a930/preview-480x272.jpg",
-        "duration": 28.8,
-        "vod_offset": null,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": null
-      },
-      {
-        "id": "ImportantElegantDiscShazBotstix-MJJgToBwatTev0kn",
-        "url": "https://www.twitch.tv/so5u/clip/ImportantElegantDiscShazBotstix-MJJgToBwatTev0kn",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ImportantElegantDiscShazBotstix-MJJgToBwatTev0kn",
-        "broadcaster_id": "130014845",
-        "broadcaster_name": "so5u",
-        "creator_id": "833710041",
-        "creator_name": "ひかる88",
-        "video_id": "2509568959",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "裏切られた…………",
-        "view_count": 121,
-        "created_at": "2025-07-12T06:02:28Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ImportantElegantDiscShazBotstix-MJJgToBwatTev0kn/86841a90-ff09-4024-89b4-6f7468591027/preview-480x272.jpg",
-        "duration": 32.1,
-        "vod_offset": 8603,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "クリスタルコンフリクト カスタムマッチ実況放送",
-          "published_at": "2025-07-11T13:44:41Z"
-        }
-      },
-      {
-        "id": "SmokyGrossGaurCurseLit-gHrmCRUhgwRkEf5Q",
-        "url": "https://www.twitch.tv/marineslimelv99/clip/SmokyGrossGaurCurseLit-gHrmCRUhgwRkEf5Q",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SmokyGrossGaurCurseLit-gHrmCRUhgwRkEf5Q",
-        "broadcaster_id": "900897352",
-        "broadcaster_name": "マリンスライム",
-        "creator_id": "900897352",
-        "creator_name": "マリンスライム",
-        "video_id": "2507477948",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "あいのうた（独唱）",
-        "view_count": 107,
-        "created_at": "2025-07-10T07:48:39Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SmokyGrossGaurCurseLit-gHrmCRUhgwRkEf5Q/de8f9574-aee0-41b3-a76c-4ee1bff33286/preview-480x272.jpg",
-        "duration": 32.8,
-        "vod_offset": 14878,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【参加◎】塔4ボス練習！15:00まで",
-          "published_at": "2025-07-09T01:54:09Z"
-        }
-      },
-      {
-        "id": "PerfectHardCurryRuleFive-oZjcleiSAgNzvPRx",
-        "url": "https://www.twitch.tv/marineslimelv99/clip/PerfectHardCurryRuleFive-oZjcleiSAgNzvPRx",
-        "embed_url": "https://clips.twitch.tv/embed?clip=PerfectHardCurryRuleFive-oZjcleiSAgNzvPRx",
-        "broadcaster_id": "900897352",
-        "broadcaster_name": "マリンスライム",
-        "creator_id": "408497778",
-        "creator_name": "常時オフライン",
-        "video_id": "2511971644",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "クロイスターデーモンの悲劇",
-        "view_count": 93,
-        "created_at": "2025-07-14T07:04:16Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PerfectHardCurryRuleFive-oZjcleiSAgNzvPRx/b22b8af8-e648-446f-8305-9d63b858699e/preview-480x272.jpg",
-        "duration": 15.6,
-        "vod_offset": 13260,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【参加◎】塔クリア目標！13：00～17:00まで",
-          "published_at": "2025-07-14T03:19:20Z"
-        }
-      },
-      {
-        "id": "NeighborlyImportantSnailCoolStoryBro-4VMgGsNGP8rxDupH",
-        "url": "https://www.twitch.tv/rukalun/clip/NeighborlyImportantSnailCoolStoryBro-4VMgGsNGP8rxDupH",
-        "embed_url": "https://clips.twitch.tv/embed?clip=NeighborlyImportantSnailCoolStoryBro-4VMgGsNGP8rxDupH",
-        "broadcaster_id": "58359926",
-        "broadcaster_name": "るっかるん",
-        "creator_id": "58359926",
-        "creator_name": "るっかるん",
-        "video_id": "2511988904",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "あちょヤカン！！ヒーヒーっ",
-        "view_count": 93,
-        "created_at": "2025-07-14T10:17:29Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/NeighborlyImportantSnailCoolStoryBro-4VMgGsNGP8rxDupH/0e21494e-fa92-40a5-835f-bad34d9955bd/preview-480x272.jpg",
-        "duration": 37.1,
-        "vod_offset": 18948,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【🎣FF14】絶エデン思い出しまでくDコン｡´◕ω◕｀｡【Mana/🍞でも】",
-          "published_at": "2025-07-14T03:48:50Z"
-        }
-      },
-      {
-        "id": "SecretiveCautiousArtichokeCoolStoryBob-6kKyQBIKfbbBDwXt",
-        "url": "https://www.twitch.tv/aoi_amearare/clip/SecretiveCautiousArtichokeCoolStoryBob-6kKyQBIKfbbBDwXt",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SecretiveCautiousArtichokeCoolStoryBob-6kKyQBIKfbbBDwXt",
-        "broadcaster_id": "808965153",
-        "broadcaster_name": "あおいあめあられ",
-        "creator_id": "61261455",
-        "creator_name": "ひろろむーん",
-        "video_id": "2511235893",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "☔･•全てを察したあおい•･💧",
-        "view_count": 91,
-        "created_at": "2025-07-13T11:05:48Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SecretiveCautiousArtichokeCoolStoryBob-6kKyQBIKfbbBDwXt/2a61fcee-b48b-451d-a8a6-0fda63ca8704/preview-480x272.jpg",
-        "duration": 16.6,
-        "vod_offset": 8622,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "☔あおい時々あめあられ🌨️",
-          "published_at": "2025-07-13T08:41:09Z"
-        }
-      },
-      {
-        "id": "NaiveAgileAnacondaBrainSlug-S2JJ7wRQyiwjGQaZ",
-        "url": "https://www.twitch.tv/shink_1018/clip/NaiveAgileAnacondaBrainSlug-S2JJ7wRQyiwjGQaZ",
-        "embed_url": "https://clips.twitch.tv/embed?clip=NaiveAgileAnacondaBrainSlug-S2JJ7wRQyiwjGQaZ",
-        "broadcaster_id": "715362821",
-        "broadcaster_name": "shink_1018",
-        "creator_id": "1225754181",
-        "creator_name": "チョコおもち",
-        "video_id": "2506792824",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "3斬鉄剣！",
-        "view_count": 87,
-        "created_at": "2025-07-08T13:50:18Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/NaiveAgileAnacondaBrainSlug-S2JJ7wRQyiwjGQaZ/73cd72cd-6b87-43fd-baa1-3383e1361e10/preview-480x272.jpg",
-        "duration": 23.1,
-        "vod_offset": 19431,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【FF14】クリコン ソロランク JP CC（Diamond ～ Crystal）（ダイヤ帯～クリスタル帯）「第27話：海馬散る!無敵のトゥーンワールド」",
-          "published_at": "2025-07-08T08:20:35Z"
-        }
-      },
-      {
-        "id": "OutstandingCrunchyArtichokeLeeroyJenkins-beLbxRvOPq-Gh3tf",
-        "url": "https://www.twitch.tv/nasiapvp/clip/OutstandingCrunchyArtichokeLeeroyJenkins-beLbxRvOPq-Gh3tf",
-        "embed_url": "https://clips.twitch.tv/embed?clip=OutstandingCrunchyArtichokeLeeroyJenkins-beLbxRvOPq-Gh3tf",
-        "broadcaster_id": "771425514",
-        "broadcaster_name": "なしあ",
-        "creator_id": "771425514",
-        "creator_name": "なしあ",
-        "video_id": "2506785968",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "赤魔をゴージTierSにしたい理由😎",
-        "view_count": 81,
-        "created_at": "2025-07-09T07:34:45Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/OutstandingCrunchyArtichokeLeeroyJenkins-beLbxRvOPq-Gh3tf/a83dd8e3-5e1d-4544-9ba5-42e57f852909/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 18962,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "モグコレゴージ🍹ManaDC！一番アツいシーズンの 開 幕 だ ！(=ﾟωﾟ=)",
-          "published_at": "2025-07-08T07:59:54Z"
-        }
-      },
-      {
-        "id": "PiercingHungryAlfalfaResidentSleeper-KvdSNIYKqScP1JSu",
-        "url": "https://www.twitch.tv/amepero/clip/PiercingHungryAlfalfaResidentSleeper-KvdSNIYKqScP1JSu",
-        "embed_url": "https://clips.twitch.tv/embed?clip=PiercingHungryAlfalfaResidentSleeper-KvdSNIYKqScP1JSu",
-        "broadcaster_id": "165024800",
-        "broadcaster_name": "AMEPERO",
-        "creator_id": "27404043",
-        "creator_name": "Whellie",
-        "video_id": "2510420497",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "しゃーらっぷ！！！！",
-        "view_count": 71,
-        "created_at": "2025-07-13T09:38:17Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PiercingHungryAlfalfaResidentSleeper-KvdSNIYKqScP1JSu/984a6a35-0b3c-43e1-aad2-03502750c683/preview-480x272.jpg",
-        "duration": 13,
-        "vod_offset": 13924,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "あめぺろがうろ覚えでキャリーする死者の宮殿🍭151階～",
-          "published_at": "2025-07-12T12:00:55Z"
-        }
-      },
-      {
-        "id": "TawdryTardyEyeballOhMyDog-USyLihAXCFlGvsR6",
-        "url": "https://www.twitch.tv/t_abyss_/clip/TawdryTardyEyeballOhMyDog-USyLihAXCFlGvsR6",
-        "embed_url": "https://clips.twitch.tv/embed?clip=TawdryTardyEyeballOhMyDog-USyLihAXCFlGvsR6",
-        "broadcaster_id": "217615741",
-        "broadcaster_name": "t_ABYSS_",
-        "creator_id": "534987164",
-        "creator_name": "瀬戸八島",
-        "video_id": "2508698370",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "大当たり",
-        "view_count": 63,
-        "created_at": "2025-07-10T17:18:28Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TawdryTardyEyeballOhMyDog-USyLihAXCFlGvsR6/df517b02-2e77-41ad-bc1f-fc6e4836c0ab/preview-480x272.jpg",
-        "duration": 25.3,
-        "vod_offset": 11725,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "🍟チルクラ⚠️極ゼレニア事前募集中！7/18 22:00～【7.25ネタバレあり】 2025-07-10",
-          "published_at": "2025-07-10T14:01:16Z"
-        }
-      },
-      {
-        "id": "ObliqueBigPoxSSSsss-lqV0iQq5rlPMgZX-",
-        "url": "https://www.twitch.tv/yukinorennkonn/clip/ObliqueBigPoxSSSsss-lqV0iQq5rlPMgZX-",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ObliqueBigPoxSSSsss-lqV0iQq5rlPMgZX-",
-        "broadcaster_id": "470727784",
-        "broadcaster_name": "雪のれんこん",
-        "creator_id": "253626247",
-        "creator_name": "水色あくあ",
-        "video_id": "2509186944",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "てんやわんや",
-        "view_count": 63,
-        "created_at": "2025-07-11T04:03:49Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObliqueBigPoxSSSsss-lqV0iQq5rlPMgZX-/d02f63c3-3a37-4df1-ba52-0a84e4a1a6ee/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 2534,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "7/11朝 ウェルリト戦役やる© SQUARE ENIX",
-          "published_at": "2025-07-11T00:59:14Z"
-        }
-      },
-      {
-        "id": "RelievedHungryWalletCharlieBitMe-f6DX44WfdaDjjbM2",
-        "url": "https://www.twitch.tv/neku_r/clip/RelievedHungryWalletCharlieBitMe-f6DX44WfdaDjjbM2",
-        "embed_url": "https://clips.twitch.tv/embed?clip=RelievedHungryWalletCharlieBitMe-f6DX44WfdaDjjbM2",
-        "broadcaster_id": "1116039762",
-        "broadcaster_name": "ねくたろ",
-        "creator_id": "891272093",
-        "creator_name": "じぇんとーる",
-        "video_id": "",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "りっとあティンティン",
-        "view_count": 59,
-        "created_at": "2025-07-12T06:09:16Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RelievedHungryWalletCharlieBitMe-f6DX44WfdaDjjbM2/522e2347-45d3-4605-9414-b29d74a9fd9d/preview-480x272.jpg",
-        "duration": 5,
-        "vod_offset": null,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": null
-      },
-      {
-        "id": "SpotlessOriginalPizzaCoolStoryBro-Yt1BXm_BwCRD7TrQ",
-        "url": "https://www.twitch.tv/nagatatta/clip/SpotlessOriginalPizzaCoolStoryBro-Yt1BXm_BwCRD7TrQ",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SpotlessOriginalPizzaCoolStoryBro-Yt1BXm_BwCRD7TrQ",
-        "broadcaster_id": "49772620",
-        "broadcaster_name": "nagatatta",
-        "creator_id": "112529779",
-        "creator_name": "mosyurin",
-        "video_id": "2507480725",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "nagataguilty",
-        "view_count": 51,
-        "created_at": "2025-07-09T10:11:48Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SpotlessOriginalPizzaCoolStoryBro-Yt1BXm_BwCRD7TrQ/9673c4ba-ea9a-454a-b0da-a0284db46b24/preview-480x272.jpg",
-        "duration": 30.9,
-        "vod_offset": 29325,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "今日も今日とてこっそりと",
-          "published_at": "2025-07-09T01:57:28Z"
-        }
-      },
-      {
-        "id": "RudeHelpfulLaptopTBCheesePull-vAkJe1rYCzf6vuap",
-        "url": "https://www.twitch.tv/aireynos/clip/RudeHelpfulLaptopTBCheesePull-vAkJe1rYCzf6vuap",
-        "embed_url": "https://clips.twitch.tv/embed?clip=RudeHelpfulLaptopTBCheesePull-vAkJe1rYCzf6vuap",
-        "broadcaster_id": "777947144",
-        "broadcaster_name": "のすてぃ",
-        "creator_id": "777947144",
-        "creator_name": "のすてぃ",
-        "video_id": "2508636761",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "有罪判決",
-        "view_count": 49,
-        "created_at": "2025-07-10T15:42:32Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RudeHelpfulLaptopTBCheesePull-vAkJe1rYCzf6vuap/b7adcf55-ebe1-400b-8dd2-60d5c2eac8a5/preview-480x272.jpg",
-        "duration": 10,
-        "vod_offset": 1603,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "竜詩 ３日目 いくど～～",
-          "published_at": "2025-07-10T12:02:46Z"
-        }
-      },
-      {
-        "id": "ThirstyOpenHabaneroHotPokket-s1kLGxUE8-5uSmxp",
-        "url": "https://www.twitch.tv/liebe_tino/clip/ThirstyOpenHabaneroHotPokket-s1kLGxUE8-5uSmxp",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ThirstyOpenHabaneroHotPokket-s1kLGxUE8-5uSmxp",
-        "broadcaster_id": "116298136",
-        "broadcaster_name": "天乃りーべ",
-        "creator_id": "116298136",
-        "creator_name": "天乃りーべ",
-        "video_id": "2507728302",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "おふざけりーべ",
-        "view_count": 47,
-        "created_at": "2025-07-09T15:10:16Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ThirstyOpenHabaneroHotPokket-s1kLGxUE8-5uSmxp/95f78b4a-7ca9-496c-bcc8-40e8d6cf8091/preview-480x272.jpg",
-        "duration": 21.6,
-        "vod_offset": 9595,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【FF14】メンルレでモグコレ対象コンテンツ引けば一石二鳥じゃない！？【参加大歓迎】",
-          "published_at": "2025-07-09T11:00:05Z"
-        }
-      },
-      {
-        "id": "EmpathicCogentEggBloodTrail-WfMbCWsbKxEazjAB",
-        "url": "https://www.twitch.tv/acchonbrike/clip/EmpathicCogentEggBloodTrail-WfMbCWsbKxEazjAB",
-        "embed_url": "https://clips.twitch.tv/embed?clip=EmpathicCogentEggBloodTrail-WfMbCWsbKxEazjAB",
-        "broadcaster_id": "102794887",
-        "broadcaster_name": "acchonbrike",
-        "creator_id": "939653679",
-        "creator_name": "バルス9029",
-        "video_id": "2510368666",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "はじめてのおつかい",
-        "view_count": 43,
-        "created_at": "2025-07-12T13:46:58Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EmpathicCogentEggBloodTrail-WfMbCWsbKxEazjAB/30afe570-15ab-4703-ac55-e8edf98a6ea3/preview-480x272.jpg",
-        "duration": 19.6,
-        "vod_offset": 13604,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "本日はどうやら主役らしい ※告知あるヨ",
-          "published_at": "2025-07-12T09:57:29Z"
-        }
-      },
-      {
-        "id": "HandsomeCrunchyTigerCharlietheUnicorn-kSbKHDnEMo-IKwTC",
-        "url": "https://www.twitch.tv/ailine_camus39/clip/HandsomeCrunchyTigerCharlietheUnicorn-kSbKHDnEMo-IKwTC",
-        "embed_url": "https://clips.twitch.tv/embed?clip=HandsomeCrunchyTigerCharlietheUnicorn-kSbKHDnEMo-IKwTC",
-        "broadcaster_id": "993590472",
-        "broadcaster_name": "アイリン_カミュ",
-        "creator_id": "186543836",
-        "creator_name": "うぃんぐ001",
-        "video_id": "2507784046",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "おやすみあいりん",
-        "view_count": 41,
-        "created_at": "2025-07-09T14:03:59Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HandsomeCrunchyTigerCharlietheUnicorn-kSbKHDnEMo-IKwTC/0554ee5f-ac62-4af6-875f-f41a62f38345/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 3041,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【 FF14 参加型 #442.5 】勘違いしてたぁあ！で、せっかくだからクレセントアイル行く！【 7.2 ネタバレ 雑談配信・鼻づまり 】",
-          "published_at": "2025-07-09T13:00:37Z"
-        }
-      },
-      {
-        "id": "CarefulBlueCobblerBlargNaut-LUvPBcvMnP0diXXV",
-        "url": "https://www.twitch.tv/kaieaurxiv/clip/CarefulBlueCobblerBlargNaut-LUvPBcvMnP0diXXV",
-        "embed_url": "https://clips.twitch.tv/embed?clip=CarefulBlueCobblerBlargNaut-LUvPBcvMnP0diXXV",
-        "broadcaster_id": "849304861",
-        "broadcaster_name": "かいえざりがに",
-        "creator_id": "849304861",
-        "creator_name": "かいえざりがに",
-        "video_id": "",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "このコルア・コルのキレが最高！！",
-        "view_count": 39,
-        "created_at": "2025-07-08T16:07:19Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CarefulBlueCobblerBlargNaut-LUvPBcvMnP0diXXV/16bd89ee-4b41-4f2e-9cb8-7de30e767df7/preview-480x272.jpg",
-        "duration": 25.3,
-        "vod_offset": null,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": null
-      },
-      {
-        "id": "LightSolidQuailYee-4A_EUu6EGhPSuqDR",
-        "url": "https://www.twitch.tv/yukinorennkonn/clip/LightSolidQuailYee-4A_EUu6EGhPSuqDR",
-        "embed_url": "https://clips.twitch.tv/embed?clip=LightSolidQuailYee-4A_EUu6EGhPSuqDR",
-        "broadcaster_id": "470727784",
-        "broadcaster_name": "雪のれんこん",
-        "creator_id": "253626247",
-        "creator_name": "水色あくあ",
-        "video_id": "2507431197",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "これが雪のれんこんだ",
-        "view_count": 39,
-        "created_at": "2025-07-09T03:44:20Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/LightSolidQuailYee-4A_EUu6EGhPSuqDR/2a36f6c3-30c9-4972-80a7-e3d4749f1a80/preview-480x272.jpg",
-        "duration": 23.6,
-        "vod_offset": 9297,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "7/9朝 マロ→紅蓮の四聖獣奇譚やる© SQUARE ENIX",
-          "published_at": "2025-07-09T00:59:14Z"
-        }
-      },
-      {
-        "id": "AmazingAnnoyingWeaselTheRinger-D-buoH3mVEgFoU6S",
-        "url": "https://www.twitch.tv/semitanku/clip/AmazingAnnoyingWeaselTheRinger-D-buoH3mVEgFoU6S",
-        "embed_url": "https://clips.twitch.tv/embed?clip=AmazingAnnoyingWeaselTheRinger-D-buoH3mVEgFoU6S",
-        "broadcaster_id": "464685517",
-        "broadcaster_name": "セミタンク",
-        "creator_id": "639332374",
-        "creator_name": "ぽぽっく",
-        "video_id": "2511302828",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "本日の最終回",
-        "view_count": 39,
-        "created_at": "2025-07-13T12:24:08Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AmazingAnnoyingWeaselTheRinger-D-buoH3mVEgFoU6S/9ea772f5-6163-47e7-b9d1-9274fec8afe1/preview-480x272.jpg",
-        "duration": 51.8,
-        "vod_offset": 2818,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "70Fまでやる",
-          "published_at": "2025-07-13T11:35:17Z"
-        }
-      },
-      {
-        "id": "ShakingRefinedBeefTriHard-rH97PIxMRFSn7UVi",
-        "url": "https://www.twitch.tv/amepero/clip/ShakingRefinedBeefTriHard-rH97PIxMRFSn7UVi",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ShakingRefinedBeefTriHard-rH97PIxMRFSn7UVi",
-        "broadcaster_id": "165024800",
-        "broadcaster_name": "AMEPERO",
-        "creator_id": "27404043",
-        "creator_name": "Whellie",
-        "video_id": "2510420497",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "DD180階で全滅しました",
-        "view_count": 39,
-        "created_at": "2025-07-12T14:48:31Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ShakingRefinedBeefTriHard-rH97PIxMRFSn7UVi/a962e158-21c1-457d-9802-71eff6326ed7/preview-480x272.jpg",
-        "duration": 48.4,
-        "vod_offset": 7156,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "あめぺろがうろ覚えでキャリーする死者の宮殿🍭151階～",
-          "published_at": "2025-07-12T12:00:55Z"
-        }
-      },
-      {
-        "id": "ShortHealthyAlbatrossAMPTropPunch-_RRlv4Sl8qxdXxGC",
-        "url": "https://www.twitch.tv/hina_s_g/clip/ShortHealthyAlbatrossAMPTropPunch-_RRlv4Sl8qxdXxGC",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ShortHealthyAlbatrossAMPTropPunch-_RRlv4Sl8qxdXxGC",
-        "broadcaster_id": "791771906",
-        "broadcaster_name": "ひなさくら",
-        "creator_id": "791771906",
-        "creator_name": "ひなさくら",
-        "video_id": "2507031591",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "0秒コントラファットは割と詰んでると思う",
-        "view_count": 37,
-        "created_at": "2025-07-11T10:17:34Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ShortHealthyAlbatrossAMPTropPunch-_RRlv4Sl8qxdXxGC/82d419d0-1647-4e9c-aaed-b2175d4a31e3/preview-480x272.jpg",
-        "duration": 13.1,
-        "vod_offset": 8294,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "クリコン行くよー！1081からっ！押そう、快気。",
-          "published_at": "2025-07-08T16:36:37Z"
-        }
-      },
-      {
-        "id": "ArtsyTacitHyenaYee-A--bsWfO4FstLBa0",
-        "url": "https://www.twitch.tv/edymuid_gg/clip/ArtsyTacitHyenaYee-A--bsWfO4FstLBa0",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ArtsyTacitHyenaYee-A--bsWfO4FstLBa0",
-        "broadcaster_id": "190791832",
-        "broadcaster_name": "えでぃ_",
-        "creator_id": "184351223",
-        "creator_name": "ちゃんさん1",
-        "video_id": "2510248707",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "感動の初勝利",
-        "view_count": 35,
-        "created_at": "2025-07-12T13:19:35Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ArtsyTacitHyenaYee-A--bsWfO4FstLBa0/fbba6a16-b01e-4e7b-b8f2-dd1f29213a05/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 29834,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "夏終わらないで！",
-          "published_at": "2025-07-12T04:59:44Z"
-        }
-      },
-      {
-        "id": "InspiringPoisedGaurPeteZaroll-5CQjexy5CL_494-y",
-        "url": "https://www.twitch.tv/semitanku/clip/InspiringPoisedGaurPeteZaroll-5CQjexy5CL_494-y",
-        "embed_url": "https://clips.twitch.tv/embed?clip=InspiringPoisedGaurPeteZaroll-5CQjexy5CL_494-y",
-        "broadcaster_id": "464685517",
-        "broadcaster_name": "セミタンク",
-        "creator_id": "639332374",
-        "creator_name": "ぽぽっく",
-        "video_id": "2510287738",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "最終回",
-        "view_count": 35,
-        "created_at": "2025-07-12T13:01:22Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/InspiringPoisedGaurPeteZaroll-5CQjexy5CL_494-y/7d4a6616-0e24-40e0-9409-d439eb83e95c/preview-480x272.jpg",
-        "duration": 35.8,
-        "vod_offset": 7181,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "初回にして最終回",
-          "published_at": "2025-07-12T06:17:08Z"
-        }
-      },
-      {
-        "id": "BlazingWiseLeopardPicoMause-yT6M_0EwD4WppS56",
-        "url": "https://www.twitch.tv/pyonchan_0707/clip/BlazingWiseLeopardPicoMause-yT6M_0EwD4WppS56",
-        "embed_url": "https://clips.twitch.tv/embed?clip=BlazingWiseLeopardPicoMause-yT6M_0EwD4WppS56",
-        "broadcaster_id": "91636321",
-        "broadcaster_name": "ぴょんち",
-        "creator_id": "263250939",
-        "creator_name": "かじまる",
-        "video_id": "",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "甘んじます？？",
-        "view_count": 35,
-        "created_at": "2025-07-10T10:27:06Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BlazingWiseLeopardPicoMause-yT6M_0EwD4WppS56/3e518fe8-1a50-425f-9c5d-d5b7266bcd2e/preview-480x272.jpg",
-        "duration": 16.9,
-        "vod_offset": null,
-        "is_featured": false,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": null
-      },
-      {
-        "id": "MiniatureBoldNoodleBigBrother-yd7hx0WDsiPnaUVD",
-        "url": "https://www.twitch.tv/five_clover0902/clip/MiniatureBoldNoodleBigBrother-yd7hx0WDsiPnaUVD",
-        "embed_url": "https://clips.twitch.tv/embed?clip=MiniatureBoldNoodleBigBrother-yd7hx0WDsiPnaUVD",
-        "broadcaster_id": "726901654",
-        "broadcaster_name": "うす荷",
-        "creator_id": "726901654",
-        "creator_name": "うす荷",
-        "video_id": "2507880632",
-        "game_id": "24241",
-        "language": "ja",
-        "title": "AoEを避けないnpcの介護で手一杯な人(死んだら負け)",
-        "view_count": 33,
-        "created_at": "2025-07-10T00:19:10Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/MiniatureBoldNoodleBigBrother-yd7hx0WDsiPnaUVD/38b4dd76-a88e-4de8-a89f-5111da166e11/preview-480x272.jpg",
-        "duration": 12.3,
-        "vod_offset": 30208,
-        "is_featured": true,
-        "game_name": "FINAL FANTASY XIV ONLINE",
-        "vod_info": {
-          "title": "【新生編】起きる時間ミスって泣きそう",
-          "published_at": "2025-07-09T15:47:51Z"
-        }
+        "is_featured": false
       }
     ]
   },
@@ -1472,12 +619,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/MoldyBombasticWaffleJonCarnage-ORPUYrmVCOaPIqk5/fdd0da19-8c20-4bdb-ae1d-bc24981bcf4f/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 12026,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "夏苗▶りマッチ",
-          "published_at": "2025-07-12T12:29:36Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FuriousFuriousRavenDoggo-hCMz9WEWZl0s_U--",
@@ -1496,12 +638,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FuriousFuriousRavenDoggo-hCMz9WEWZl0s_U--/516cbfdd-0c87-4d5c-ba00-e48346164232/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 3404,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【#ストグラ】Day272 / BJローン74日目【 #配信しろや / 三否亭 四五六確 / のりプロ所属】",
-          "published_at": "2025-07-09T13:21:37Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BetterCulturedLemurLitty-p3fKR1i4HLIuZo1X",
@@ -1520,12 +657,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BetterCulturedLemurLitty-p3fKR1i4HLIuZo1X/1c0419a3-bec5-4a0b-b429-518ccfbe6920/preview-480x272.jpg",
         "duration": 26.1,
         "vod_offset": 5986,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ681日目",
-          "published_at": "2025-07-12T14:10:20Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CleverTastyKoupreyWow-LWJS4gc-RYkw35mF",
@@ -1544,12 +676,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CleverTastyKoupreyWow-LWJS4gc-RYkw35mF/95dee414-f90c-4e12-8211-401df537de16/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 8788,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "夏苗▶りマッチ",
-          "published_at": "2025-07-12T12:29:36Z"
-        }
+        "is_featured": false
       },
       {
         "id": "GeniusWrongPieShazBotstix-grJs-GstV6uPg2AA",
@@ -1568,12 +695,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/GeniusWrongPieShazBotstix-grJs-GstV6uPg2AA/66bafacf-331b-4b93-8d45-b30084187f94/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 4450,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "#ストグラ 253日目 警察【味野環九郎】",
-          "published_at": "2025-07-15T08:02:04Z"
-        }
+        "is_featured": false
       },
       {
         "id": "InventiveFineRavenDatBoi-fZRKjI4JLkqo5ywe",
@@ -1592,12 +714,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/InventiveFineRavenDatBoi-fZRKjI4JLkqo5ywe/cf9bec0f-2cd2-48e2-9c55-e5f7e4e2afc3/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 17917,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH練習",
-          "published_at": "2025-07-12T13:19:43Z"
-        }
+        "is_featured": false
       },
       {
         "id": "AuspiciousAssiduousDiamondBCWarrior-vMGhDRBbr6QhGdIZ",
@@ -1616,12 +733,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AuspiciousAssiduousDiamondBCWarrior-vMGhDRBbr6QhGdIZ/82f2d0d7-d1db-4080-b0ef-3f4c8dc528d9/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 3978,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "夏苗▶REMATCH",
-          "published_at": "2025-07-08T11:50:59Z"
-        }
+        "is_featured": false
       },
       {
         "id": "NurturingSaltyGrassTriHard-5yYk41590E9FoUN1",
@@ -1640,12 +752,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/NurturingSaltyGrassTriHard-5yYk41590E9FoUN1/723ea050-90f3-4742-8205-d9e979ff23b8/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 19344,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【ストグラ】ろっぷ出勤！RqteL体験part２",
-          "published_at": "2025-07-13T10:26:26Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BraveGloriousPlumageOptimizePrime-x1l8su9FuoH1pMJn",
@@ -1664,12 +771,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BraveGloriousPlumageOptimizePrime-x1l8su9FuoH1pMJn/26b8ba2c-f5b6-4d68-ad10-ccc000d69463/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 22368,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH練習",
-          "published_at": "2025-07-12T13:19:43Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SpoopyResoluteLasagnaDxAbomb-GUAOx0_lxlRcT6qQ",
@@ -1688,12 +790,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SpoopyResoluteLasagnaDxAbomb-GUAOx0_lxlRcT6qQ/e9d90a18-54d3-40cd-be42-ac6036ad18fd/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 34093,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【#ストグラ 263日目】警察スナイパーとタイプFとレベル2ミッション / RqteL三島みつー",
-          "published_at": "2025-07-12T10:22:09Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ThoughtfulDullFinchDerp-8FDObT6azUKyM6qQ",
@@ -1712,12 +809,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ThoughtfulDullFinchDerp-8FDObT6azUKyM6qQ/ab2363ad-b10c-4dda-8f39-1ae6bf2457d1/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 9989,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "夏苗▶りマッチ",
-          "published_at": "2025-07-12T12:29:36Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SleepyCredulousSamosaAMPTropPunch--w8CrzqSnS423q6J",
@@ -1736,12 +828,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SleepyCredulousSamosaAMPTropPunch--w8CrzqSnS423q6J/725c1687-f601-41b8-b6e9-eddf7d4ef1a3/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 3136,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "大豆か夏苗",
-          "published_at": "2025-07-15T11:21:03Z"
-        }
+        "is_featured": false
       },
       {
         "id": "HeadstrongFitTigerHumbleLife-OK0-JRp_OD9rGSYf",
@@ -1760,12 +847,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HeadstrongFitTigerHumbleLife-OK0-JRp_OD9rGSYf/73e94a98-2d69-46b8-9e1e-c2755deb943c/preview-480x272.jpg",
         "duration": 30,
         "vod_offset": 20482,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "7/10【GTAV/RP】 BLACK GANG『悩』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-10T09:52:44Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CreativeNurturingPangolinChefFrank-Kh2ltrslS_0MLmYz",
@@ -1784,12 +866,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CreativeNurturingPangolinChefFrank-Kh2ltrslS_0MLmYz/c44998af-8510-45f3-b7cc-245324b30edd/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 3106,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH(?)",
-          "published_at": "2025-07-10T13:13:14Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ImportantExcitedOkapiPanicVis-6CDExsmmAkezuibl",
@@ -1808,12 +885,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ImportantExcitedOkapiPanicVis-6CDExsmmAkezuibl/6435fe54-638f-40f7-a31c-205fbde5bd53/preview-480x272.jpg",
         "duration": 49.7,
         "vod_offset": 21675,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "＃ストグラ Day249 星唄サウ汰視点！",
-          "published_at": "2025-07-09T13:14:59Z"
-        }
+        "is_featured": false
       },
       {
         "id": "RealJoyousSparrowGrammarKing-Agt_Mn7iSYMGmgmo",
@@ -1832,12 +904,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RealJoyousSparrowGrammarKing-Agt_Mn7iSYMGmgmo/a6043a99-d808-4c6f-b440-d96973d0f3a8/preview-480x272.jpg",
         "duration": 59,
         "vod_offset": 11713,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "147日目 ジョシュア",
-          "published_at": "2025-07-13T09:33:07Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PlumpLuckyMarrowKeyboardCat-BEzRQfHgruLO32py",
@@ -1856,12 +923,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PlumpLuckyMarrowKeyboardCat-BEzRQfHgruLO32py/0cb3a7f2-36ab-4f31-a18e-2c28a5cf4779/preview-480x272.jpg",
         "duration": 54.6,
         "vod_offset": 4186,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ配信 | 月ノ島 | 週末早番ブローカー #ストグラ",
-          "published_at": "2025-07-13T08:17:32Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PlainAuspiciousTrollCharlietheUnicorn-_oGulIzL-nFNtJdl",
@@ -1880,12 +942,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PlainAuspiciousTrollCharlietheUnicorn-_oGulIzL-nFNtJdl/92fa09c5-8895-4da3-a8f2-4a92433af73e/preview-480x272.jpg",
         "duration": 40.3,
         "vod_offset": 4120,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ Day243 DEP/FadeGate 第二章？【加藤圧】",
-          "published_at": "2025-07-08T16:37:39Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BashfulFilthyCaribouImGlitch-DGgnVkrXwLTna80z",
@@ -1904,12 +961,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BashfulFilthyCaribouImGlitch-DGgnVkrXwLTna80z/059e481d-374e-42f8-8652-81be9cd94651/preview-480x272.jpg",
         "duration": 55.3,
         "vod_offset": 6663,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "#ストグラ GTA5/510目】作業系→くりかん 【聖女れりあ】",
-          "published_at": "2025-07-11T16:58:00Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SnappyColdLatteFunRun-G5Tw9FeplLxi6u0O",
@@ -1928,12 +980,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SnappyColdLatteFunRun-G5Tw9FeplLxi6u0O/473742c3-ce1a-4462-9d63-dc81612f1489/preview-480x272.jpg",
         "duration": 41.1,
         "vod_offset": 4852,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DeliciousUglyCormorantWutFace-Z16AhYfC8S9JRan2",
@@ -1952,12 +999,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DeliciousUglyCormorantWutFace-Z16AhYfC8S9JRan2/a7faeaa4-bf34-4f8b-8d4d-1979cbf23fb3/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 3314,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH(?)",
-          "published_at": "2025-07-10T13:13:14Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TastyJollyPassionfruitAllenHuhu-ozX6RczhpPyqOVY7",
@@ -1976,12 +1018,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TastyJollyPassionfruitAllenHuhu-ozX6RczhpPyqOVY7/b9794d5f-5f80-45a5-bc1d-2e0933884fe7/preview-480x272.jpg",
         "duration": 35.9,
         "vod_offset": 12765,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【ストグラ警察】伊勢えびす:275日 /蜂夜ハチ:起きれば22日目",
-          "published_at": "2025-07-13T13:28:13Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FreezingUninterestedMarjoramDatSheffy-IsXFrKZHcE12IG1J",
@@ -2000,12 +1037,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FreezingUninterestedMarjoramDatSheffy-IsXFrKZHcE12IG1J/ad992fc2-60a9-450f-a80f-84f39060e61c/preview-480x272.jpg",
         "duration": 47,
         "vod_offset": 18707,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH練習",
-          "published_at": "2025-07-12T13:19:43Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CrispyFantasticPastaBatChest-gksxeQGoweTp1oew",
@@ -2024,12 +1056,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CrispyFantasticPastaBatChest-gksxeQGoweTp1oew/fa435885-9349-45a1-be7b-49549326c291/preview-480x272.jpg",
         "duration": 31.3,
         "vod_offset": 5947,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH練習",
-          "published_at": "2025-07-12T13:19:43Z"
-        }
+        "is_featured": false
       },
       {
         "id": "HungryArtisticPanKappaRoss-KQgFf665TebJg36e",
@@ -2048,12 +1075,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HungryArtisticPanKappaRoss-KQgFf665TebJg36e/ef0eee84-0d4d-4508-a150-9d0a24bea110/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 22275,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH練習",
-          "published_at": "2025-07-12T13:19:43Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TangibleRoundSowOSsloth-U9cOBDSiWVZUpFGz",
@@ -2072,12 +1094,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TangibleRoundSowOSsloth-U9cOBDSiWVZUpFGz/2dbf645e-d7cb-4e9b-a56b-140364332e75/preview-480x272.jpg",
         "duration": 11.5,
         "vod_offset": 27907,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【513日目】亡霊の幽霊【ヘルアン視点｜#ストグラ】※鳩・指示・他下げBAN",
-          "published_at": "2025-07-08T09:51:02Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FlaccidBumblingBaboonPeteZaroll-ZQc6S7GRwP65Ntsh",
@@ -2096,12 +1113,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FlaccidBumblingBaboonPeteZaroll-ZQc6S7GRwP65Ntsh/cbb39fd6-dea3-4ed7-9b29-6a811a9e222e/preview-480x272.jpg",
         "duration": 38.1,
         "vod_offset": 3660,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【#ストグラ】Day272 / BJローン74日目【 #配信しろや / 三否亭 四五六確 / のりプロ所属】",
-          "published_at": "2025-07-09T13:21:37Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SolidFlaccidBaconOSkomodo-lyjS5DoqbbZWFt8d",
@@ -2120,12 +1132,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SolidFlaccidBaconOSkomodo-lyjS5DoqbbZWFt8d/dd659faa-96d1-4145-aa81-36a3c241a7c4/preview-480x272.jpg",
         "duration": 54.5,
         "vod_offset": 34003,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【#ストグラ 263日目】警察スナイパーとタイプFとレベル2ミッション / RqteL三島みつー",
-          "published_at": "2025-07-12T10:22:09Z"
-        }
+        "is_featured": false
       },
       {
         "id": "EvilSmilingWalletFreakinStinkin-nH7u21ZIttQFJ_bg",
@@ -2144,12 +1151,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EvilSmilingWalletFreakinStinkin-nH7u21ZIttQFJ_bg/23fda559-0a06-47bd-bb28-1a6f3121eb56/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 970,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "ストグラ 胡將 → REMATCH練習",
-          "published_at": "2025-07-11T13:36:16Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DoubtfulFamousUdonJKanStyle-uP-RMwJWhQEq_N_M",
@@ -2168,12 +1170,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DoubtfulFamousUdonJKanStyle-uP-RMwJWhQEq_N_M/9a614ad4-3b7c-4a10-af0e-875a83296cce/preview-480x272.jpg",
         "duration": 40.2,
         "vod_offset": 6535,
-        "is_featured": false,
-        "game_name": "Grand Theft Auto V",
-        "vod_info": {
-          "title": "【#ストグラ 260日目】コナダで大型行きたい / RqteL三島みつー",
-          "published_at": "2025-07-09T10:19:05Z"
-        }
+        "is_featured": false
       }
     ]
   },
@@ -2186,7 +1183,236 @@
     "clips_2025-08-02": [],
     "clips_2025-08-01": [],
     "clips_1week": [],
-    "clips_1month": []
+    "clips_1month": [
+      {
+        "id": "AstuteFastAlpacaSeemsGood-FsbHO869yPlt4ypy",
+        "url": "https://www.twitch.tv/kawaii_club_0809/clip/AstuteFastAlpacaSeemsGood-FsbHO869yPlt4ypy",
+        "embed_url": "https://clips.twitch.tv/embed?clip=AstuteFastAlpacaSeemsGood-FsbHO869yPlt4ypy",
+        "broadcaster_id": "912775996",
+        "broadcaster_name": "KAWAII_CLUB_0809",
+        "creator_id": "1091465290",
+        "creator_name": "ふにﾌﾆふに",
+        "video_id": "2508634479",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "ベストクリップ",
+        "view_count": 10167,
+        "created_at": "2025-07-10T13:37:36Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AstuteFastAlpacaSeemsGood-FsbHO869yPlt4ypy/e1663c40-c08a-47d8-96cf-cfe0fbc4d018/preview-480x272.jpg",
+        "duration": 60,
+        "vod_offset": 5839,
+        "is_featured": false
+      },
+      {
+        "id": "NiceEntertainingQueleaPJSalt-w7QzQEfroGw5Dy05",
+        "url": "https://www.twitch.tv/kawaii_club_0809/clip/NiceEntertainingQueleaPJSalt-w7QzQEfroGw5Dy05",
+        "embed_url": "https://clips.twitch.tv/embed?clip=NiceEntertainingQueleaPJSalt-w7QzQEfroGw5Dy05",
+        "broadcaster_id": "912775996",
+        "broadcaster_name": "KAWAII_CLUB_0809",
+        "creator_id": "1091465290",
+        "creator_name": "ふにﾌﾆふに",
+        "video_id": "2508634479",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "☺",
+        "view_count": 5961,
+        "created_at": "2025-07-10T12:38:20Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/NiceEntertainingQueleaPJSalt-w7QzQEfroGw5Dy05/93182b3c-fa29-4dd0-b7d8-63e002d24876/preview-480x272.jpg",
+        "duration": 58.4,
+        "vod_offset": 2310,
+        "is_featured": false
+      },
+      {
+        "id": "ArtsyNiceGazelleCharlietheUnicorn-vSp_YsHQYRacvQge",
+        "url": "https://www.twitch.tv/yaritaiji/clip/ArtsyNiceGazelleCharlietheUnicorn-vSp_YsHQYRacvQge",
+        "embed_url": "https://clips.twitch.tv/embed?clip=ArtsyNiceGazelleCharlietheUnicorn-vSp_YsHQYRacvQge",
+        "broadcaster_id": "102631269",
+        "broadcaster_name": "たいじ_たいちゃんねる",
+        "creator_id": "899570018",
+        "creator_name": "ｱｻﾅﾝ",
+        "video_id": "2506934325",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "チビコレに笑うたいじ",
+        "view_count": 5947,
+        "created_at": "2025-07-08T14:23:03Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ArtsyNiceGazelleCharlietheUnicorn-vSp_YsHQYRacvQge/add95cd6-a132-47ff-b8ec-9aa2ea917c40/preview-480x272.jpg",
+        "duration": 30.1,
+        "vod_offset": 549,
+        "is_featured": false
+      },
+      {
+        "id": "EncouragingFuriousCattle4Head-UkvA_UZNitGx25tO",
+        "url": "https://www.twitch.tv/hanakon_/clip/EncouragingFuriousCattle4Head-UkvA_UZNitGx25tO",
+        "embed_url": "https://clips.twitch.tv/embed?clip=EncouragingFuriousCattle4Head-UkvA_UZNitGx25tO",
+        "broadcaster_id": "430335846",
+        "broadcaster_name": "華子狐",
+        "creator_id": "35850893",
+        "creator_name": "aLimeBear",
+        "video_id": "2513016967",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "blue",
+        "view_count": 5875,
+        "created_at": "2025-07-15T10:41:28Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EncouragingFuriousCattle4Head-UkvA_UZNitGx25tO/05f7645a-dccf-4743-9a5f-4a4f8fc525e6/preview-480x272.jpg",
+        "duration": 60,
+        "vod_offset": 198,
+        "is_featured": false
+      },
+      {
+        "id": "TallVictoriousYamBrokeBack-__1evlwpxNokiJgu",
+        "url": "https://www.twitch.tv/kato_junichi0817/clip/TallVictoriousYamBrokeBack-__1evlwpxNokiJgu",
+        "embed_url": "https://clips.twitch.tv/embed?clip=TallVictoriousYamBrokeBack-__1evlwpxNokiJgu",
+        "broadcaster_id": "545050196",
+        "broadcaster_name": "加藤純一うん〇ちゃん",
+        "creator_id": "659613419",
+        "creator_name": "yarukiryoku",
+        "video_id": "2506101334",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "バトラ観てくれ",
+        "view_count": 5553,
+        "created_at": "2025-07-09T02:32:08Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TallVictoriousYamBrokeBack-__1evlwpxNokiJgu/a2db4fff-0b16-4223-8d57-749112b18fe5/preview-480x272.jpg",
+        "duration": 21,
+        "vod_offset": 11302,
+        "is_featured": false
+      },
+      {
+        "id": "SmoothAlivePicklesTTours-3WzrRY2lZw8PO4Cw",
+        "url": "https://www.twitch.tv/kawaii_club_0809/clip/SmoothAlivePicklesTTours-3WzrRY2lZw8PO4Cw",
+        "embed_url": "https://clips.twitch.tv/embed?clip=SmoothAlivePicklesTTours-3WzrRY2lZw8PO4Cw",
+        "broadcaster_id": "912775996",
+        "broadcaster_name": "KAWAII_CLUB_0809",
+        "creator_id": "1091465290",
+        "creator_name": "ふにﾌﾆふに",
+        "video_id": "2508634479",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "☺",
+        "view_count": 4217,
+        "created_at": "2025-07-10T12:37:58Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SmoothAlivePicklesTTours-3WzrRY2lZw8PO4Cw/4aba30cf-7935-4403-a20b-8d080bb97e3c/preview-480x272.jpg",
+        "duration": 60,
+        "vod_offset": 2253,
+        "is_featured": false
+      },
+      {
+        "id": "AgreeableSpotlessIcecreamTriHard-EcbsL52fYlwYRsF7",
+        "url": "https://www.twitch.tv/fullcon/clip/AgreeableSpotlessIcecreamTriHard-EcbsL52fYlwYRsF7",
+        "embed_url": "https://clips.twitch.tv/embed?clip=AgreeableSpotlessIcecreamTriHard-EcbsL52fYlwYRsF7",
+        "broadcaster_id": "9094040",
+        "broadcaster_name": "フルコン_2525",
+        "creator_id": "901145505",
+        "creator_name": "slugkun",
+        "video_id": "2511321234",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "そめにゃん可愛いねぇ",
+        "view_count": 3869,
+        "created_at": "2025-07-14T01:34:11Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AgreeableSpotlessIcecreamTriHard-EcbsL52fYlwYRsF7/e894ba37-6baa-4509-95f7-8943e2b8bc95/preview-480x272.jpg",
+        "duration": 58.6,
+        "vod_offset": 4308,
+        "is_featured": false
+      },
+      {
+        "id": "AthleticFlaccidInternFutureMan-dIH5wbWjWFcy2U8m",
+        "url": "https://www.twitch.tv/enako_chan/clip/AthleticFlaccidInternFutureMan-dIH5wbWjWFcy2U8m",
+        "embed_url": "https://clips.twitch.tv/embed?clip=AthleticFlaccidInternFutureMan-dIH5wbWjWFcy2U8m",
+        "broadcaster_id": "875637475",
+        "broadcaster_name": "えなこ",
+        "creator_id": "727604334",
+        "creator_name": "サブスクなしこ",
+        "video_id": "2510370423",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "おｐ",
+        "view_count": 3793,
+        "created_at": "2025-07-12T11:09:10Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AthleticFlaccidInternFutureMan-dIH5wbWjWFcy2U8m/52e5da1e-b121-4bbc-b6b9-cba2e564a8fe/preview-480x272.jpg",
+        "duration": 31.4,
+        "vod_offset": 4026,
+        "is_featured": false
+      },
+      {
+        "id": "GoodPerfectHippoStoneLightning-4EzrFGx2k85OrcBf",
+        "url": "https://www.twitch.tv/kettuncyukyuhei/clip/GoodPerfectHippoStoneLightning-4EzrFGx2k85OrcBf",
+        "embed_url": "https://clips.twitch.tv/embed?clip=GoodPerfectHippoStoneLightning-4EzrFGx2k85OrcBf",
+        "broadcaster_id": "71897376",
+        "broadcaster_name": "けっつん",
+        "creator_id": "699707583",
+        "creator_name": "イマヒロ",
+        "video_id": "2513031092",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "SAYちゃんかわよ",
+        "view_count": 3741,
+        "created_at": "2025-07-15T12:00:21Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/GoodPerfectHippoStoneLightning-4EzrFGx2k85OrcBf/b388e307-5038-4719-8d18-ffba124ab380/preview-480x272.jpg",
+        "duration": 59.7,
+        "vod_offset": 2505,
+        "is_featured": false
+      },
+      {
+        "id": "SingleUgliestShallotBCWarrior-ViKI3ID6aJxFl-zE",
+        "url": "https://www.twitch.tv/cr_vanilla/clip/SingleUgliestShallotBCWarrior-ViKI3ID6aJxFl-zE",
+        "embed_url": "https://clips.twitch.tv/embed?clip=SingleUgliestShallotBCWarrior-ViKI3ID6aJxFl-zE",
+        "broadcaster_id": "862499417",
+        "broadcaster_name": "CR_VanilLa",
+        "creator_id": "686412713",
+        "creator_name": "suichan_9",
+        "video_id": "2512233464",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "手のひらくるくるバニさん",
+        "view_count": 3476,
+        "created_at": "2025-07-14T14:08:43Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SingleUgliestShallotBCWarrior-ViKI3ID6aJxFl-zE/f3ebdd1c-7830-4e96-bf02-6c11b05bb4f7/preview-480x272.jpg",
+        "duration": 55.5,
+        "vod_offset": 708,
+        "is_featured": false
+      },
+      {
+        "id": "DelightfulPopularPhonePanicBasket-2qlmVnLaJ6N-kWgn",
+        "url": "https://www.twitch.tv/kawaii_club_0809/clip/DelightfulPopularPhonePanicBasket-2qlmVnLaJ6N-kWgn",
+        "embed_url": "https://clips.twitch.tv/embed?clip=DelightfulPopularPhonePanicBasket-2qlmVnLaJ6N-kWgn",
+        "broadcaster_id": "912775996",
+        "broadcaster_name": "KAWAII_CLUB_0809",
+        "creator_id": "1091465290",
+        "creator_name": "ふにﾌﾆふに",
+        "video_id": "2508634479",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "心から出た言葉",
+        "view_count": 3189,
+        "created_at": "2025-07-10T12:40:45Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DelightfulPopularPhonePanicBasket-2qlmVnLaJ6N-kWgn/063afe5c-10ab-4a7b-94b9-1623f6fd67cc/preview-480x272.jpg",
+        "duration": 48.9,
+        "vod_offset": 2442,
+        "is_featured": false
+      },
+      {
+        "id": "FuriousGlamorousHorseDAESuppy-NW4HsHNDRd8fTbbB",
+        "url": "https://www.twitch.tv/kawaii_club_0809/clip/FuriousGlamorousHorseDAESuppy-NW4HsHNDRd8fTbbB",
+        "embed_url": "https://clips.twitch.tv/embed?clip=FuriousGlamorousHorseDAESuppy-NW4HsHNDRd8fTbbB",
+        "broadcaster_id": "912775996",
+        "broadcaster_name": "KAWAII_CLUB_0809",
+        "creator_id": "778517512",
+        "creator_name": "ぱふーく",
+        "video_id": "2508634479",
+        "game_id": "509658",
+        "language": "ja",
+        "title": "ぺっちゃんとゲームの可能性",
+        "view_count": 2909,
+        "created_at": "2025-07-10T13:28:48Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FuriousGlamorousHorseDAESuppy-NW4HsHNDRd8fTbbB/005b4385-8356-4116-b8fd-a7effea3cde6/preview-480x272.jpg",
+        "duration": 15.6,
+        "vod_offset": 5154,
+        "is_featured": false
+      }
+    ]
   },
   "511224": {
     "clips_2025-08-07": [],
@@ -2215,9 +1441,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AmericanFrozenPastaFUNgineer-yhbCTBpUAZ1MckBU/a319741b-584e-4187-9e56-adba4ee65d40/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": null,
-        "is_featured": true,
-        "game_name": "Apex Legends",
-        "vod_info": null
+        "is_featured": true
       },
       {
         "id": "BigTrustworthyMartenRickroll-tFsYoV135Y_H-u8e",
@@ -2236,12 +1460,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BigTrustworthyMartenRickroll-tFsYoV135Y_H-u8e/fe7d3e67-0d81-4c1b-940e-d89441d7d2b2/preview-480x272.jpg",
         "duration": 53.5,
         "vod_offset": 7715,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "【ストグラ 439日目】レーシック難しい",
-          "published_at": "2025-07-12T13:02:06Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BlightedTalentedBibimbapEleGiggle-Vf3fvYEix5wLBvxi",
@@ -2260,12 +1479,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BlightedTalentedBibimbapEleGiggle-Vf3fvYEix5wLBvxi/0879ff84-60f0-4e75-90f4-15a8e6e8d0db/preview-480x272.jpg",
         "duration": 57.9,
         "vod_offset": 1053,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "【Apex Legends】元開幕世界一位 ランク 五十嵐あくしす",
-          "published_at": "2025-07-10T10:15:24Z"
-        }
+        "is_featured": false
       },
       {
         "id": "AbnegateTriumphantYakKappaPride--mT6VfSWDfMzGm16",
@@ -2284,12 +1498,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AbnegateTriumphantYakKappaPride--mT6VfSWDfMzGm16/942df7a0-3d7f-4fcf-85a0-323be3631e04/preview-480x272.jpg",
         "duration": 16,
         "vod_offset": 4644,
-        "is_featured": true,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "EWC Watch Party Day 3",
-          "published_at": "2025-07-12T14:52:07Z"
-        }
+        "is_featured": true
       },
       {
         "id": "StrongThirstyMeatloafFeelsBadMan-NxxYBuu67l7ZD-yl",
@@ -2308,12 +1517,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/StrongThirstyMeatloafFeelsBadMan-NxxYBuu67l7ZD-yl/3c58df94-8f77-410e-b23a-8fead534ea37/preview-480x272.jpg",
         "duration": 11.2,
         "vod_offset": 41984,
-        "is_featured": true,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "マスター、私を完凸していただけますか？ この剣に、さらなる力を！！เปิดเซเบอร์กับเล่นอีเว้นต์ Fate",
-          "published_at": "2025-07-11T05:15:03Z"
-        }
+        "is_featured": true
       },
       {
         "id": "EasyZealousScallionDendiFace--XGxkNey52p-DxQ2",
@@ -2332,9 +1536,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EasyZealousScallionDendiFace--XGxkNey52p-DxQ2/d24cf10f-bbc2-41bf-b8ee-57129f9056c4/preview-480x272.jpg",
         "duration": 37.5,
         "vod_offset": null,
-        "is_featured": true,
-        "game_name": "Apex Legends",
-        "vod_info": null
+        "is_featured": true
       },
       {
         "id": "PlayfulBravePancakeCharlieBitMe-XbIE5bqHmh4YkqRS",
@@ -2353,12 +1555,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PlayfulBravePancakeCharlieBitMe-XbIE5bqHmh4YkqRS/fe8758e6-e128-4d31-b0d1-7e50af46eca8/preview-480x272.jpg",
         "duration": 36.3,
         "vod_offset": 10516,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "EWC final ウォチパ",
-          "published_at": "2025-07-13T14:54:37Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TardyBrightEmuBCWarrior-jv7y67coEtDaE3TI",
@@ -2377,12 +1574,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TardyBrightEmuBCWarrior-jv7y67coEtDaE3TI/ab45987b-f1e8-42bb-801f-2819cc5611b5/preview-480x272.jpg",
         "duration": 30.3,
         "vod_offset": 3344,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "ノーリミほんわかAPEX部/月夜見レオ、ひぽぽ",
-          "published_at": "2025-07-13T11:27:37Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PreciousTangentialDootBCWarrior-bnbWhowHzlXhksZ9",
@@ -2401,12 +1593,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PreciousTangentialDootBCWarrior-bnbWhowHzlXhksZ9/d6d8373a-1262-47f6-a3e4-7789ccf40044/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 8900,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "RANK EWC -> Watch Party",
-          "published_at": "2025-07-11T09:35:09Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PatientLovelyCrabSwiftRage-9HzoW8WCXx5FisXx",
@@ -2425,12 +1612,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PatientLovelyCrabSwiftRage-9HzoW8WCXx5FisXx/f67ce274-a9bf-43e4-b34a-18468ddaae50/preview-480x272.jpg",
         "duration": 16.2,
         "vod_offset": 5179,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "【JP】ALGS Mid Season Playoffs / EWC Apex Legends | Pool Play Group B | Day 2",
-          "published_at": "2025-07-11T14:15:08Z"
-        }
+        "is_featured": false
       },
       {
         "id": "HungryProductiveBananaFailFish-Ijc_DxqwjRIM55Cu",
@@ -2449,12 +1631,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HungryProductiveBananaFailFish-Ijc_DxqwjRIM55Cu/1722b0c8-4ecd-4409-891a-89516d2f0b95/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 6542,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "【APEX】1億と2000年ぶりの　ｗ/月夜見レオ・にごんご",
-          "published_at": "2025-07-13T11:27:29Z"
-        }
+        "is_featured": false
       },
       {
         "id": "RelievedStrangeKuduKappa-mewVVGrxbBrvC_bb",
@@ -2473,12 +1650,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RelievedStrangeKuduKappa-mewVVGrxbBrvC_bb/ced7fc7d-f42b-4326-94ca-186e01ea1164/preview-480x272.jpg",
         "duration": 25,
         "vod_offset": 36451,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "マスター、私を完凸していただけますか？ この剣に、さらなる力を！！เปิดเซเบอร์กับเล่นอีเว้นต์ Fate",
-          "published_at": "2025-07-11T05:15:03Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TriumphantInventiveWalletOSfrog-0FZHXIIu_tRh1nsy",
@@ -2497,12 +1669,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TriumphantInventiveWalletOSfrog-0FZHXIIu_tRh1nsy/d10e69dc-de60-48af-941c-bc6674dacb77/preview-480x272.jpg",
         "duration": 32.9,
         "vod_offset": 10374,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "さすがに決勝は観る EWC観戦",
-          "published_at": "2025-07-13T14:58:15Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FairHumbleScorpionDeIlluminati-ZlpyMwvR_v5puqdc",
@@ -2521,9 +1688,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FairHumbleScorpionDeIlluminati-ZlpyMwvR_v5puqdc/8d7e925f-5994-4c6c-9345-7ede20cab3dc/preview-480x272.jpg",
         "duration": 28.1,
         "vod_offset": null,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": null
+        "is_featured": false
       },
       {
         "id": "BashfulFriendlyMagpieOSfrog-gHNSI3LNtfbkFHHS",
@@ -2542,9 +1707,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BashfulFriendlyMagpieOSfrog-gHNSI3LNtfbkFHHS/cac35191-1c90-4524-aa29-e16a58be5e54/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": null,
-        "is_featured": true,
-        "game_name": "Apex Legends",
-        "vod_info": null
+        "is_featured": true
       },
       {
         "id": "UnsightlyHandsomeStarlingMrDestructoid-JekOM_vRSImF6t_N",
@@ -2563,12 +1726,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/UnsightlyHandsomeStarlingMrDestructoid-JekOM_vRSImF6t_N/b827d1d4-77ef-4c26-9010-22fbd4439fe0/preview-480x272.jpg",
         "duration": 30,
         "vod_offset": 10313,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "おっす",
-          "published_at": "2025-07-08T10:01:58Z"
-        }
+        "is_featured": false
       },
       {
         "id": "MuddySmoothWrenchOhMyDog-rnzKdqs72RmKJiyG",
@@ -2587,12 +1745,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/MuddySmoothWrenchOhMyDog-rnzKdqs72RmKJiyG/958cc88c-3365-4d49-b7f4-1ed913bb3a14/preview-480x272.jpg",
         "duration": 45.6,
         "vod_offset": 10724,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "rank aoharu taida",
-          "published_at": "2025-07-12T12:21:52Z"
-        }
+        "is_featured": false
       },
       {
         "id": "AltruisticCrunchyNikudonRlyTho-Ofe1CzdAnsfgNxGy",
@@ -2611,12 +1764,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AltruisticCrunchyNikudonRlyTho-Ofe1CzdAnsfgNxGy/90d99360-2179-4a0e-872d-019573a55996/preview-480x272.jpg",
         "duration": 46.2,
         "vod_offset": 7653,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "プレデターランク w/ Rasさん、ハセシンさん",
-          "published_at": "2025-07-14T10:02:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "KawaiiRepleteMomCurseLit-UuUp0L1qTCOiDZDs",
@@ -2635,12 +1783,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/KawaiiRepleteMomCurseLit-UuUp0L1qTCOiDZDs/7ed5d2fc-5fdf-4c3f-86aa-ea418634f331/preview-480x272.jpg",
         "duration": 33.4,
         "vod_offset": 10054,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "EWCウォチパ",
-          "published_at": "2025-07-10T12:45:15Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SnappyRacyLionTwitchRPG-F-_00MW9n7k2l7Cz",
@@ -2659,12 +1802,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SnappyRacyLionTwitchRPG-F-_00MW9n7k2l7Cz/a2d2a5b0-1a6c-4bb3-b5a0-934d1e2abd28/preview-480x272.jpg",
         "duration": 21.2,
         "vod_offset": 1868,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "おひさソロランク !session !rp",
-          "published_at": "2025-07-08T12:25:51Z"
-        }
+        "is_featured": false
       },
       {
         "id": "RudeCourteousDunlinWow-0pAIHSrzyUijCmbQ",
@@ -2683,12 +1821,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RudeCourteousDunlinWow-0pAIHSrzyUijCmbQ/11b10083-6aa9-4684-bd63-2a1c855c230e/preview-480x272.jpg",
         "duration": 40.6,
         "vod_offset": 37728,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "毎日健康ランク生活24日目",
-          "published_at": "2025-07-09T17:34:07Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DeliciousWealthyOstrichOpieOP-oZidTeATWKeTU32g",
@@ -2707,12 +1840,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DeliciousWealthyOstrichOpieOP-oZidTeATWKeTU32g/dfac1810-f5ab-43f5-adf7-dea2820bc92b/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 5122,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "【JP】ALGS Mid Season Playoffs / EWC Apex Legends | Match Point Finals | Day 4",
-          "published_at": "2025-07-13T14:10:07Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ObservantGiantLarkRedCoat-GFLUpHan9qJONtye",
@@ -2731,9 +1859,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObservantGiantLarkRedCoat-GFLUpHan9qJONtye/3928c866-278e-4058-9ce4-6df244249c5c/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": null,
-        "is_featured": true,
-        "game_name": "Apex Legends",
-        "vod_info": null
+        "is_featured": true
       },
       {
         "id": "GracefulFantasticSowArsonNoSexy-doHsa8LSvPazDJPe",
@@ -2752,12 +1878,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/GracefulFantasticSowArsonNoSexy-doHsa8LSvPazDJPe/a228976f-d858-40f5-b1a1-128fcfcce451/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 10371,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "プレデターランク w/ MiaKさん、あーもー",
-          "published_at": "2025-07-09T13:19:37Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SplendidIcyToothStinkyCheese-uPpAlWDZj5plrP_2",
@@ -2776,12 +1897,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SplendidIcyToothStinkyCheese-uPpAlWDZj5plrP_2/39351d44-66a8-4bed-80dd-9c4edcd19ab7/preview-480x272.jpg",
         "duration": 27.9,
         "vod_offset": 4569,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "さすがに決勝は観る EWC観戦",
-          "published_at": "2025-07-13T14:58:15Z"
-        }
+        "is_featured": false
       },
       {
         "id": "IgnorantStupidShallotPraiseIt-KUFDfUgosa7saUkk",
@@ -2800,12 +1916,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/IgnorantStupidShallotPraiseIt-KUFDfUgosa7saUkk/24420481-ab1b-4cc7-b97b-f3bbe07a93ea/preview-480x272.jpg",
         "duration": 29.4,
         "vod_offset": 10537,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "EWCウォチパ",
-          "published_at": "2025-07-10T12:45:15Z"
-        }
+        "is_featured": false
       },
       {
         "id": "MuddySmilingSamosaKippa-jlsddB44sX8LfMLy",
@@ -2824,12 +1935,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/MuddySmilingSamosaKippa-jlsddB44sX8LfMLy/66eea73f-acf8-4845-91b5-27ac39ddad07/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 5555,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "EWC final ウォチパ",
-          "published_at": "2025-07-13T14:54:37Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ZealousHeadstrongRabbitHassaanChop-yPhzp5fssfp8k0XG",
@@ -2848,12 +1954,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ZealousHeadstrongRabbitHassaanChop-yPhzp5fssfp8k0XG/36edc8d7-5bd3-4739-a8a8-4e40e12ad3bd/preview-480x272.jpg",
         "duration": 54.3,
         "vod_offset": 1092,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "オールでAPEX参戦。w/Geega先輩、AmaLeeお姉さま  #VShojoNOVA #なぎたいむ",
-          "published_at": "2025-07-10T23:50:44Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ScaryVibrantSpiderVoHiYo-flT1QabNUJRF68Vh",
@@ -2872,12 +1973,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ScaryVibrantSpiderVoHiYo-flT1QabNUJRF68Vh/43e0110d-1c8b-42dc-815b-b50ed76ac124/preview-480x272.jpg",
         "duration": 59,
         "vod_offset": 4594,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "帰宅 EWC観戦",
-          "published_at": "2025-07-11T15:18:03Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ComfortableReliableSproutPRChase-xCXf6_Qh14Zmgmqy",
@@ -2896,12 +1992,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ComfortableReliableSproutPRChase-xCXf6_Qh14Zmgmqy/5c85634f-c5be-422b-ac33-742a9282bb6c/preview-480x272.jpg",
         "duration": 48.5,
         "vod_offset": 1698,
-        "is_featured": false,
-        "game_name": "Apex Legends",
-        "vod_info": {
-          "title": "はっぴーAPEX /夢咲ひぽぽ、にごんご",
-          "published_at": "2025-07-13T11:27:21Z"
-        }
+        "is_featured": false
       }
     ]
   },
@@ -2932,12 +2023,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TameLivelyGoatKappaPride-H1Hxej69cFkx9EOd/f6a591b4-abe6-4bb3-a75c-8d13d63ba81d/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 19384,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "みる VALORANT Challengers Japan 2025 Split 3 Main Stage Day 1",
-          "published_at": "2025-07-11T03:44:46Z"
-        }
+        "is_featured": false
       },
       {
         "id": "OriginalCoweringSquirrelItsBoshyTime-d0Fb20SrjYHYWDZV",
@@ -2956,12 +2042,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/OriginalCoweringSquirrelItsBoshyTime-d0Fb20SrjYHYWDZV/871a1183-870b-4aa5-a2ea-594298b085a6/preview-480x272.jpg",
         "duration": 31.5,
         "vod_offset": 1427,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "リアルガチソロVALO 振り分け戦 ダイヤ勘弁",
-          "published_at": "2025-07-09T12:05:39Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ViscousCovertMuleYee-27478H6BAz0Jzw8L",
@@ -2980,12 +2061,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ViscousCovertMuleYee-27478H6BAz0Jzw8L/d364b82a-5e26-4916-89cf-6b23c0972767/preview-480x272.jpg",
         "duration": 11.5,
         "vod_offset": 6637,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "初心者コファーの強くてニューゲイム",
-          "published_at": "2025-07-10T10:37:15Z"
-        }
+        "is_featured": false
       },
       {
         "id": "NiceCalmCarabeefLitty-s0iaT1n5MOB7pMNT",
@@ -3004,12 +2080,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/NiceCalmCarabeefLitty-s0iaT1n5MOB7pMNT/acb3b650-0d07-4e60-9925-d9597979e4a7/preview-480x272.jpg",
         "duration": 13.6,
         "vod_offset": 8180,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "RID  vs ZETA AC を見る VALORANT Challengers Japan",
-          "published_at": "2025-07-14T04:11:55Z"
-        }
+        "is_featured": false
       },
       {
         "id": "IntelligentTemperedFishPraiseIt-1d1v2qt2R2PzYCgD",
@@ -3028,12 +2099,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/IntelligentTemperedFishPraiseIt-1d1v2qt2R2PzYCgD/044260e9-ea8e-42ff-ae90-c6bee980ee87/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 19773,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "みる VALORANT Challengers Japan 2025 Split 3 Main Stage Day 1",
-          "published_at": "2025-07-11T03:44:46Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ObeseAwkwardPterodactylCorgiDerp-HNQ0ovtC60WPpMET",
@@ -3052,12 +2118,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObeseAwkwardPterodactylCorgiDerp-HNQ0ovtC60WPpMET/c646a2cc-86be-48d4-9dd1-8163c61b98a7/preview-480x272.jpg",
         "duration": 23.9,
         "vod_offset": 4864,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "ばろこんぺ /w ノアぺんうおといこは",
-          "published_at": "2025-07-15T10:04:53Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SullenSeductiveTireHotPokket-Q4M0YTOyJ8b5aHM7",
@@ -3076,12 +2137,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SullenSeductiveTireHotPokket-Q4M0YTOyJ8b5aHM7/959307af-0a97-43b8-93ee-609b55ae5a24/preview-480x272.jpg",
         "duration": 7.1,
         "vod_offset": 10485,
-        "is_featured": true,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "陰謀に抗ってレディアント目指すよ",
-          "published_at": "2025-07-12T02:42:37Z"
-        }
+        "is_featured": true
       },
       {
         "id": "TenuousSmoggyChimpanzeeHassaanChop-mnj0ug4vH6r8mbvk",
@@ -3100,12 +2156,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TenuousSmoggyChimpanzeeHassaanChop-mnj0ug4vH6r8mbvk/b154610b-4f08-4162-b5da-38ddc8db4da8/preview-480x272.jpg",
         "duration": 12.9,
         "vod_offset": 22462,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "みる VALORANT Challengers Japan 2025 Split 3 Main Stage Day 1",
-          "published_at": "2025-07-11T03:44:46Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TangibleCoweringHummingbirdCorgiDerp-1ffSawDHdN3BTM-4",
@@ -3119,17 +2170,12 @@
         "game_id": "516575",
         "language": "ja",
         "title": "工場長2（弁明）",
-        "view_count": 3592,
+        "view_count": 3593,
         "created_at": "2025-07-13T09:18:46Z",
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TangibleCoweringHummingbirdCorgiDerp-1ffSawDHdN3BTM-4/eb991a5a-3cb9-4865-a92d-7ecd3fc8f3d5/preview-480x272.jpg",
         "duration": 29.9,
         "vod_offset": 2860,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "激ムズ◯nly Up みたいな山登りゲーリベンジ",
-          "published_at": "2025-07-11T13:15:33Z"
-        }
+        "is_featured": false
       },
       {
         "id": "GenerousVictoriousWolverineCopyThis-gtgRae-tL9JWJ7TP",
@@ -3148,12 +2194,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/GenerousVictoriousWolverineCopyThis-gtgRae-tL9JWJ7TP/2e3d3bf7-d6e4-42fb-bb8e-6b46dd5ebb04/preview-480x272.jpg",
         "duration": 53.3,
         "vod_offset": 13080,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "ウォチパ＝＝＝ VALORANT Challengers Japan 2025 Split 3 Main Stage Day 4",
-          "published_at": "2025-07-14T04:02:25Z"
-        }
+        "is_featured": false
       },
       {
         "id": "JoyousDeterminedMallardLeeroyJenkins-H7_yqOcZke3zjJU_",
@@ -3172,12 +2213,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/JoyousDeterminedMallardLeeroyJenkins-H7_yqOcZke3zjJU_/404786e5-86bf-4d90-99ae-faa2b5c378d7/preview-480x272.jpg",
         "duration": 30,
         "vod_offset": 3899,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "SP3の初陣を見届ける。VALORANT Challengers Japan",
-          "published_at": "2025-07-11T08:06:11Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FriendlyApatheticRedpandaWow-Noj8waqDXqq0iSBe",
@@ -3196,12 +2232,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FriendlyApatheticRedpandaWow-Noj8waqDXqq0iSBe/2bc04043-ead1-4047-a75e-45ba587c197b/preview-480x272.jpg",
         "duration": 32.6,
         "vod_offset": 23364,
-        "is_featured": true,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "コメントが流れないとブチぎれてメンヘラになるこっそり朝配信",
-          "published_at": "2025-07-13T20:27:54Z"
-        }
+        "is_featured": true
       },
       {
         "id": "NeighborlyAbstruseLaptopPicoMause-fUCNBW14KJgzRHUL",
@@ -3220,12 +2251,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/NeighborlyAbstruseLaptopPicoMause-fUCNBW14KJgzRHUL/58f6f3fc-5dfa-45fe-9590-4838f740a8d4/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 5639,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "リアルガチソロVALO 振り分け戦 ダイヤ勘弁",
-          "published_at": "2025-07-09T12:05:39Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CleverObliviousDiamondPhilosoraptor-dNZp3l-BDGaJy1X2",
@@ -3244,12 +2270,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CleverObliviousDiamondPhilosoraptor-dNZp3l-BDGaJy1X2/5dc7c087-12c5-4656-88d7-86ee405c675a/preview-480x272.jpg",
         "duration": 7.1,
         "vod_offset": 38034,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "oha",
-          "published_at": "2025-07-12T06:21:20Z"
-        }
+        "is_featured": false
       },
       {
         "id": "RockyGlutenFreeLouseJKanStyle-245FbotuYPjwC9x5",
@@ -3268,12 +2289,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RockyGlutenFreeLouseJKanStyle-245FbotuYPjwC9x5/95a2fadd-f280-49e8-a377-8deb3b14cb62/preview-480x272.jpg",
         "duration": 46.7,
         "vod_offset": 5729,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "VCJわいわい雑談広場＼(^o^)／",
-          "published_at": "2025-07-13T13:25:59Z"
-        }
+        "is_featured": false
       },
       {
         "id": "IronicDependableYamDuDudu-SZs7XsfkFjz7V3uy",
@@ -3292,12 +2308,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/IronicDependableYamDuDudu-SZs7XsfkFjz7V3uy/d613296d-4ad7-49f0-9e10-9444618fd095/preview-480x272.jpg",
         "duration": 17.7,
         "vod_offset": 7695,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "SP3の初陣を見届ける。VALORANT Challengers Japan",
-          "published_at": "2025-07-11T08:06:11Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TenderInventiveBeeTheTarFu-G2TzVlZqUS9YDLlH",
@@ -3316,12 +2327,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TenderInventiveBeeTheTarFu-G2TzVlZqUS9YDLlH/74af9647-3e02-4704-a162-3fefbf81e40f/preview-480x272.jpg",
         "duration": 15.3,
         "vod_offset": 3621,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "VALORANT Challengers Japan 2025 Split 3 Advance Stage Day 3",
-          "published_at": "2025-07-03T06:30:01Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SourAbrasiveOpossumJKanStyle-Z7EDdziSNeUkB2ca",
@@ -3340,12 +2346,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SourAbrasiveOpossumJKanStyle-Z7EDdziSNeUkB2ca/c8951f39-b954-4436-8465-71472ec899ca/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 22103,
-        "is_featured": true,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "みるぞ～ VALORANT Challengers Japan 2025 Split 3 Main Stage Day 3 #VCTWatchParty",
-          "published_at": "2025-07-13T06:45:39Z"
-        }
+        "is_featured": true
       },
       {
         "id": "BillowingGiantFiddleheadsMcaT-qz3zaTDQWRN3Zb61",
@@ -3364,12 +2365,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BillowingGiantFiddleheadsMcaT-qz3zaTDQWRN3Zb61/253535ad-5465-444d-8669-886e27366ade/preview-480x272.jpg",
         "duration": 36.2,
         "vod_offset": 4244,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "Meiy Biju",
-          "published_at": "2025-07-13T13:34:06Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CourageousLitigiousGullDansGame-mseS0IzISFdR7-qY",
@@ -3388,12 +2384,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CourageousLitigiousGullDansGame-mseS0IzISFdR7-qY/9916b016-2492-4e22-a6e3-cd915d238a77/preview-480x272.jpg",
         "duration": 30,
         "vod_offset": 3041,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "みる VALORANT Challengers Japan 2025 Split 3 Main Stage Day 1",
-          "published_at": "2025-07-11T03:44:46Z"
-        }
+        "is_featured": false
       },
       {
         "id": "MiniatureEntertainingParrotShazBotstix-R4YrPDyg9BmhEV4n",
@@ -3412,12 +2403,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/MiniatureEntertainingParrotShazBotstix-R4YrPDyg9BmhEV4n/3ab0d1ca-9a8d-4673-9e14-dc8df3365925/preview-480x272.jpg",
         "duration": 10.1,
         "vod_offset": 7732,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "RID  vs ZETA AC を見る VALORANT Challengers Japan",
-          "published_at": "2025-07-14T04:11:55Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ClearDependableMarrowSpicyBoy-FIgTN7K4A87wKpdJ",
@@ -3436,12 +2422,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ClearDependableMarrowSpicyBoy-FIgTN7K4A87wKpdJ/3093069e-5838-433c-b78d-22e9ed6d74ee/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 13555,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "ウォチパ＝＝＝ VALORANT Challengers Japan 2025 Split 3 Main Stage Day 4",
-          "published_at": "2025-07-14T04:02:25Z"
-        }
+        "is_featured": false
       },
       {
         "id": "StrangeCooperativeHorseradishLitFam-xv10ZUE9exdJcRzL",
@@ -3460,12 +2441,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/StrangeCooperativeHorseradishLitFam-xv10ZUE9exdJcRzL/d7b082ca-eb24-4774-a130-27914acb28b8/preview-480x272.jpg",
         "duration": 26.3,
         "vod_offset": 9717,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "あのmemberでフルパ",
-          "published_at": "2025-07-09T11:09:32Z"
-        }
+        "is_featured": false
       },
       {
         "id": "FurryDistinctQuailPJSalt-cv3Sk2aE0x2Cx3H4",
@@ -3484,12 +2460,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FurryDistinctQuailPJSalt-cv3Sk2aE0x2Cx3H4/ba76d0f3-23f3-406f-a7b5-3cc74de48f8f/preview-480x272.jpg",
         "duration": 40.2,
         "vod_offset": 19452,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "メインステージ観るぞ！ VALORANT Challengers Japan 2025 Split 3 Main Stage Day 1",
-          "published_at": "2025-07-11T03:44:51Z"
-        }
+        "is_featured": false
       },
       {
         "id": "InspiringDifferentSalamanderFailFish-M8_xDg6uFkW6ol4P",
@@ -3508,12 +2479,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/InspiringDifferentSalamanderFailFish-M8_xDg6uFkW6ol4P/b171be27-3c29-418d-ae11-2969474ab8fb/preview-480x272.jpg",
         "duration": 60,
         "vod_offset": 1485,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "Valo RANKやろう 新マウス",
-          "published_at": "2025-07-14T13:48:22Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ThankfulDirtyCrabCmonBruh-WcrrmrxIXBRCPews",
@@ -3532,9 +2498,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ThankfulDirtyCrabCmonBruh-WcrrmrxIXBRCPews/6ebab2e0-dd78-4ebf-88d8-03bbe24ab220/preview-480x272.jpg",
         "duration": 30.3,
         "vod_offset": null,
-        "is_featured": true,
-        "game_name": "VALORANT",
-        "vod_info": null
+        "is_featured": true
       },
       {
         "id": "YawningWrongNostrilFreakinStinkin-FZ1oCmKihX1tnZYK",
@@ -3553,9 +2517,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/YawningWrongNostrilFreakinStinkin-FZ1oCmKihX1tnZYK/f39aeac5-8128-4225-85c3-e5bf00ec0935/preview-480x272.jpg",
         "duration": 45,
         "vod_offset": null,
-        "is_featured": true,
-        "game_name": "VALORANT",
-        "vod_info": null
+        "is_featured": true
       },
       {
         "id": "PeppyAmazonianGerbilTheThing-nWsg16bZC4SaQ5b8",
@@ -3569,17 +2531,12 @@
         "game_id": "516575",
         "language": "ja",
         "title": "うぉうぉの｢にゃん｣に反応するぺんちゃん",
-        "view_count": 1574,
+        "view_count": 1575,
         "created_at": "2025-07-15T10:14:19Z",
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PeppyAmazonianGerbilTheThing-nWsg16bZC4SaQ5b8/e5bba20e-f5d4-4ca7-9ccc-9962209c6259/preview-480x272.jpg",
         "duration": 41.7,
         "vod_offset": 312,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "ばろこんぺ /w ノアぺんうおといこは",
-          "published_at": "2025-07-15T10:04:53Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ClumsyFuriousDiamondDansGame-KZqW1HAesdQbzmtJ",
@@ -3598,12 +2555,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ClumsyFuriousDiamondDansGame-KZqW1HAesdQbzmtJ/777d97dc-26c0-47e3-aaeb-9d3af975fc45/preview-480x272.jpg",
         "duration": 37.6,
         "vod_offset": 4656,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "樽エイム見せたる",
-          "published_at": "2025-07-10T10:11:26Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TentativeAwkwardCrowNinjaGrumpy-moM9738x_886wgvT",
@@ -3622,12 +2574,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TentativeAwkwardCrowNinjaGrumpy-moM9738x_886wgvT/d351c368-2a08-4bd9-a8e7-c2e2e1537e8b/preview-480x272.jpg",
         "duration": 21.8,
         "vod_offset": 3696,
-        "is_featured": false,
-        "game_name": "VALORANT",
-        "vod_info": {
-          "title": "SP3の初陣を見届ける。VALORANT Challengers Japan",
-          "published_at": "2025-07-11T08:06:11Z"
-        }
+        "is_featured": false
       }
     ]
   },
@@ -3658,12 +2605,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/LaconicDirtySwordWholeWheat-lxE05Ai9y_3vgpT2/ddd954f3-5daf-4aca-8bf2-35687ad42946/preview-480x272.jpg",
         "duration": 33.8,
         "vod_offset": 12414,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "タルコフアプデしながら",
-          "published_at": "2025-07-10T05:41:45Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ConfidentPowerfulBadgerEagleEye-XBTnSTwZhXf_oo2B",
@@ -3682,12 +2624,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ConfidentPowerfulBadgerEagleEye-XBTnSTwZhXf_oo2B/59331279-0aa0-4355-ae23-47c2858220ab/preview-480x272.jpg",
         "duration": 9.2,
         "vod_offset": 2084,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンGG 面白過ぎた",
-          "published_at": "2025-07-13T10:01:59Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SpookyCarefulBunnyKappa-i6Jqr_lTr4PIHP3r",
@@ -3706,12 +2643,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SpookyCarefulBunnyKappa-i6Jqr_lTr4PIHP3r/4bfbdda5-8431-4a24-b48a-12dec261ab3d/preview-480x272.jpg",
         "duration": 59.3,
         "vod_offset": 20144,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンみる！",
-          "published_at": "2025-07-12T05:06:39Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ThirstyAnnoyingJalapenoKeepo-XffG5iqFPFtFYTXF",
@@ -3730,12 +2662,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ThirstyAnnoyingJalapenoKeepo-XffG5iqFPFtFYTXF/d2e1b095-4814-49fe-8573-f1e01dd33f2f/preview-480x272.jpg",
         "duration": 23.7,
         "vod_offset": 522,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンミラー!!",
-          "published_at": "2025-07-12T07:18:17Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PolishedEasyAlmondItsBoshyTime-zeSB4tVvh8fUxYA5",
@@ -3754,12 +2681,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PolishedEasyAlmondItsBoshyTime-zeSB4tVvh8fUxYA5/79669566-6cf7-4a36-b034-8108d1358f21/preview-480x272.jpg",
         "duration": 57.2,
         "vod_offset": 1728,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "17時くらいからLTK",
-          "published_at": "2025-07-14T07:34:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BusyAttractiveAardvarkChocolateRain-PJH-20MlXLHMmXbf",
@@ -3778,12 +2700,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BusyAttractiveAardvarkChocolateRain-PJH-20MlXLHMmXbf/2a11fc23-1251-4232-a7fa-bb740c034e16/preview-480x272.jpg",
         "duration": 23.2,
         "vod_offset": 26276,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "スト6 カスタムMR2000以上くらい募集 17時からトパチャンミラー",
-          "published_at": "2025-07-11T04:10:24Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CulturedManlyGiraffeTheRinger-LqOM-PFSk7K9hQhz",
@@ -3802,12 +2719,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CulturedManlyGiraffeTheRinger-LqOM-PFSk7K9hQhz/fe9c1973-9b82-4777-85f3-0c6ecdaaed16/preview-480x272.jpg",
         "duration": 15.7,
         "vod_offset": 4014,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "17時くらいからLTK",
-          "published_at": "2025-07-14T07:34:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "LachrymoseResoluteTildeDuDudu-Vpkxr5-247LFmZ7E",
@@ -3826,12 +2738,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/LachrymoseResoluteTildeDuDudu-Vpkxr5-247LFmZ7E/76b5608d-9a59-4740-8c9f-0e6fe42212cc/preview-480x272.jpg",
         "duration": 31.9,
         "vod_offset": 30030,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "スト6 MR2000以上くらいカスタム募集 14時からトパチャンミラー",
-          "published_at": "2025-07-11T23:59:16Z"
-        }
+        "is_featured": false
       },
       {
         "id": "RenownedPopularCheesecakePJSugar-w5YwGFjz9rpuTwis",
@@ -3850,12 +2757,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RenownedPopularCheesecakePJSugar-w5YwGFjz9rpuTwis/7a1f342f-651d-4306-a43b-dbf934795790/preview-480x272.jpg",
         "duration": 16.4,
         "vod_offset": 8234,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンみるぜ",
-          "published_at": "2025-07-11T07:58:55Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DifferentPerfectGalagoTinyFace-4MWDzu0YEc8wRgB0",
@@ -3874,12 +2776,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DifferentPerfectGalagoTinyFace-4MWDzu0YEc8wRgB0/ec38b66e-a122-418a-ba45-8e63eccaa537/preview-480x272.jpg",
         "duration": 59.4,
         "vod_offset": 1231,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "久々",
-          "published_at": "2025-07-10T07:40:49Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BeautifulAuspiciousElkOneHand-dkgDyiX70OVIjaPk",
@@ -3898,12 +2795,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BeautifulAuspiciousElkOneHand-dkgDyiX70OVIjaPk/fb59e75e-fcc1-408f-b5bd-d969c83b3333/preview-480x272.jpg",
         "duration": 48.6,
         "vod_offset": 11600,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンみる！",
-          "published_at": "2025-07-12T05:06:39Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SuperAgitatedLlamaOpieOP-NuV3K3mPm0Fctso7",
@@ -3922,12 +2814,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SuperAgitatedLlamaOpieOP-NuV3K3mPm0Fctso7/1e693935-b064-4570-b66f-d93bd0753df4/preview-480x272.jpg",
         "duration": 5,
         "vod_offset": 29763,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "強化フルゴール今日こそ倒します！w/アルランディス・ろびん ※チアー禁止",
-          "published_at": "2025-07-12T14:33:27Z"
-        }
+        "is_featured": false
       },
       {
         "id": "DignifiedBlitheCheesecakeGingerPower-A0d3Tg5tsO8ddncw",
@@ -3946,12 +2833,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DignifiedBlitheCheesecakeGingerPower-A0d3Tg5tsO8ddncw/33c87aa1-75bf-4b42-bfce-b132ad2c50f6/preview-480x272.jpg",
         "duration": 45.4,
         "vod_offset": 3702,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "【ウォチパ】第6期TOPANGA CHAMPIONSHIP【FINAL STAGE｜DAY3】",
-          "published_at": "2025-07-13T04:49:16Z"
-        }
+        "is_featured": false
       },
       {
         "id": "PlainShortSharkTBTacoLeft-48QL3UrF7msgrn9G",
@@ -3970,12 +2852,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PlainShortSharkTBTacoLeft-48QL3UrF7msgrn9G/e9f6fa62-1b14-4d90-8d98-068d07e53e5e/preview-480x272.jpg",
         "duration": 10.1,
         "vod_offset": 1523,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "ゆなっこ杯",
-          "published_at": "2025-07-15T11:02:41Z"
-        }
+        "is_featured": false
       },
       {
         "id": "JollyInnocentWasabiRlyTho-_F3i7eBQff9fghvC",
@@ -3994,12 +2871,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/JollyInnocentWasabiRlyTho-_F3i7eBQff9fghvC/05b452a4-cd94-4bc2-b63b-d1e528051378/preview-480x272.jpg",
         "duration": 43.9,
         "vod_offset": 18887,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "おはよ！！",
-          "published_at": "2025-07-09T04:07:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CarefulIgnorantSharkSquadGoals-GkG3-W__i21QP2kI",
@@ -4018,12 +2890,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CarefulIgnorantSharkSquadGoals-GkG3-W__i21QP2kI/c68374ce-b90a-44dd-a558-26e805e742e8/preview-480x272.jpg",
         "duration": 9.7,
         "vod_offset": 15481,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンみるぜ",
-          "published_at": "2025-07-11T07:58:55Z"
-        }
+        "is_featured": false
       },
       {
         "id": "BeautifulSourFriseePeoplesChamp-VbtJ6T4S05BiiDeP",
@@ -4042,12 +2909,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BeautifulSourFriseePeoplesChamp-VbtJ6T4S05BiiDeP/65b717c2-d916-45e8-9bd4-35b76c5d4707/preview-480x272.jpg",
         "duration": 14.6,
         "vod_offset": 18855,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "ランクマの合間にはじめましての人たちとちはたんカップ",
-          "published_at": "2025-07-13T02:21:31Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SmoggySarcasticChickpeaTF2John-rt-414Th6qnin2cb",
@@ -4066,12 +2928,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SmoggySarcasticChickpeaTF2John-rt-414Th6qnin2cb/6cf20b17-30a4-4abb-b69e-107cbe7f975d/preview-480x272.jpg",
         "duration": 33.3,
         "vod_offset": 222,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "【515日目】亡霊の幽霊【ヘルアン視点｜#ストグラ】※鳩・指示・他下げBAN",
-          "published_at": "2025-07-10T10:46:36Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CrepuscularAmorphousLouseKeyboardCat-RKWbKWefGo56-aGv",
@@ -4090,12 +2947,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CrepuscularAmorphousLouseKeyboardCat-RKWbKWefGo56-aGv/fb7fbcbf-b154-4235-a4e1-4fcfccc19fbf/preview-480x272.jpg",
         "duration": 31.2,
         "vod_offset": 3937,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンミラー!!",
-          "published_at": "2025-07-12T07:18:17Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SmellyFlirtySmoothiePermaSmug-5kwCUneGOeVZfY1O",
@@ -4114,12 +2966,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SmellyFlirtySmoothiePermaSmug-5kwCUneGOeVZfY1O/48c2c780-0bf7-4be0-970c-9aa39d57a676/preview-480x272.jpg",
         "duration": 23.5,
         "vod_offset": 5907,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "【ウォチパ】第6期TOPANGA CHAMPIONSHIP【FINAL STAGE｜DAY3】",
-          "published_at": "2025-07-13T04:49:16Z"
-        }
+        "is_featured": false
       },
       {
         "id": "CallousConfidentDuckYee-pBrLDqxVsTszAymx",
@@ -4138,12 +2985,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CallousConfidentDuckYee-pBrLDqxVsTszAymx/5231b018-0b0f-4daf-8a82-a991fded2cf8/preview-480x272.jpg",
         "duration": 23.3,
         "vod_offset": 31032,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "スト6 カスタムMR2000以上くらい募集 17時からトパチャンミラー",
-          "published_at": "2025-07-11T04:10:24Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ExquisiteSpoopyTurtleHassanChop-BRrXq4ZqGf2Q1DgA",
@@ -4162,12 +3004,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ExquisiteSpoopyTurtleHassanChop-BRrXq4ZqGf2Q1DgA/3147e80b-f2b5-49cd-9c74-3dffbe78b72e/preview-480x272.jpg",
         "duration": 42.1,
         "vod_offset": 11153,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンみる！",
-          "published_at": "2025-07-12T05:06:39Z"
-        }
+        "is_featured": false
       },
       {
         "id": "VainNaiveAnacondaUWot-i66vS2acYqrXRGjt",
@@ -4186,12 +3023,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/VainNaiveAnacondaUWot-i66vS2acYqrXRGjt/37b89dbe-455e-4d07-b555-3912a84e44c1/preview-480x272.jpg",
         "duration": 27.1,
         "vod_offset": 1056,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "ハイタニ一門たいせんか～い！！！！！",
-          "published_at": "2025-07-09T09:17:55Z"
-        }
+        "is_featured": false
       },
       {
         "id": "AnnoyingFrozenPrariedogVoHiYo-65wvJJtubyTO4PPT",
@@ -4210,12 +3042,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AnnoyingFrozenPrariedogVoHiYo-65wvJJtubyTO4PPT/6fe49221-11e2-478f-ae1e-244398036705/preview-480x272.jpg",
         "duration": 7.9,
         "vod_offset": 16461,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "第6期TOPANGA CHAMPIONSHIP【FINAL STAGE｜DAY1】",
-          "published_at": "2025-07-11T07:50:26Z"
-        }
+        "is_featured": false
       },
       {
         "id": "TangentialPlainGnatPJSalt-hTaCQfpP4y5sRc9a",
@@ -4234,12 +3061,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips/K4tYrIU2gkH6T-MubEXPWg/314587674994-offset-1926-preview-480x272.jpg",
         "duration": 26,
         "vod_offset": 1901,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "17時くらいからLTK",
-          "published_at": "2025-07-14T07:34:56Z"
-        }
+        "is_featured": false
       },
       {
         "id": "EnergeticSilkyOcelotOneHand-CbZVRfNMLP6219Xa",
@@ -4258,12 +3080,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EnergeticSilkyOcelotOneHand-CbZVRfNMLP6219Xa/fc660612-edf9-41bd-acb3-3d6fa5c7d308/preview-480x272.jpg",
         "duration": 29.9,
         "vod_offset": 2440,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "Samsung様から謎の箱が届いた #PR",
-          "published_at": "2025-07-10T10:00:49Z"
-        }
+        "is_featured": false
       },
       {
         "id": "ToughAmazingSpiderRaccAttack-Z1pDlYIz3ZUK12dj",
@@ -4282,12 +3099,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ToughAmazingSpiderRaccAttack-Z1pDlYIz3ZUK12dj/247a762c-dccc-410c-acc6-c592287c77b6/preview-480x272.jpg",
         "duration": 14.5,
         "vod_offset": 12678,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "【sf6】げんき！！！",
-          "published_at": "2025-07-15T05:10:02Z"
-        }
+        "is_featured": false
       },
       {
         "id": "SingleObliqueYamAliens-UzXyafSqD9jJBGzn",
@@ -4306,36 +3118,7 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SingleObliqueYamAliens-UzXyafSqD9jJBGzn/cbefa873-79bb-4734-9877-f5dea59c483a/preview-480x272.jpg",
         "duration": 20.9,
         "vod_offset": 8202,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "スト6定期配信",
-          "published_at": "2025-07-08T11:20:49Z"
-        }
-      },
-      {
-        "id": "RudeIntelligentRutabagaWTRuck-5HgKQc_GwKUvrIHw",
-        "url": "https://www.twitch.tv/fps_shaka/clip/RudeIntelligentRutabagaWTRuck-5HgKQc_GwKUvrIHw",
-        "embed_url": "https://clips.twitch.tv/embed?clip=RudeIntelligentRutabagaWTRuck-5HgKQc_GwKUvrIHw",
-        "broadcaster_id": "49207184",
-        "broadcaster_name": "fps_shaka",
-        "creator_id": "1008354140",
-        "creator_name": "nabetake1219",
-        "video_id": "2509426974",
-        "game_id": "55453844",
-        "language": "ja",
-        "title": "トパチャンみるぜ",
-        "view_count": 735,
-        "created_at": "2025-07-11T09:39:55Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips/SLQvpeR4CkHPxsClL6yB8A/314574353266-offset-6054-preview-480x272.jpg",
-        "duration": 30,
-        "vod_offset": 6030,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "トパチャンみるぜ",
-          "published_at": "2025-07-11T07:58:55Z"
-        }
+        "is_featured": false
       },
       {
         "id": "AcceptableEnjoyableBarracudaGingerPower-mFlab30gmtlloVYk",
@@ -4354,16 +3137,30 @@
         "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AcceptableEnjoyableBarracudaGingerPower-mFlab30gmtlloVYk/4ef02d99-e448-4aeb-bbe2-29af2b39997c/preview-480x272.jpg",
         "duration": 54.1,
         "vod_offset": 12734,
-        "is_featured": false,
-        "game_name": "Street Fighter 6",
-        "vod_info": {
-          "title": "私はダルシム1本でｓ",
-          "published_at": "2025-07-11T07:40:48Z"
-        }
+        "is_featured": false
+      },
+      {
+        "id": "RudeIntelligentRutabagaWTRuck-5HgKQc_GwKUvrIHw",
+        "url": "https://www.twitch.tv/fps_shaka/clip/RudeIntelligentRutabagaWTRuck-5HgKQc_GwKUvrIHw",
+        "embed_url": "https://clips.twitch.tv/embed?clip=RudeIntelligentRutabagaWTRuck-5HgKQc_GwKUvrIHw",
+        "broadcaster_id": "49207184",
+        "broadcaster_name": "fps_shaka",
+        "creator_id": "1008354140",
+        "creator_name": "nabetake1219",
+        "video_id": "2509426974",
+        "game_id": "55453844",
+        "language": "ja",
+        "title": "トパチャンみるぜ",
+        "view_count": 735,
+        "created_at": "2025-07-11T09:39:55Z",
+        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips/SLQvpeR4CkHPxsClL6yB8A/314574353266-offset-6054-preview-480x272.jpg",
+        "duration": 30,
+        "vod_offset": 6030,
+        "is_featured": false
       }
     ]
   },
-  "last_updated": "2025-08-07T12:50:01.101Z",
+  "last_updated": "2025-08-07T12:59:29.726Z",
   "overall": {
     "clips_2025-08-07": [],
     "clips_2025-08-06": [],
@@ -4373,727 +3170,6 @@
     "clips_2025-08-02": [],
     "clips_2025-08-01": [],
     "clips_1week": [],
-    "clips_1month": [
-      {
-        "id": "HeadstrongFitTigerHumbleLife-OK0-JRp_OD9rGSYf",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/HeadstrongFitTigerHumbleLife-OK0-JRp_OD9rGSYf",
-        "embed_url": "https://clips.twitch.tv/embed?clip=HeadstrongFitTigerHumbleLife-OK0-JRp_OD9rGSYf",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "719449446",
-        "creator_name": "はすらん",
-        "video_id": "2508586576",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "夏苗リオコンビ",
-        "view_count": 14089,
-        "created_at": "2025-07-10T15:34:47Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HeadstrongFitTigerHumbleLife-OK0-JRp_OD9rGSYf/73e94a98-2d69-46b8-9e1e-c2755deb943c/preview-480x272.jpg",
-        "duration": 30,
-        "vod_offset": 20482,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/10【GTAV/RP】 BLACK GANG『悩』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-10T09:52:44Z"
-        }
-      },
-      {
-        "id": "SnappyColdLatteFunRun-G5Tw9FeplLxi6u0O",
-        "url": "https://www.twitch.tv/crtopioxd/clip/SnappyColdLatteFunRun-G5Tw9FeplLxi6u0O",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SnappyColdLatteFunRun-G5Tw9FeplLxi6u0O",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "飛んで跳ねるクソガキ",
-        "view_count": 11711,
-        "created_at": "2025-07-13T12:18:37Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SnappyColdLatteFunRun-G5Tw9FeplLxi6u0O/473742c3-ce1a-4462-9d63-dc81612f1489/preview-480x272.jpg",
-        "duration": 41.1,
-        "vod_offset": 4852,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "CalmWealthyTaroChefFrank-kjmEYcVsaxAixT4f",
-        "url": "https://www.twitch.tv/crtopioxd/clip/CalmWealthyTaroChefFrank-kjmEYcVsaxAixT4f",
-        "embed_url": "https://clips.twitch.tv/embed?clip=CalmWealthyTaroChefFrank-kjmEYcVsaxAixT4f",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ノンデリトピオカ",
-        "view_count": 8545,
-        "created_at": "2025-07-13T14:56:52Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CalmWealthyTaroChefFrank-kjmEYcVsaxAixT4f/b9e97a4e-378b-4d93-b05a-b6514b3a3f93/preview-480x272.jpg",
-        "duration": 57.3,
-        "vod_offset": 14348,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "PiercingSlickDragonfruitWTRuck-MbA301f0VewwTkuK",
-        "url": "https://www.twitch.tv/crtopioxd/clip/PiercingSlickDragonfruitWTRuck-MbA301f0VewwTkuK",
-        "embed_url": "https://clips.twitch.tv/embed?clip=PiercingSlickDragonfruitWTRuck-MbA301f0VewwTkuK",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "餡ブレラの解散を知ったトピオ",
-        "view_count": 8081,
-        "created_at": "2025-07-13T11:13:04Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/PiercingSlickDragonfruitWTRuck-MbA301f0VewwTkuK/086b2117-5e81-4abe-85e8-633efe769313/preview-480x272.jpg",
-        "duration": 35.7,
-        "vod_offset": 874,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "EncouragingImpossibleRhinocerosRitzMitz-lDk-oPu7vWLXH7gB",
-        "url": "https://www.twitch.tv/crtopioxd/clip/EncouragingImpossibleRhinocerosRitzMitz-lDk-oPu7vWLXH7gB",
-        "embed_url": "https://clips.twitch.tv/embed?clip=EncouragingImpossibleRhinocerosRitzMitz-lDk-oPu7vWLXH7gB",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ももみ先生に許されてないトピオ",
-        "view_count": 7253,
-        "created_at": "2025-07-13T12:27:46Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EncouragingImpossibleRhinocerosRitzMitz-lDk-oPu7vWLXH7gB/bb946a81-edb6-4046-a725-3eb1ec559af2/preview-480x272.jpg",
-        "duration": 52.4,
-        "vod_offset": 5282,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "AgitatedDependableFinchDxCat-vSTzLPijSjcUF05p",
-        "url": "https://www.twitch.tv/crtopioxd/clip/AgitatedDependableFinchDxCat-vSTzLPijSjcUF05p",
-        "embed_url": "https://clips.twitch.tv/embed?clip=AgitatedDependableFinchDxCat-vSTzLPijSjcUF05p",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "1090039900",
-        "creator_name": "uririsan_",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "思春期トピオ伏線回収",
-        "view_count": 7167,
-        "created_at": "2025-07-13T12:49:18Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AgitatedDependableFinchDxCat-vSTzLPijSjcUF05p/eae3c432-979c-4320-a53e-f0416d1d81e6/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 6847,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "LuckyTiredWombatCurseLit-XDbTibUx9TPvf_ZB",
-        "url": "https://www.twitch.tv/crtopioxd/clip/LuckyTiredWombatCurseLit-XDbTibUx9TPvf_ZB",
-        "embed_url": "https://clips.twitch.tv/embed?clip=LuckyTiredWombatCurseLit-XDbTibUx9TPvf_ZB",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "先生が買っていらねーってなったヘリ",
-        "view_count": 7111,
-        "created_at": "2025-07-13T13:26:00Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/LuckyTiredWombatCurseLit-XDbTibUx9TPvf_ZB/9e3329fc-82b7-4cd1-b3f3-dcb3c9305b1a/preview-480x272.jpg",
-        "duration": 45.8,
-        "vod_offset": 8979,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "CrispyRoughSalmonBrainSlug-WqIefKRP53wJU6Hx",
-        "url": "https://www.twitch.tv/crtopioxd/clip/CrispyRoughSalmonBrainSlug-WqIefKRP53wJU6Hx",
-        "embed_url": "https://clips.twitch.tv/embed?clip=CrispyRoughSalmonBrainSlug-WqIefKRP53wJU6Hx",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ボス達と一緒に来たことのある建物",
-        "view_count": 6709,
-        "created_at": "2025-07-13T13:53:44Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CrispyRoughSalmonBrainSlug-WqIefKRP53wJU6Hx/651640c8-5af4-4086-9f11-07dc1521d7b4/preview-480x272.jpg",
-        "duration": 51.8,
-        "vod_offset": 10610,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "FlirtyTubularHamburgerOSkomodo-l6Se_von76LqxOee",
-        "url": "https://www.twitch.tv/crtopioxd/clip/FlirtyTubularHamburgerOSkomodo-l6Se_von76LqxOee",
-        "embed_url": "https://clips.twitch.tv/embed?clip=FlirtyTubularHamburgerOSkomodo-l6Se_von76LqxOee",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "仲良し魂トーク",
-        "view_count": 6501,
-        "created_at": "2025-07-13T11:27:01Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/FlirtyTubularHamburgerOSkomodo-l6Se_von76LqxOee/3c44bd17-bf39-4d7f-bd65-cc3315b1a445/preview-480x272.jpg",
-        "duration": 47.3,
-        "vod_offset": 1754,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "ShakingGiftedBatKeepo-LaWcKB-ih1t4yAKk",
-        "url": "https://www.twitch.tv/crtopioxd/clip/ShakingGiftedBatKeepo-LaWcKB-ih1t4yAKk",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ShakingGiftedBatKeepo-LaWcKB-ih1t4yAKk",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "フロガーで大穴脱出するテクニシャン・トピオカ",
-        "view_count": 4313,
-        "created_at": "2025-07-13T12:40:59Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ShakingGiftedBatKeepo-LaWcKB-ih1t4yAKk/62428e5f-bfd3-4078-a0f3-f5d49b5df676/preview-480x272.jpg",
-        "duration": 59.2,
-        "vod_offset": 6293,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "ProudDependableSlothVoHiYo-p64XyWBZ6Etc_n0p",
-        "url": "https://www.twitch.tv/crtopioxd/clip/ProudDependableSlothVoHiYo-p64XyWBZ6Etc_n0p",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ProudDependableSlothVoHiYo-p64XyWBZ6Etc_n0p",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "クソガキマーくんを心配するトピオ",
-        "view_count": 3859,
-        "created_at": "2025-07-13T11:33:08Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ProudDependableSlothVoHiYo-p64XyWBZ6Etc_n0p/6fc90ebe-f6e9-4e96-93fd-07666b86c151/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 2098,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "RacyAgileAntJebaited-OqxFjN4QgPBNPibY",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/RacyAgileAntJebaited-OqxFjN4QgPBNPibY",
-        "embed_url": "https://clips.twitch.tv/embed?clip=RacyAgileAntJebaited-OqxFjN4QgPBNPibY",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "790098261",
-        "creator_name": "a_sun8887",
-        "video_id": "2509607646",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "神子田の父です",
-        "view_count": 3203,
-        "created_at": "2025-07-11T15:54:02Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/RacyAgileAntJebaited-OqxFjN4QgPBNPibY/5c399dca-39cf-4114-bc1a-7afa5a2e2131/preview-480x272.jpg",
-        "duration": 25.3,
-        "vod_offset": 3615,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/11【GTAV/RP】 BLACK GANG『遅』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-11T14:51:50Z"
-        }
-      },
-      {
-        "id": "BlushingBillowingOilEagleEye-5e_oDTbunG32ioEu",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/BlushingBillowingOilEagleEye-5e_oDTbunG32ioEu",
-        "embed_url": "https://clips.twitch.tv/embed?clip=BlushingBillowingOilEagleEye-5e_oDTbunG32ioEu",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "205095845",
-        "creator_name": "Maiga03",
-        "video_id": "2509607646",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ナイスピック",
-        "view_count": 3197,
-        "created_at": "2025-07-11T15:47:15Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BlushingBillowingOilEagleEye-5e_oDTbunG32ioEu/c3f37f8f-c2f0-44fd-8366-3c21641829c8/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 3089,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/11【GTAV/RP】 BLACK GANG『遅』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-11T14:51:50Z"
-        }
-      },
-      {
-        "id": "StylishTangibleHorseCoolCat-h1M9CgZ8YF7muHAp",
-        "url": "https://www.twitch.tv/crtopioxd/clip/StylishTangibleHorseCoolCat-h1M9CgZ8YF7muHAp",
-        "embed_url": "https://clips.twitch.tv/embed?clip=StylishTangibleHorseCoolCat-h1M9CgZ8YF7muHAp",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "サイコパスフェアリー🔪",
-        "view_count": 2835,
-        "created_at": "2025-07-13T14:17:48Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/StylishTangibleHorseCoolCat-h1M9CgZ8YF7muHAp/664e4e98-a35a-4ae6-a9c1-902957d0f29f/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 11933,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "CredulousStormyKoupreySoonerLater-l9bd6wI0pTHBsH0-",
-        "url": "https://www.twitch.tv/crtopioxd/clip/CredulousStormyKoupreySoonerLater-l9bd6wI0pTHBsH0-",
-        "embed_url": "https://clips.twitch.tv/embed?clip=CredulousStormyKoupreySoonerLater-l9bd6wI0pTHBsH0-",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "536236977",
-        "creator_name": "だんごちゃん1639",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "エレベーター",
-        "view_count": 1971,
-        "created_at": "2025-07-13T12:08:19Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CredulousStormyKoupreySoonerLater-l9bd6wI0pTHBsH0-/e2a02463-45dd-4f73-8c7e-6bac380499db/preview-480x272.jpg",
-        "duration": 16.4,
-        "vod_offset": 2046,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "DeliciousCulturedDogTheTarFu-xZqkopHh1V7Rser3",
-        "url": "https://www.twitch.tv/assarisyoko1/clip/DeliciousCulturedDogTheTarFu-xZqkopHh1V7Rser3",
-        "embed_url": "https://clips.twitch.tv/embed?clip=DeliciousCulturedDogTheTarFu-xZqkopHh1V7Rser3",
-        "broadcaster_id": "792691462",
-        "broadcaster_name": "あっさりしょこー",
-        "creator_id": "623266986",
-        "creator_name": "kametaro33",
-        "video_id": "2511274292",
-        "game_id": "271304",
-        "language": "ja",
-        "title": "しゃべるニア",
-        "view_count": 1967,
-        "created_at": "2025-07-14T07:50:12Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DeliciousCulturedDogTheTarFu-xZqkopHh1V7Rser3/862902ee-38e0-42e4-8052-3d92722b88c6/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 35882,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "寝るまで",
-          "published_at": "2025-07-13T10:26:14Z"
-        }
-      },
-      {
-        "id": "SpunkyReliableNuggetsCorgiDerp-1HQ3lnvsh_uh-AQX",
-        "url": "https://www.twitch.tv/kanseru_tyan/clip/SpunkyReliableNuggetsCorgiDerp-1HQ3lnvsh_uh-AQX",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SpunkyReliableNuggetsCorgiDerp-1HQ3lnvsh_uh-AQX",
-        "broadcaster_id": "163255402",
-        "broadcaster_name": "かんせる",
-        "creator_id": "803616589",
-        "creator_name": "ブクブク",
-        "video_id": "2506877321",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "プライドバトル　ヤバッキオvs政宗",
-        "view_count": 1917,
-        "created_at": "2025-07-08T14:51:07Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SpunkyReliableNuggetsCorgiDerp-1HQ3lnvsh_uh-AQX/2dce855c-b1c1-42ad-992e-f6f71c801b74/preview-480x272.jpg",
-        "duration": 13.4,
-        "vod_offset": 9421,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "ストグラ153日目「イベントお邪魔しますか」【蒲田ヤバッキオ】",
-          "published_at": "2025-07-08T12:11:01Z"
-        }
-      },
-      {
-        "id": "CorrectEagerBeanHassaanChop-UxhpbXAJsxuBIo_V",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/CorrectEagerBeanHassaanChop-UxhpbXAJsxuBIo_V",
-        "embed_url": "https://clips.twitch.tv/embed?clip=CorrectEagerBeanHassaanChop-UxhpbXAJsxuBIo_V",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "736513960",
-        "creator_name": "一重で何が悪い",
-        "video_id": "2508586576",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ダーマーが絶対に書かない言葉",
-        "view_count": 1873,
-        "created_at": "2025-07-10T10:11:44Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CorrectEagerBeanHassaanChop-UxhpbXAJsxuBIo_V/a8f1e93a-799b-4d87-870f-52e9cd137c91/preview-480x272.jpg",
-        "duration": 41.6,
-        "vod_offset": 1061,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/10【GTAV/RP】 BLACK GANG『悩』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-10T09:52:44Z"
-        }
-      },
-      {
-        "id": "BovineBlazingBottleOSsloth-Z-SmHbMhBrvcXZYS",
-        "url": "https://www.twitch.tv/crtopioxd/clip/BovineBlazingBottleOSsloth-Z-SmHbMhBrvcXZYS",
-        "embed_url": "https://clips.twitch.tv/embed?clip=BovineBlazingBottleOSsloth-Z-SmHbMhBrvcXZYS",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "呪文",
-        "view_count": 1855,
-        "created_at": "2025-07-13T14:31:38Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BovineBlazingBottleOSsloth-Z-SmHbMhBrvcXZYS/163b97ee-2838-4060-80d2-cc93621d8eb9/preview-480x272.jpg",
-        "duration": 17.5,
-        "vod_offset": 12959,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "StrangeFastCougarBatChest-pFqM05lcZ9jewIbU",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/StrangeFastCougarBatChest-pFqM05lcZ9jewIbU",
-        "embed_url": "https://clips.twitch.tv/embed?clip=StrangeFastCougarBatChest-pFqM05lcZ9jewIbU",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "719449446",
-        "creator_name": "はすらん",
-        "video_id": "2509607646",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ダウン体わちゃわちゃ会話",
-        "view_count": 1777,
-        "created_at": "2025-07-11T15:48:40Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/StrangeFastCougarBatChest-pFqM05lcZ9jewIbU/1d431be4-d58e-4afc-87ed-583048f32525/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 3290,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/11【GTAV/RP】 BLACK GANG『遅』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-11T14:51:50Z"
-        }
-      },
-      {
-        "id": "AlluringHonorableRatOSkomodo-ijHTzVMvbwPGfV13",
-        "url": "https://www.twitch.tv/crtopioxd/clip/AlluringHonorableRatOSkomodo-ijHTzVMvbwPGfV13",
-        "embed_url": "https://clips.twitch.tv/embed?clip=AlluringHonorableRatOSkomodo-ijHTzVMvbwPGfV13",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "クソガキ探偵団出発",
-        "view_count": 1741,
-        "created_at": "2025-07-13T11:23:07Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AlluringHonorableRatOSkomodo-ijHTzVMvbwPGfV13/d16daee8-9ad0-492a-a1c0-9c98cf5ed194/preview-480x272.jpg",
-        "duration": 31,
-        "vod_offset": 1619,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "KitschyCulturedHawkTTours-CPCP-uIvei6NTmgr",
-        "url": "https://www.twitch.tv/crtopioxd/clip/KitschyCulturedHawkTTours-CPCP-uIvei6NTmgr",
-        "embed_url": "https://clips.twitch.tv/embed?clip=KitschyCulturedHawkTTours-CPCP-uIvei6NTmgr",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "言ったそばから",
-        "view_count": 1659,
-        "created_at": "2025-07-13T12:04:19Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/KitschyCulturedHawkTTours-CPCP-uIvei6NTmgr/91b87a56-1117-4536-a73d-77e0d758446c/preview-480x272.jpg",
-        "duration": 36.6,
-        "vod_offset": 3917,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "SleepyViscousPotKeepo-HzYVSRuZQW5m1vt0",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/SleepyViscousPotKeepo-HzYVSRuZQW5m1vt0",
-        "embed_url": "https://clips.twitch.tv/embed?clip=SleepyViscousPotKeepo-HzYVSRuZQW5m1vt0",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "205095845",
-        "creator_name": "Maiga03",
-        "video_id": "2509607646",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "人前でやめなさいキミトス",
-        "view_count": 1583,
-        "created_at": "2025-07-11T16:04:46Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SleepyViscousPotKeepo-HzYVSRuZQW5m1vt0/ee3a0045-a7b1-46af-8835-78e3e20b42ee/preview-480x272.jpg",
-        "duration": 48.8,
-        "vod_offset": 4266,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/11【GTAV/RP】 BLACK GANG『遅』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-11T14:51:50Z"
-        }
-      },
-      {
-        "id": "ToughNiceChickpeaPermaSmug-HYJ4p7KRSmRty1Sx",
-        "url": "https://www.twitch.tv/crtopioxd/clip/ToughNiceChickpeaPermaSmug-HYJ4p7KRSmRty1Sx",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ToughNiceChickpeaPermaSmug-HYJ4p7KRSmRty1Sx",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "791956999",
-        "creator_name": "shiru3_fe",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "思春期できょせめそ",
-        "view_count": 1543,
-        "created_at": "2025-07-13T11:46:34Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ToughNiceChickpeaPermaSmug-HYJ4p7KRSmRty1Sx/e8910c19-a3d3-4780-97b9-86cd87617b1f/preview-480x272.jpg",
-        "duration": 49.8,
-        "vod_offset": 2981,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "ImportantShinyBaguetteThisIsSparta-FdJYaeXI8ftldxKu",
-        "url": "https://www.twitch.tv/euriece/clip/ImportantShinyBaguetteThisIsSparta-FdJYaeXI8ftldxKu",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ImportantShinyBaguetteThisIsSparta-FdJYaeXI8ftldxKu",
-        "broadcaster_id": "206506086",
-        "broadcaster_name": "Euriece",
-        "creator_id": "858945872",
-        "creator_name": "しーぶん",
-        "video_id": "2511241157",
-        "game_id": "1835414308",
-        "language": "ja",
-        "title": "案件で死体撃ちかよ",
-        "view_count": 1425,
-        "created_at": "2025-07-13T10:55:54Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ImportantShinyBaguetteThisIsSparta-FdJYaeXI8ftldxKu/92931c11-d308-43b2-9a58-f7efe7a014d7/preview-480x272.jpg",
-        "duration": 30,
-        "vod_offset": 7148,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "新作バトロワ!!! REJECT HOUR!! 運命のトリガー #PR",
-          "published_at": "2025-07-13T08:56:10Z"
-        }
-      },
-      {
-        "id": "TenuousBillowingLardNinjaGrumpy-RiY8kd4TaOxDfA0_",
-        "url": "https://www.twitch.tv/sirry_twich/clip/TenuousBillowingLardNinjaGrumpy-RiY8kd4TaOxDfA0_",
-        "embed_url": "https://clips.twitch.tv/embed?clip=TenuousBillowingLardNinjaGrumpy-RiY8kd4TaOxDfA0_",
-        "broadcaster_id": "446699865",
-        "broadcaster_name": "Sirry_Twich",
-        "creator_id": "1167461745",
-        "creator_name": "meghaad",
-        "video_id": "2513028841",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "バキオにプレゼントした車が刺さる",
-        "view_count": 1399,
-        "created_at": "2025-07-15T11:39:56Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TenuousBillowingLardNinjaGrumpy-RiY8kd4TaOxDfA0_/5d015be6-eb7f-4304-bef5-0ed00f09c2ee/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 1780,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【#ストグラ】Day317 しょうがくSAYの犯罪べんきょー @sirry_twich",
-          "published_at": "2025-07-15T11:09:20Z"
-        }
-      },
-      {
-        "id": "ObservantPricklyDunlinYouDontSay-MWdIAdzXu5kUeBU9",
-        "url": "https://www.twitch.tv/crtopioxd/clip/ObservantPricklyDunlinYouDontSay-MWdIAdzXu5kUeBU9",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ObservantPricklyDunlinYouDontSay-MWdIAdzXu5kUeBU9",
-        "broadcaster_id": "836587213",
-        "broadcaster_name": "しーあーるとっぴー",
-        "creator_id": "1223421922",
-        "creator_name": "h0lynight3",
-        "video_id": "2511284692",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "探索中にMOZUのアジトに近づいてしまい圧をかけられるトピジョア",
-        "view_count": 1377,
-        "created_at": "2025-07-13T12:41:49Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObservantPricklyDunlinYouDontSay-MWdIAdzXu5kUeBU9/3d6a21d5-ea22-4278-863c-87d4cb07b360/preview-480x272.jpg",
-        "duration": 59.6,
-        "vod_offset": 6348,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "【ストグラ】わかんない日目 フェアリートピオ",
-          "published_at": "2025-07-13T10:54:02Z"
-        }
-      },
-      {
-        "id": "ColorfulAliveCiderNinjaGrumpy-utXnv9a1nNaG2g4L",
-        "url": "https://www.twitch.tv/kanseru_tyan/clip/ColorfulAliveCiderNinjaGrumpy-utXnv9a1nNaG2g4L",
-        "embed_url": "https://clips.twitch.tv/embed?clip=ColorfulAliveCiderNinjaGrumpy-utXnv9a1nNaG2g4L",
-        "broadcaster_id": "163255402",
-        "broadcaster_name": "かんせる",
-        "creator_id": "553576422",
-        "creator_name": "ろいどです",
-        "video_id": "2507782906",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ヤバッキオの慎重な着陸チャレンジ",
-        "view_count": 1357,
-        "created_at": "2025-07-09T16:22:36Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ColorfulAliveCiderNinjaGrumpy-utXnv9a1nNaG2g4L/37a287b0-7b86-4145-baae-b7488f5d74dc/preview-480x272.jpg",
-        "duration": 20.7,
-        "vod_offset": 12036,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "ストグラ154日目「シャンプロ会議」【蒲田ヤバッキオ】",
-          "published_at": "2025-07-09T12:59:17Z"
-        }
-      },
-      {
-        "id": "IncredulousTastyCockroachDendiFace-ipneTW47eIkXqn-Y",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/IncredulousTastyCockroachDendiFace-ipneTW47eIkXqn-Y",
-        "embed_url": "https://clips.twitch.tv/embed?clip=IncredulousTastyCockroachDendiFace-ipneTW47eIkXqn-Y",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "763521594",
-        "creator_name": "fairy_of_you",
-        "video_id": "2509607646",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "えらいね～",
-        "view_count": 1297,
-        "created_at": "2025-07-11T15:08:40Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/IncredulousTastyCockroachDendiFace-ipneTW47eIkXqn-Y/af3dcfcc-82ba-4acb-aaaf-211ab77dc01b/preview-480x272.jpg",
-        "duration": 30,
-        "vod_offset": 990,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/11【GTAV/RP】 BLACK GANG『遅』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-11T14:51:50Z"
-        }
-      },
-      {
-        "id": "EasyShortCurlewEleGiggle-4cn1oLDsFIpuReEl",
-        "url": "https://www.twitch.tv/banda_chosuke/clip/EasyShortCurlewEleGiggle-4cn1oLDsFIpuReEl",
-        "embed_url": "https://clips.twitch.tv/embed?clip=EasyShortCurlewEleGiggle-4cn1oLDsFIpuReEl",
-        "broadcaster_id": "470973222",
-        "broadcaster_name": "番田長助",
-        "creator_id": "205095845",
-        "creator_name": "Maiga03",
-        "video_id": "2509607646",
-        "game_id": "32982",
-        "language": "ja",
-        "title": "ヴァンあびの会話",
-        "view_count": 1283,
-        "created_at": "2025-07-11T16:15:09Z",
-        "thumbnail_url": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/EasyShortCurlewEleGiggle-4cn1oLDsFIpuReEl/bf9e41b6-6479-409c-b284-edae9b2eb9e8/preview-480x272.jpg",
-        "duration": 60,
-        "vod_offset": 4698,
-        "is_featured": false,
-        "game_name": "",
-        "vod_info": {
-          "title": "7/11【GTAV/RP】 BLACK GANG『遅』#MOZU #ストグラ #ヴァンダーマー",
-          "published_at": "2025-07-11T14:51:50Z"
-        }
-      }
-    ]
+    "clips_1month": []
   }
 }
