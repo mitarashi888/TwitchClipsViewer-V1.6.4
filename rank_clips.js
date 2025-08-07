@@ -258,7 +258,13 @@ async function main() {
         console.log(`カテゴリ 「${category.name}」の集計が完了しました。`);
     }
 
+
+
     if (!fs.existsSync('./public')) fs.mkdirSync('./public');
+
+    console.log('ファイル書き込み直前のデータサイズ:', JSON.stringify(finalData).length);
+    console.log('「総合」カテゴリの「1week」データサンプル:', finalData['overall']?.['clips_1week']?.[0]);
+
     fs.writeFileSync('./public/popular_clips.json', JSON.stringify(finalData, null, 2));
     console.log('ランキングファイル popular_clips.json の生成が完了しました。');
 }
