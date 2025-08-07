@@ -644,8 +644,8 @@ function renderClipsToContainer(clipsToRender, container, videoDetailsMap) {
             e.preventDefault();
             e.stopPropagation();
             updateView('channelSearch');
-            channelNameInput.value = clip.broadcaster_name;
-            messageElement.textContent = `配信者「${clip.broadcaster_name}」が入力されました。期間などを確認し「クリップを取得」ボタンを押してください。`;
+            channelNameInput.value = clip.broadcaster_login;
+            messageElement.textContent = `配信者「${clip.broadcaster_login}」が入力されました。期間などを確認し「クリップを取得」ボタンを押してください。`;
             window.scrollTo(0, 0);
         });
         const namePart = document.createElement('span');
@@ -1413,59 +1413,70 @@ async function fetchRelatedClips(broadcasterId, gameId) {
  * @param {Array} results - カテゴリごとのクリップ情報を含む配列
  * @param {Map} videoDetails - VOD情報のMap
  */
-function renderPopularClipsFromCache() {
-    if (!popularClipsCache) {
-        // キャッシュがない場合は、取得処理を呼び出す
-        fetchPopularClips();
-        return;
-    }
 
-    const popularClipsGrid = document.getElementById('popularClipsGrid');
-    popularClipsGrid.innerHTML = '';
-
-    const categoryData = popularClipsCache[selectedPopularCategory];
-    const dateRange = popularDateRangeFilter.value; // "1day", "3days", "1week"
-    const clipsToShow = categoryData ? categoryData[`clips_${dateRange}`] : [];
-
-    if (clipsToShow && clipsToShow.length > 0) {
-        // VOD情報やゲーム名はJSONに埋め込まれているため、videoDetailsMapは空で良い
-        renderClipsToContainer(clipsToShow, popularClipsGrid, new Map());
-        const categoryName = POPULAR_CATEGORIES.find(c => c.id === selectedPopularCategory)?.name || '';
-        messageElement.textContent = `「${categoryName}」の人気クリップを${clipsToShow.length}件表示しました。`;
-    } else {
-        messageElement.textContent = 'この期間の人気クリップは見つかりませんでした。';
-    }
-}
 async function fetchPopularClips() {
-    // 既にキャッシュがあれば、再取得せずに表示関数を呼ぶ
-    if (popularClipsCache) {
-        renderPopularClipsFromCache();
+    const selectedCategory = POPULAR_CATEGORIES.find(cat => cat.id === selectedPopularCategory);
+    if (!selectedCategory) return;
+
+    const activeButton = document.querySelector('#popularDateRangeButtons button.active');
+    if (!activeButton) {
+        console.error("期間選択ボタンが見つかりません。");
         return;
     }
 
     const popularClipsGrid = document.getElementById('popularClipsGrid');
     loadingSpinner.style.display = 'flex';
     popularClipsGrid.innerHTML = '';
-    messageElement.textContent = `人気クリップリストを取得中...`;
+    messageElement.textContent = `「${selectedCategory.name}」の人気クリップを取得中...`;
+    cachedAllClips = []; // 表示前にクリップをクリア
 
     try {
-        logEvent('fetch_popular_clips_from_server');
-        // GitHub Pages上のJSONファイルにアクセス
-        const response = await fetch('https://mitarashi888.github.io/TwitchClipsViewer-V1.6.4/popular_clips.json');
-        if (!response.ok) {
-            throw new Error(`サーバーからのリスト取得に失敗しました (ステータス: ${response.status})`);
+        const token = await getAccessToken();
+        if (!token) {
+            messageElement.textContent = 'Twitch認証が必要です。';
+            return;
         }
 
-        // 取得したJSONをキャッシュに保存
-        popularClipsCache = await response.json();
+        const startedAtISO = activeButton.dataset.startDate;
+        const endedAtISO = activeButton.dataset.endDate;
 
-        // キャッシュから表示する
-        renderPopularClipsFromCache();
+        let url = `https://api.twitch.tv/helix/clips?first=100`;
+        url += `&started_at=${startedAtISO}`;
+        url += `&ended_at=${endedAtISO}`;
+
+        // カテゴリに応じてパラメータを追加
+        if (selectedCategory.id === 'overall') {
+            url += `&language=ja`; // 総合の場合は日本語のクリップを取得
+        } else {
+            url += `&game_id=${selectedCategory.id}`;
+        }
+
+        const response = await fetch(url, {
+            headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` }
+        });
+
+        if (!response.ok) {
+            throw new Error(`APIエラー (ステータス: ${response.status})`);
+        }
+
+        const data = await response.json();
+        let fetchedClips = data.data || [];
+
+        // 視聴回数で並び替え
+        fetchedClips.sort((a, b) => b.view_count - a.view_count);
+
+        cachedAllClips = fetchedClips; // 取得したクリップをキャッシュに保持
+
+        // VODとゲーム情報を取得
+        await fetchAndCacheGameDetails([...new Set(fetchedClips.map(c => c.game_id).filter(id => id))]);
+        const videoDetails = await fetchAndCacheVideoDetailsForClips(fetchedClips);
+
+        // 描画
+        renderClips(fetchedClips, videoDetails);
 
     } catch (error) {
-        console.error('Error fetching popular clips from server:', error);
-        messageElement.textContent = '人気クリップの取得中にエラーが発生しました。時間をおいて再度お試しください。';
-        popularClipsGrid.innerHTML = ''; // エラー時はグリッドを空にする
+        console.error('人気クリップの取得中にエラーが発生しました:', error);
+        messageElement.textContent = '人気クリップの取得中にエラーが発生しました。';
     } finally {
         loadingSpinner.style.display = 'none';
     }
@@ -1674,7 +1685,6 @@ document.addEventListener('DOMContentLoaded', () => {
     clipInfoSection = document.getElementById('clipInfoSection');
     settingsSection = document.getElementById('settingsSection');
 
-    popularDateRangeFilter = document.getElementById('popularDateRangeFilter');
     popularClipsContainer = document.getElementById('popularClipsContainer');
 
     clipUrlInput = document.getElementById('clipUrlInput');
@@ -1828,8 +1838,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuClipInfo.addEventListener('click', (e) => { e.preventDefault(); updateView('clipInfo'); });
     menuSettings.addEventListener('click', (e) => { e.preventDefault(); updateView('settings'); });
 
-
-    popularDateRangeFilter.addEventListener('change', renderPopularClipsFromCache);
+    initializePopularDateButtons();
 
     const popularCategoryButtonsContainer = document.getElementById('popularCategoryButtons');
     popularCategoryButtonsContainer.innerHTML = '';
@@ -2214,3 +2223,80 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+initializePopularDateButtons();
+
+// ファイルの末尾など、関数の外側に追加
+/**
+ * 人気クリップタブの期間選択ボタンを動的に生成し、イベントリスナーを設定する
+ */
+/**
+ * 人気クリップタブの期間選択ボタンを動的に生成し、イベントリスナーを設定する
+ */
+function initializePopularDateButtons() {
+    const container = document.getElementById('popularDateRangeButtons');
+    if (!container) return;
+
+    container.innerHTML = ''; // コンテナを初期化
+    const today = new Date();
+    const buttons = [];
+
+    // 「今日」ボタン
+    const todayStart = new Date();
+    todayStart.setHours(0, 0, 0, 0);
+    buttons.push({
+        label: `今日 (${today.getMonth() + 1}/${today.getDate()})`,
+        startDate: todayStart.toISOString(),
+        endDate: today.toISOString(),
+    });
+
+    // 過去6日間のボタン
+    for (let i = 1; i <= 6; i++) {
+        const date = new Date();
+        date.setDate(today.getDate() - i);
+        const dateStart = new Date(date);
+        dateStart.setHours(0, 0, 0, 0);
+        const dateEnd = new Date(date);
+        dateEnd.setHours(23, 59, 59, 999);
+        buttons.push({
+            label: `${date.getMonth() + 1}/${date.getDate()}`,
+            startDate: dateStart.toISOString(),
+            endDate: dateEnd.toISOString(),
+        });
+    }
+
+    // 「過去1週間」ボタン
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(today.getDate() - 7);
+    buttons.push({
+        label: '過去1週間',
+        startDate: oneWeekAgo.toISOString(),
+        endDate: today.toISOString(),
+        default: true // デフォルト選択
+    });
+
+    // 「過去1ヶ月間」ボタン
+    const oneMonthAgo = new Date();
+    oneMonthAgo.setMonth(today.getMonth() - 1);
+    buttons.push({
+        label: '過去1ヶ月間',
+        startDate: oneMonthAgo.toISOString(),
+        endDate: today.toISOString(),
+    });
+
+    buttons.forEach(btnInfo => {
+        const button = document.createElement('button');
+        button.textContent = btnInfo.label;
+        button.dataset.startDate = btnInfo.startDate;
+        button.dataset.endDate = btnInfo.endDate;
+
+        if (btnInfo.default) button.classList.add('active');
+
+        button.addEventListener('click', () => {
+            container.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            fetchPopularClips(); // クリックで再取得
+        });
+        container.appendChild(button);
+    });
+}

@@ -151,3 +151,39 @@
 .clip-manager-fav-button:hover {
     background-color: #686878;
 }
+
+/* === 以下のコードを末尾に追加 === */
+
+/* 人気クリップの期間選択ボタンのコンテナ */
+.popular-date-range-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    /* カテゴリボタンとの間に余白を追加 */
+}
+
+/* 期間選択ボタンのスタイル */
+.popular-date-range-buttons button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.popular-date-range-buttons button:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+/* 選択中の期間選択ボタンのスタイル */
+.popular-date-range-buttons button.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(145, 71, 255, 0.4);
+}
