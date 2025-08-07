@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch クリップビューア</title>
+    <link rel="stylesheet" href="clips_page.css">
+</head>
+
+<body>
+    <div id="loadingSpinner" class="spinner-overlay" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-title-wrapper">
+                <i class="twitch-icon"></i>
+                <h1>Twitch クリップビューア</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" id="menuChannelSearch" class="active">チャンネル検索</a></li>
+                    <li><a href="#" id="menuFavorites">お気に入りクリップ</a></li>
+                    <li><a href="#" id="menuMyChannel">Myチャンネル</a></li>
+                    <li><a href="#" id="menuPopular">人気クリップ</a></li>
+                    <li><a href="#" id="menuClipInfo">クリップ情報</a></li>
+                    <li><a href="#" id="menuSettings">設定</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="channelSearchSection" class="content-section active">
+                <div class="search-form">
+                    <div class="channel-input-group">
+                        <label for="channelName">チャンネルID:</label>
+                        <input type="text" id="channelName" placeholder="検索したい配信者のチャンネルIDを記入">
+                    </div>
+                    <div id="searchHistoryContainer" class="search-history-container">
+                        <span class="search-history-label">検索履歴:</span>
+                        <div id="searchHistoryItems" class="search-history-items"></div>
+                    </div>
+                    <div class="date-range-group">
+                        <label class="date-range-label">期間選択:</label>
+                        <div class="date-inputs">
+                            <input type="date" id="startDate">
+                            <span class="date-separator">〜</span>
+                            <input type="date" id="endDate">
+                        </div>
+                        <select id="dateRangePreset">
+                            <option value="custom">カスタム</option>
+                            <option value="today">今日</option>
+                            <option value="3days">3日間</option>
+                            <option value="1week" selected>1週間</option>
+                            <option value="1month">1ヶ月間</option>
+                            <option value="3months">3ヶ月間</option>
+                            <option value="6months">6ヶ月間</option>
+                            <option value="1year">1年間</option>
+                            <option value="alltime">全期間</option>
+                        </select>
+                    </div>
+                    <div class="keyword-search-group">
+                        <label for="channelKeywordSearch">キーワード検索:</label>
+                        <input type="text" id="channelKeywordSearch" placeholder="タイトルや作成者名で絞り込み検索">
+                    </div>
+                    <div class="controls-group">
+                        <div class="button-container">
+                            <label></label> <button id="fetchClips">クリップを取得</button>
+                        </div>
+                        <div class="filter-controls-right">
+                            <div class="filter-toggle-group">
+                                <label for="myCreationsFilterToggleChannel">自分が作成したクリップ</label>
+                                <input type="checkbox" id="myCreationsFilterToggleChannel" class="filter-toggle-switch">
+                            </div>
+                            <div class="game-filter-group" id="gameFilterContainer" style="display: none;">
+                                <label for="gameFilter">ゲームで絞り込む:</label>
+                                <select id="gameFilter">
+                                    <option value="all">すべてのゲーム</option>
+                                </select>
+                            </div>
+                            <div class="sort-order-group">
+                                <label for="sortOrder">並び順:</label>
+                                <select id="sortOrder">
+                                    <option value="newest" selected>新しい順</option>
+                                    <option value="oldest">古い順</option>
+                                    <option value="views">視聴回数が多い順</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="favoritesSection" class="content-section">
+                <div class="favorites-controls">
+                    <div class="filter-group">
+                        <div class="input-group">
+                            <label for="favoriteKeywordSearch">キーワード検索:</label>
+                            <input type="text" id="favoriteKeywordSearch" placeholder="タイトルや作成者名で絞り込み検索">
+                        </div>
+                        <div class="input-group">
+                            <label for="favoriteStreamerFilter">配信者で絞り込む:</label>
+                            <select id="favoriteStreamerFilter">
+                                <option value="all">すべての配信者</option>
+                            </select>
+                        </div>
+                        <div class="input-group" id="favoriteGameFilterContainer" style="display: none;">
+                            <label for="favoriteGameFilter">ゲームで絞り込む:</label>
+                            <select id="favoriteGameFilter">
+                                <option value="all">すべてのゲーム</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="sortOrderFavorites">並び順:</label>
+                            <select id="sortOrderFavorites">
+                                <option value="newest" selected>新しい順</option>
+                                <option value="oldest">古い順</option>
+                                <option value="views">視聴回数が多い順</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-group secondary-filters">
+                        <div class="filter-toggle-group">
+                            <label for="myCreationsFilterToggleFavorites">自分が作成したクリップ</label>
+                            <input type="checkbox" id="myCreationsFilterToggleFavorites" class="filter-toggle-switch">
+                        </div>
+                        <div class="input-group" id="favoriteTagFilterContainer">
+                            <label for="favoriteTagFilter">タグで絞り込む:</label>
+                            <select id="favoriteTagFilter">
+                                <option value="all">すべてのタグ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="favorites-io-group">
+                        <label>データ管理:</label>
+                        <button id="exportFavoritesButton" class="io-button">CSVエクスポート</button>
+                        <button id="importFavoritesButton" class="io-button">CSVインポート</button>
+                        <input type="file" id="importFavoritesInput" accept=".csv" style="display: none;">
+                    </div>
+                </div>
+            </section>
+
+            <section id="myChannelSection" class="content-section">
+                <div class="search-form">
+                    <div id="myChannelIdDisplay" class="channel-id-display">
+                        <span id="myChannelIdText"></span>
+                        <a id="clipManagerLink" class="clip-manager-button" href="#" target="_blank"
+                            style="display: none;">クリップマネージャー</a>
+                    </div>
+                    <div class="my-channel-top-filters">
+                        <div class="date-range-group">
+                            <label class="date-range-label">期間選択:</label>
+                            <div class="date-inputs">
+                                <input type="date" id="myChannelStartDate">
+                                <span class="date-separator">〜</span>
+                                <input type="date" id="myChannelEndDate">
+                            </div>
+                            <select id="myChannelDateRangePreset">
+                                <option value="custom">カスタム</option>
+                                <option value="today">今日</option>
+                                <option value="3days">3日間</option>
+                                <option value="1week" selected>1週間</option>
+                                <option value="1month">1ヶ月間</option>
+                                <option value="3months">3ヶ月間</option>
+                                <option value="6months">6ヶ月間</option>
+                                <option value="1year">1年間</option>
+                                <option value="alltime">全期間</option>
+                            </select>
+                        </div>
+                        <div class="keyword-search-group">
+                            <label for="myChannelKeywordSearch">タイトル検索:</label>
+                            <input type="text" id="myChannelKeywordSearch" placeholder="クリップのタイトルで絞り込み">
+                        </div>
+                        <div class="filter-controls-right">
+                            <div class="filter-toggle-group">
+                                <label for="favoritesOnlyToggleMyChannel">お気に入りクリップのみ</label>
+                                <input type="checkbox" id="favoritesOnlyToggleMyChannel" class="filter-toggle-switch">
+                            </div>
+                            <div class="filter-toggle-group">
+                                <label for="myCreationsFilterToggleMyChannel">自分が作成したクリップ</label>
+                                <input type="checkbox" id="myCreationsFilterToggleMyChannel"
+                                    class="filter-toggle-switch">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="favorites-controls">
+                        <div class="filter-group secondary-filters"
+                            style="border-top: none; padding-top: 0; margin-top:0;">
+                            <div class="input-group" id="myChannelTagFilterContainer">
+                                <label for="myChannelTagFilter">タグで絞り込む:</label>
+                                <select id="myChannelTagFilter">
+                                    <option value="all">すべてのタグ</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="myChannelGameFilterContainer" style="display: none;">
+                                <label for="myChannelGameFilter">ゲームで絞り込む:</label>
+                                <select id="myChannelGameFilter">
+                                    <option value="all">すべてのゲーム</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="myChannelCreatorFilterContainer" style="display: none;">
+                                <label for="myChannelCreatorFilter">作成者で絞り込む:</label>
+                                <select id="myChannelCreatorFilter">
+                                    <option value="all">すべての作成者</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="sortOrderMyChannel">並び順:</label>
+                                <select id="sortOrderMyChannel">
+                                    <option value="newest" selected>新しい順</option>
+                                    <option value="oldest">古い順</option>
+                                    <option value="views">視聴回数が多い順</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="popularSection" class="content-section">
+                <div class="popular-controls">
+                    <div id="popularCategoryButtons" class="popular-category-buttons">
+                    </div>
+                    <div class="input-group">
+                        <label for="popularDateRangeFilter">期間:</label>
+                        <select id="popularDateRangeFilter">
+                            <option value="1day">過去1日間</option>
+                            <option value="3days">過去3日間</option>
+                            <option value="1week">過去1週間</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="popularClipsGrid" class="clips-grid"></div>
+            </section>
+
+            <section id="clipInfoSection" class="content-section">
+                <div class="clip-info-form">
+                    <div class="input-group">
+                        <label for="clipUrlInput">クリップURL:</label>
+                        <input type="text" id="clipUrlInput" placeholder="TwitchクリップのURLまたはIDをここに貼り付け">
+                        <button id="fetchClipInfoButton">クリップ情報を取得</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="settingsSection" class="content-section">
+                <div class="settings-group-container">
+                    <div class="settings-group-left">
+                        <div class="settings-card" id="selfChannelSettingsCard">
+                            <label for="userChannelIdInput">① 自身のTwitchチャンネルID</label>
+                            <p class="settings-description">
+                                自身のIDを設定すると、各検索結果で「自分が作成したクリップ」がハイライト表示・絞り込み検索が可能となります。
+                            </p>
+                            <div class="settings-user-preview" id="settingsUserPreview" style="display: none;">
+                                <img id="settingsUserAvatar" src="" alt="User Avatar" class="settings-user-avatar">
+                                <span id="settingsUserDisplayName"></span>
+                            </div>
+                            <div class="settings-input-group">
+                                <input type="text" id="userChannelIdInput" placeholder="自身のTwitchのチャンネルIDを入力">
+                                <button id="saveUserChannelButton">保存</button>
+                            </div>
+                            <p id="userChannelMessage" class="message" style="text-align:left; padding-left:0;"></p>
+                        </div>
+                    </div>
+                    <div class="settings-group-right">
+                        <div class="settings-card" id="myChannelSettingsCard">
+                            <label>② Myチャンネル設定</label>
+                            <p class="settings-description">
+                                「Myチャンネル」タブで表示するチャンネルを設定します。
+                            </p>
+                            <div class="settings-user-preview" id="myChannelUserPreview" style="display: none;">
+                                <img id="myChannelUserAvatar" src="" alt="User Avatar" class="settings-user-avatar">
+                                <span id="myChannelUserDisplayName"></span>
+                            </div>
+                            <div class="my-channel-settings-group">
+                                <div class="filter-toggle-group">
+                                    <input type="checkbox" id="setMyChannelToSelf" class="filter-toggle-switch">
+                                    <label for="setMyChannelToSelf"
+                                        style="cursor:pointer;">自身のチャンネルをMyチャンネルに設定（配信者は推奨）</label>
+                                </div>
+                                <div class="settings-input-group">
+                                    <input type="text" id="myChannelIdInput" placeholder="チャンネルIDを入力">
+                                    <button id="saveMyChannelButton">保存</button>
+                                </div>
+                            </div>
+                            <p id="myChannelMessage" class="message" style="text-align:left; padding-left:0;"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="settings-card">
+                    <label>表示テーマ</label>
+                    <p class="settings-description">
+                        拡張機能の表示テーマをダークモードまたはライトモードに切り替えます。
+                    </p>
+                    <div class="theme-switcher-container">
+                        <span id="theme-label" class="theme-label-text">ダークモード</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <label>ご意見・ご要望</label>
+                    <p class="settings-description">
+                        不具合の報告や、機能追加の要望などはこちらからお願いします。良い機能だと思ってくださったら、いいねRT・拡散・レビューをしていただけるととても有難いです。</p>
+                    <div class="contact-links">
+                        <a href="https://chromewebstore.google.com/detail/twitch%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97%E3%83%93%E3%83%A5%E3%83%BC%E3%82%A2/kfjgbhjokopbpabnlgncnadgdminocfc"
+                            target="_blank" rel="noopener noreferrer" class="contact-link">
+                            拡張機能ページ
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScw01nS1p5o1G52B_uFPT9JJ102TETs8A_gtJg2I-c2sWl4ww/viewform?usp=pp_url&entry.1000000=Twitch_Clip_Viewer"
+                            target="_blank" rel="noopener noreferrer" class="contact-link">
+                            匿名問い合わせフォーム
+                        </a>
+                        <a href="https://x.com/hnars0024" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
+                            X (旧Twitter)
+                        </a>
+                        <a href="https://x.com/hnars0024/status/1952675266607943959" target="_blank"
+                            rel="noopener noreferrer" class="contact-link">
+                            紹介ツイートを見る
+                        </a>
+
+                        <button id="shareOnTwitterBtn" class="share-button">
+                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" style="width: 1em; height: 1em; vertical-align: -0.125em;">
+                                <path fill="currentColor"
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.214 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                            拡張機能を共有 (ツイート)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <div class="settings-header-with-button">
+                        <label>拡張機能の使い方</label>
+                        <button id="showTutorialButton" class="help-button" title="使い方ガイドを再表示">？ ガイドを表示</button>
+                    </div>
+                    <div class="settings-description" style="line-height: 1.8;">
+                        <dl>
+                            <dt><strong>チャンネル検索</strong></dt>
+                            <dd>「チャンネル検索」タブでは、指定した配信者のクリップを期間やキーワードで検索できます。</dd>
+                            <br>
+                            <dt><strong>お気に入りクリップ</strong></dt>
+                            <dd>「お気に入りクリップ」タブでは、「★」マークを付けて保存したクリップを一覧表示できます。配信者やゲーム、キーワードでの絞り込みも可能です。CSVでのエクスポート/インポートにも対応しています。
+                            </dd>
+                            <br>
+                            <dt><strong>Myチャンネル</strong></dt>
+                            <dd>「Myチャンネル」タブでは、設定で指定した特定のチャンネルのクリップをまとめて表示・管理できます。配信者自身のクリップ管理や、特定のお気に入り配信者のクリップを追いかけるのに便利です。このタブ専用のタグ付け機能もあります。
+                            </dd>
+                            <br>
+                            <dt><strong>人気クリップ</strong></dt>
+                            <dd>「人気クリップ」タブでは、日本のTwitchで今まさに話題になっている人気のクリップを、カテゴリごとにまとめてチェックすることができます。期間（過去1日/3日/1週間）を選ぶだけで、「雑談」や「VALORANT」などの人気カテゴリの中から視聴回数の多いクリップが自動で表示されます。
+                            </dd>
+                            <br>
+                            <dt><strong>クリップ情報</strong></dt>
+                            <dd>「クリップ情報」タブでは、クリップのURLを貼り付けることで、そのクリップ単体の情報を表示できます。クリップ視聴のページが古く、想定されている構造と異なることによりTwitchサイト上でお気に入り登録できなかった場合などに利用してください。
+                            </dd>
+                            <br>
+                            <dt><strong>Twitchサイト上の機能</strong></dt>
+                            <dd>
+                                <ul style="padding-left: 20px; margin-top: 5px;">
+                                    <li>Twitchサイト上部の検索バー横に、このビューアを開くアイコンが追加されます。</li>
+                                    <li>各チャンネルページでは配信者名の横に「クリップビューア」ボタンが追加され、そのチャンネルのクリップを直接検索できます。</li>
+                                    <li>クリップ視聴ページでは、動画プレイヤーの近くに「★」ボタンが追加され、簡単にお気に入りの登録・解除ができます。</li>
+                                </ul>
+                            </dd>
+                            <br>
+                            <br>
+                            <dt><strong>（※ 拡張機能活用例）</strong></dt>
+                            <dd>
+                                <ul style="padding-left: 20px; margin-top: 5px;">
+                                    <li>好きな配信者のクリップを、期間やキーワードで素早く見つける。</li>
+                                    <li>お気に入りのクリップを登録し、自分だけのクリップ一覧を作成。自分だけのタグを作り見返しやすく。</li>
+                                    <li>期間や視聴回数で絞り込み、「一番再生されたクリップ」を簡単に見つけ出す。</li>
+                                    <li>クリップを時系列で並べて、見逃した配信のハイライトや流れを把握することができる。</li>
+                                    <li>日本でいま話題になってる人気クリップをカテゴリごとに調べることができる。</li>
+                                    <li>大会やコラボなど、大きなイベントの「振り返り配信」で紹介するクリップを効率的に探す。</li>
+                                    <li>配信者自身の利用も強力にサポート。散らばったクリップを一覧で集約し、SNSや動画投稿用の素材集めを時短。</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <label>お知らせ</label>
+                    <div class="announcement-log">
+                        <div class="announcement-item">
+                            <p><strong>2025/08/07</strong></p>
+                            <p>以下の機能の追加を行いました。</p>
+                            <ul>
+                                <li>「Myチャンネル」タブに自身のクリップマネージャーへのリンクボタンを追加。</li>
+                                <li>Twitchのクリップマネージャーにお気に入り登録ボタンを追加。</li>
+                                <li>クリップビューアのクリップ配信者名項目を押すと、「クリップ検索」タブに移動し検索しやすくしました。</li>
+                                <li>「人気クリップ」タブに各種タブを追加。イベントがあった際は、カテゴリをその都度追加しようと思います。</li>
+                            </ul>
+                        </div>
+                        <div class="announcement-item">
+                            <p><strong>2025/08/06</strong></p>
+                            <p>以下の機能の修正を行いました。</p>
+                            <ul>
+                                <li>拡張機能ページでのキャッシュを保存し、タブ移動してもクリップが表示されたままにすることで利便性を向上しました。</li>
+                                <li>日付指定の内部変換を修正。</li>                            
+                            </ul>
+                        </div>
+                        <div class="announcement-item">
+                            <p><strong>2025/08/05</strong></p>
+                            <p>以下の機能の修正、追加を行いました。</p>
+                            <ul>
+                                <li>「Myチャンネル」タブを追加。配信者自身のクリップ管理や特定チャンネルの追跡が容易になりました。←重要</li>
+                                <li>クリップのMP4ダウンロード機能を追加。←重要</li>
+                                <li>「自分が作成したクリップ」の絞り込みを利用しやすいように配置修正。</li>
+                                <li>使用方法チュートリアルを追加。</li>
+                                <li>お気に入りに登録した際にエフェクトを追加。</li>
+                                <li>お気に入りクリップにユーザー個別のタグ付与機能を追加。←重要</li>
+                                <li>クリップ情報の詳細情報・関連クリップを追加。</li>
+                                <li>設定にお知らせの項目を追加。</li>
+                            </ul>
+                        </div>
+                        <div class="announcement-item">
+                            <p><strong>2025/08/02</strong></p>
+                            <p>以下の機能の修正、追加を行いました。</p>
+                            <ul>
+                                <li>元配信へ飛ぶリンクがクリップ終了時点でのタイムスタンプだったのを、開始時点でのタイムスタンプに修正。</li>
+                                <li>『人気クリップ』タブを作成し、日本のクリップランキング機能の追加。←重要</li>
+                                <li>チャンネル検索のチャンネルID検索履歴機能を追加。</li>
+                                <li>クリップのキーワード検索機能（クリップタイトル / クリップ作者名）を追加。</li>
+                                <li>クリップの配信ゲームでの絞り込み検索機能を追加。</li>
+                                <li>クリップ情報のクリップURL記入の欄で、クリップIDでも情報を取得できるように修正。</li>
+                                <li>お気に入りクリップのデータをCSVとしてエクスポート / インポート機能を追加。←重要</li>
+                                <li>クリップのURLコピーボタンの追加。</li>
+                                <li>ライトモード切替機能の追加。</li>
+                                <li>設定に拡張機能の使い方の説明項目を追加。</li>
+                                <li>設定にご意見・ご要望の項目を追加。</li>
+                            </ul>
+                        </div>
+                        <div class="announcement-item">
+                            <p><strong>2025/07/31</strong></p>
+                            <p>拡張機能『Twitchクリップビューア』公開</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="clipDetailSection" style="display: none;">
+                <div id="clipDetailGrid">
+                    <div id="clipDetailCardContainer">
+                    </div>
+                    <div id="clipDetailInfoContainer">
+                        <h3 class="clip-detail-header">クリップ詳細情報</h3>
+                        <table id="clipDetailTable">
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <h3 class="clip-detail-header">アクション</h3>
+                        <div id="clipDetailActions">
+                        </div>
+                    </div>
+                </div>
+                <div id="relatedClipsSection">
+                    <h3 class="clip-detail-header">関連クリップ</h3>
+                    <div id="relatedBroadcasterAllTime" style="display: none;">
+                        <h4>この配信者の他の人気クリップ (全期間)</h4>
+                        <div id="relatedBroadcasterAllTimeGrid" class="clips-grid"></div>
+                    </div>
+                    <div id="relatedBroadcasterWeekly" style="display: none;">
+                        <h4>この配信者の他の人気クリップ (直近1週間)</h4>
+                        <div id="relatedBroadcasterWeeklyGrid" class="clips-grid"></div>
+                    </div>
+                    <div id="relatedGameWeekly" style="display: none;">
+                        <h4>このゲームの他の人気クリップ (直近1週間)</h4>
+                        <div id="relatedGameWeeklyGrid" class="clips-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div id="message" class="message"></div>
+        <div id="clipsGrid" class="clips-grid">
+        </div>
+    </div>
+
+    <div id="confirmationModal" class="modal-overlay" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>確認</h3>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button id="modalCancelButton" class="modal-button cancel">キャンセル</button>
+                <button id="modalConfirmButton" class="modal-button confirm">削除</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tutorialOverlay" class="tutorial-overlay" style="display: none;"></div>
+    <div id="tutorialPopover" class="tutorial-popover" style="display: none;">
+        <div class="tutorial-header">
+            <h4 id="tutorialTitle"></h4>
+        </div>
+        <div class="tutorial-body">
+            <p id="tutorialDescription"></p>
+        </div>
+        <div class="tutorial-footer">
+            <div id="tutorialProgress"></div>
+            <button id="tutorialSkip">スキップ</button>
+            <button id="tutorialNext">次へ</button>
+            <button id="tutorialDone" style="display: none;">完了</button>
+        </div>
+    </div>
+
+    <script src="clips_page.js"></script>
+</body>
+
+</html>

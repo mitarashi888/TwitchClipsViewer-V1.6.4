@@ -1,0 +1,153 @@
+/* content.css */
+
+/* 共通ボタンスタイル */
+.custom-twitch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+    border-radius: 0.4rem;
+    /* 共通の角丸 */
+}
+
+/* ページ上部のアイコンボタン */
+.top-button {
+    background-color: transparent;
+    padding: 0 5px;
+    height: 3.6rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.top-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.top-button img {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+}
+
+/* チャンネルページのテキストボタン */
+.channel-button {
+    background-color: #9147ff;
+    color: #ffffff;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    border-radius: 1rem;
+}
+
+.channel-button:hover {
+    background-color: #772ce8;
+}
+
+/* ボタンを囲むラッパーに余白を設定 */
+.clip-viewer-fav-wrapper {
+    margin-right: 1rem;
+}
+
+/* ダウンロードボタンのラッパー */
+.clip-viewer-download-wrapper {
+    margin-right: 0.5rem;
+    /* お気に入りボタンとの間に余白を作成 */
+}
+
+/* ダウンロードボタン本体 */
+.clip-page-download-button {
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 0.4rem 0.6rem;
+    transition: all 0.2s ease;
+    background-color: #53535f;
+    color: #efeff1;
+}
+
+.clip-page-download-button:hover {
+    background-color: #686878;
+}
+
+.clip-page-download-button svg {
+    width: 1.8rem;
+    /* 変更：お気に入りボタンのフォントサイズに合わせました */
+    height: 1.8rem;
+    /* 変更：お気に入りボタンのフォントサイズに合わせました */
+}
+
+/* クリップ視聴ページのお気に入りボタン（星マーク） */
+.clip-page-fav-button {
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 0.4rem 0.6rem;
+    transition: all 0.2s ease;
+}
+
+/* 通常時（お気に入りではない）のスタイル */
+.clip-page-fav-button[data-favorited="false"] {
+    background-color: #53535f;
+    /* グレーの背景 */
+    color: #efeff1;
+    /* 白い星 */
+}
+
+.clip-page-fav-button[data-favorited="false"]:hover {
+    background-color: #686878;
+}
+
+/* お気に入り登録済みの時のスタイル */
+.clip-page-fav-button[data-favorited="true"] {
+    background-color: #9147ff;
+    /* 紫の背景 */
+    color: gold;
+    /* 金色の星 */
+}
+
+/* お気に入り登録済みの時のスタイルにアニメーションを追加 */
+.clip-page-fav-button[data-favorited="true"] {
+    background-color: #9147ff;
+    /* 紫の背景 */
+    color: gold;
+    /* 金色の星 */
+    animation: favorite-pop 0.4s ease-in-out;
+    /* ← この行を追加 */
+}
+
+/* お気に入りボタンのアニメーション定義 */
+@keyframes favorite-pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4) rotate(15deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* クリップマネージャー内のお気に入りボタンのスタイル */
+.clip-manager-fav-button {
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 0.4rem 0.6rem;
+    margin-right: 0.5rem;
+    /* シェアボタンとの間に余白を作成 */
+    background-color: #53535f;
+    /* グレーの背景 */
+    color: #efeff1;
+    /* 白い星 */
+    border-radius: 0.4rem;
+}
+
+.clip-manager-fav-button:hover {
+    background-color: #686878;
+}

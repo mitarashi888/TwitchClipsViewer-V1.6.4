@@ -1,0 +1,1916 @@
+/* clips_page.css */
+
+/* --- CSS変数定義 --- */
+:root {
+    --bg-color: #1a1a1d;
+    --container-bg: #2c2c31;
+    --text-color: #e0e0e0;
+    --text-color-secondary: #adadb8;
+    --primary-color: #9147ff;
+    --primary-color-hover: #772ce8;
+    --input-bg: #3e3e42;
+    --border-color: #4a4a4d;
+    --card-bg: #3a3a3e;
+    --clip-item-bg: #3e3e42;
+    --clip-item-border-my-creation: #FFC107;
+    --clip-item-shadow-my-creation: rgba(255, 193, 7, 0.6);
+    --button-secondary-bg: #5a5a60;
+    --button-secondary-hover-bg: #707078;
+    --history-item-bg: #53535f;
+    --history-item-border: #686878;
+    --history-item-hover-bg: #772ce8;
+    --history-item-hover-border: #9147ff;
+    --link-color: #64B5F6;
+    --link-vod-color: #55acee;
+    --select-arrow-filter: invert(1);
+    --my-channel-tag-bg: #0077b6;
+    /* 水色系のタグ背景色 */
+}
+
+body.light-theme {
+    --bg-color: #f4f4f5;
+    --container-bg: #ffffff;
+    --text-color: #18181b;
+    --text-color-secondary: #52525b;
+    --primary-color: #772ce8;
+    --primary-color-hover: #5f21bc;
+    --input-bg: #f4f4f5;
+    --border-color: #d4d4d8;
+    --card-bg: #f9fafb;
+    --clip-item-bg: #fafafa;
+    --clip-item-border-my-creation: #f59e0b;
+    --clip-item-shadow-my-creation: rgba(245, 158, 11, 0.4);
+    --button-secondary-bg: #e4e4e7;
+    --button-secondary-hover-bg: #d4d4d8;
+    --history-item-bg: #e4e4e7;
+    --history-item-border: #d4d4d8;
+    --history-item-hover-bg: #d4d4d8;
+    --history-item-hover-border: #a1a1aa;
+    --link-color: #007acc;
+    --link-vod-color: #005a9e;
+    --select-arrow-filter: none;
+    --my-channel-tag-bg: #00b4d8;
+}
+
+/* --- ここまで変数定義 --- */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1400px;
+    padding: 10px 25px 25px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    transition: border-bottom-color 0.3s ease;
+}
+
+
+.header-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.twitch-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url('icons/icon48.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+    margin-right: 46px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.5s ease-out;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.main-nav li a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.main-nav li a.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(145, 71, 255, 0.4);
+}
+
+.main-nav li a.highlight-for-attention {
+    box-shadow: 0 0 0 3px var(--primary-color-hover), 0 0 15px var(--primary-color);
+}
+
+
+.content-section {
+    display: none;
+    padding: 0px 0;
+}
+
+.content-section.active {
+    display: block;
+}
+
+
+.search-form,
+.clip-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+
+.channel-input-group,
+.date-range-group,
+.clip-info-form .input-group,
+.keyword-search-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.channel-input-group label,
+.date-range-label,
+.clip-info-form .input-group label,
+.keyword-search-group label {
+    flex-basis: 100px;
+    text-align: right;
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease;
+}
+
+.channel-input-group input,
+.clip-info-form .input-group input,
+.keyword-search-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    min-width: 200px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.search-history-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -5px;
+}
+
+.search-history-label {
+    flex-basis: 100px;
+    text-align: right;
+    color: var(--text-color-secondary);
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.search-history-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.history-item {
+    background-color: var(--history-item-bg);
+    color: var(--text-color);
+    border: 1px solid var(--history-item-border);
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.history-item:hover {
+    background-color: var(--history-item-hover-bg);
+    border-color: var(--history-item-hover-border);
+}
+
+.date-inputs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.date-inputs input[type="date"] {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.date-inputs input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: var(--select-arrow-filter);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+
+.date-separator {
+    color: var(--text-color-secondary);
+}
+
+#dateRangePreset,
+.sort-order-group select,
+.game-filter-group select,
+.favorites-controls .input-group select,
+.popular-controls select,
+#myChannelDateRangePreset {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 1.2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%23e0e0e0%22%3E%3Cpath%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20111.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, background-image 0.3s ease;
+}
+
+body.light-theme #dateRangePreset,
+body.light-theme .sort-order-group select,
+body.light-theme .game-filter-group select,
+body.light-theme .favorites-controls .input-group select,
+body.light-theme .popular-controls select,
+body.light-theme #myChannelDateRangePreset {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%2318181b%22%3E%3Cpath%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20111.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+
+.controls-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.filter-controls-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.button-container label {
+    flex-basis: 100px;
+}
+
+#fetchClips,
+#fetchClipInfoButton,
+#saveUserChannelButton,
+#saveMyChannelButton {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    white-space: nowrap;
+}
+
+#fetchClips:hover,
+#fetchClipInfoButton:hover,
+#saveUserChannelButton:hover,
+#saveMyChannelButton:hover {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-1px);
+}
+
+#fetchClips:active,
+#fetchClipInfoButton:active,
+#saveUserChannelButton:active,
+#saveMyChannelButton:active {
+    transform: translateY(0);
+}
+
+.clip-info-form .button-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.clip-info-form .button-group label {
+    flex-basis: 100px;
+}
+
+.sort-order-group,
+.game-filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-order-group label,
+.game-filter-group label {
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease;
+}
+
+.sort-order-group select,
+.game-filter-group select {
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.message {
+    text-align: center;
+    margin: 15px 0;
+    color: var(--text-color-secondary);
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    min-height: 1.2em;
+}
+
+.clips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.clip-item {
+    background-color: var(--clip-item-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+}
+
+.clip-item.my-creation {
+    border: 2px solid var(--clip-item-border-my-creation);
+    box-shadow: 0 0 12px var(--clip-item-shadow-my-creation);
+}
+
+
+.clip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.clip-item a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.clip-thumbnail-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.clip-thumbnail-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.copy-link-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.copy-link-button svg {
+    width: 18px;
+    height: 18px;
+    color: var(--text-color);
+}
+
+.copy-link-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.copy-notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(26, 26, 29, 0.95);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.copy-notification.show {
+    opacity: 1;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.favorite-button svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+.favorite-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.favorite-button:hover svg {
+    color: #ffffff;
+}
+
+.favorite-button.favorited svg {
+    color: gold;
+}
+
+.favorite-button.favorited:hover svg {
+    color: gold;
+}
+
+.download-clip-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.download-clip-button svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-color);
+}
+
+.download-clip-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.clip-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clip-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    line-height: 1.4;
+    max-height: 2.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+}
+
+.clip-metadata {
+    font-size: 0.85em;
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.clip-channel-name {
+    font-weight: bold;
+    /* colorはJSで直接指定 */
+    transition: color 0.3s ease;
+}
+
+.clip-author {
+    font-style: normal;
+}
+
+.clip-views {
+    font-weight: bold;
+}
+
+.clip-date-display {
+    font-size: 0.8em;
+}
+
+.clip-vod-info {
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+.clip-vod-info a {
+    color: var(--link-vod-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.clip-vod-info a:hover {
+    text-decoration: underline;
+}
+
+.favorites-controls {
+    padding: 0px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.favorites-controls .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.favorites-controls .secondary-filters {
+    justify-content: flex-start;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-top: 5px;
+}
+
+
+
+.favorites-controls .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.favorites-controls .input-group label {
+    color: var(--text-color-secondary);
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.favorites-controls .input-group input,
+.favorites-controls .input-group select {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    min-width: 150px;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 1.2;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.favorites-io-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.favorites-io-group label {
+    color: var(--text-color-secondary);
+    font-weight: bold;
+}
+
+.io-button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    padding: 8px 15px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.io-button:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+.popular-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.popular-controls .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popular-controls label {
+    color: var(--text-color-secondary);
+    font-weight: bold;
+}
+
+.popular-controls select {
+    min-width: 180px;
+}
+
+#popularSection .popular-category-title {
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 8px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+#popularSection .clips-grid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.show-more-container {
+    text-align: center;
+    margin: -10px 0 20px 0;
+}
+
+.show-more-button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--history-item-border);
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.show-more-button:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+#settingsSection {
+    text-align: left;
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease;
+}
+
+.settings-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 15px;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.settings-card>label,
+.settings-header-with-button>label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color);
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.settings-card>label {
+    margin-bottom: 8px;
+}
+
+.settings-header-with-button>label {
+    margin-bottom: 0;
+}
+
+
+.settings-header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.settings-description {
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.settings-user-preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    background-color: var(--container-bg);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    min-height: 44px;
+    /* アイコン分の高さを確保 */
+}
+
+.settings-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+#settingsUserDisplayName,
+#myChannelUserDisplayName {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+
+.settings-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.settings-input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.settings-input-group input:disabled {
+    background-color: var(--clip-item-bg);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.settings-group-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.settings-group-left,
+.settings-group-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-group-left .settings-card,
+.settings-group-right .settings-card {
+    margin-top: 0;
+    flex-grow: 1;
+    /* 高さを揃える */
+}
+
+
+.my-channel-settings-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.my-channel-settings-group .filter-toggle-group label {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+
+.theme-switcher-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.theme-label-text {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button-secondary-bg);
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--primary-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--primary-color);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.contact-link-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-link,
+.contact-link:visited {
+    display: inline-block;
+    background-color: #87CEFA;
+    color: #1f1f23;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #4682B4;
+    color: #ffffff;
+}
+
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid var(--primary-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+}
+
+.modal {
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.modal-body {
+    padding: 20px;
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease;
+}
+
+.modal-footer {
+    padding: 15px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.modal-button.cancel {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+}
+
+.modal-button.cancel:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+.modal-button.confirm {
+    background-color: #c7342e;
+    color: white;
+}
+
+.modal-button.confirm:hover {
+    background-color: #a52a26;
+}
+
+.share-button {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 5px 15px;
+    transition: background-color 0.2s ease;
+    font-family: inherit;
+}
+
+.share-button:hover {
+    background-color: #0c85d0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 98%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .main-nav ul {
+        gap: 5px;
+    }
+
+    .main-nav li a {
+        padding: 6px 8px;
+    }
+
+    .search-form,
+    .controls-group,
+    .clip-info-form,
+    .popular-controls,
+    .my-channel-top-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .favorites-controls,
+    .favorites-controls .filter-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .channel-input-group,
+    .date-range-group,
+    .clip-info-form .input-group,
+    .keyword-search-group,
+    .game-filter-group,
+    .search-history-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    .channel-input-group label,
+    .date-range-label,
+    .sort-order-group label,
+    .favorites-controls .input-group label,
+    .clip-info-form .input-group label,
+    .keyword-search-group label,
+    .game-filter-group label,
+    .search-history-label {
+        text-align: left;
+        flex-basis: auto;
+    }
+
+    .button-container label,
+    .clip-info-form .button-group label {
+        display: none;
+    }
+
+    .date-inputs {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .date-inputs input[type="date"] {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    #dateRangePreset,
+    #fetchClips,
+    #fetchClipInfoButton,
+    .sort-order-group select,
+    .favorites-controls .input-group select,
+    .game-filter-group select,
+    .popular-controls select,
+    #myChannelDateRangePreset {
+        width: 100%;
+    }
+
+    #saveUserChannelButton,
+    #saveMyChannelButton {
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .clips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #popularSection .clips-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .settings-input-group {
+        flex-direction: row;
+    }
+
+    .settings-group-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes favorite-pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4) rotate(15deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.favorite-button.favorited {
+    animation: favorite-pop 0.4s ease-in-out;
+}
+
+.announcement-log {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-top: 15px;
+    color: var(--text-color-secondary);
+}
+
+.announcement-item {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.announcement-item p {
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.announcement-item strong {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.announcement-item ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 22px;
+}
+
+.announcement-item li {
+    margin-bottom: 5px;
+}
+
+.clip-tags-container {
+    padding: 10px 15px 15px;
+    margin-top: 10px;
+    border-top: 1px solid var(--border-color);
+    position: relative;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.tag-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tag-item.my-channel-tag {
+    background-color: var(--my-channel-tag-bg);
+}
+
+.remove-tag-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.remove-tag-btn:hover {
+    opacity: 1;
+}
+
+.add-tag-form {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.add-tag-input {
+    flex-grow: 1;
+    padding: 4px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 0.8em;
+}
+
+.add-tag-button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.add-tag-button:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+.tutorial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+}
+
+.tutorial-popover {
+    position: absolute;
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 320px;
+    max-width: 90vw;
+    z-index: 10001;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: top 0.3s ease, left 0.3s ease, transform 0.3s ease;
+}
+
+.tutorial-header h4 {
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+    font-size: 1.2em;
+}
+
+.tutorial-body p {
+    margin: 0;
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.tutorial-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tutorialProgress {
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+}
+
+#tutorialSkip,
+#tutorialNext,
+#tutorialDone {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#tutorialSkip {
+    background-color: transparent;
+    color: var(--text-color-secondary);
+}
+
+#tutorialSkip:hover {
+    background-color: var(--clip-item-bg);
+}
+
+#tutorialNext,
+#tutorialDone {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#tutorialNext:hover,
+#tutorialDone:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.highlight-element {
+    position: relative;
+    z-index: 10001;
+    box-shadow: 0 0 0 4px var(--primary-color), 0 0 25px rgba(145, 71, 255, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.settings-header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.settings-card>.settings-header-with-button~.settings-description {
+    margin-top: 0;
+}
+
+.settings-card>.settings-header-with-button>label {
+    margin-bottom: 0;
+}
+
+.help-button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.help-button:hover {
+    background-color: var(--button-secondary-hover-bg);
+    border-color: var(--text-color-secondary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#clipDetailSection {
+    padding: 20px 0;
+}
+
+#clipDetailGrid {
+    display: grid;
+    grid-template-columns: minmax(320px, 1.2fr) 2fr;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+#clipDetailCardContainer .clip-item {
+    margin: 0;
+}
+
+#clipDetailInfoContainer {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px 25px;
+    border: 1px solid var(--border-color);
+}
+
+.clip-detail-header {
+    font-size: 1.3em;
+    color: var(--text-color);
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#clipDetailInfoContainer .clip-detail-header:nth-of-type(2) {
+    margin-top: 25px;
+}
+
+#clipDetailTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+#clipDetailTable td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+#clipDetailTable td:first-child {
+    font-weight: bold;
+    color: var(--text-color-secondary);
+    width: 120px;
+    white-space: nowrap;
+}
+
+#clipDetailTable a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#clipDetailTable a:hover {
+    text-decoration: underline;
+}
+
+#clipDetailActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#clipDetailActions button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#clipDetailActions button:hover {
+    background-color: var(--button-secondary-hover-bg);
+    transform: translateY(-1px);
+}
+
+#relatedClipsSection {
+    margin-top: 20px;
+}
+
+#relatedClipsSection h4 {
+    font-size: 1.1em;
+    color: var(--text-color-secondary);
+    margin-bottom: 10px;
+}
+
+#relatedClipsSection .clips-grid {
+    padding-top: 0;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+@media (max-width: 900px) {
+    #clipDetailGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#clipDetailActions {
+    position: relative;
+}
+
+.action-notification {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    pointer-events: none;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.action-notification.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.detail-table-header {
+    background-color: var(--clip-item-bg);
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 12px;
+    text-align: left;
+}
+
+#clipInfoSection .clip-info-form {
+    gap: 0;
+}
+
+#clipInfoSection .input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+#clipInfoSection .input-group input {
+    flex-grow: 1;
+}
+
+#clipInfoSection .input-group button {
+    flex-shrink: 0;
+}
+
+.filter-toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+}
+
+.filter-toggle-group label {
+    color: var(--text-color-secondary);
+    font-size: 0.9em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-toggle-switch {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 38px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: var(--button-secondary-bg);
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter-toggle-switch::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.2s ease;
+}
+
+.filter-toggle-switch:checked {
+    background-color: var(--primary-color);
+}
+
+.filter-toggle-switch:checked::before {
+    transform: translateX(16px);
+}
+
+/* Myチャンネルタブの追加スタイル */
+.channel-id-display {
+    padding: 10px 15px;
+    background-color: var(--input-bg);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: var(--text-color-secondary);
+    font-size: 0.9em;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#myChannelIdText {
+    flex-grow: 1;
+}
+
+.clip-manager-button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.clip-manager-button:hover {
+    background-color: var(--button-secondary-hover-bg);
+    color: var(--text-color);
+}
+
+
+.channel-id-display strong {
+    color: var(--text-color);
+}
+
+.my-channel-top-filters {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-channel-top-filters>.date-range-group {
+    flex-grow: 2;
+}
+
+.my-channel-top-filters>.keyword-search-group {
+    flex-grow: 1;
+}
+
+/* 未設定の項目をハイライトするためのスタイル */
+.highlight-setting-card {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 12px rgba(145, 71, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ... (既存のCSSの末尾に追加) ... */
+
+.popular-mode-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* 下の要素との余白 */
+    align-self: flex-start;
+    /* 左寄せにする */
+}
+
+.popular-mode-toggle button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.popular-mode-toggle button:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+.popular-mode-toggle button.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(145, 71, 255, 0.4);
+}
+
+
+/* スマートフォン表示用の調整 */
+@media (max-width: 768px) {
+    .popular-controls {
+        align-items: flex-start;
+        /* 左寄せにする */
+    }
+
+    .popular-mode-toggle {
+        width: 100%;
+        /* 横幅いっぱいに広げる */
+    }
+
+    .popular-mode-toggle button {
+        flex-grow: 1;
+        /* ボタンが均等に広がるようにする */
+    }
+}
+
+
+.clip-metadata>span,
+.clip-metadata>.clip-views {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 人気クリップのコントロール部分のレイアウト調整 */
+.popular-controls {
+    flex-direction: column;
+    /* 要素を縦に並べる */
+    align-items: flex-start;
+    /* 左揃えにする */
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+/* カテゴリボタンのコンテナ */
+.popular-category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    /* 画面が狭い時に折り返す */
+    gap: 10px;
+}
+
+/* カテゴリボタンのスタイル */
+.popular-category-buttons button {
+    background-color: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.popular-category-buttons button:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+
+/* 選択中のボタンのスタイル */
+.popular-category-buttons button.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(145, 71, 255, 0.4);
+}
+
+/* 人気クリップのグリッド表示エリアの調整 */
+#popularClipsGrid {
+    padding-top: 20px;
+}
+
+/* 全てのグループをまとめるコンテナのスタイル */
+.popular-category-buttons {
+    gap: 15px;
+    /* グループ間の隙間 */
+}
+
+/* 各グループを囲む四角(div)のスタイル */
+.popular-category-group {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* グループ内のボタン間の隙間 */
+    align-items: center;
+}

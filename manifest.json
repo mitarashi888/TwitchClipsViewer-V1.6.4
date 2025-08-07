@@ -1,0 +1,60 @@
+{
+    "manifest_version": 3,
+    "name": "Twitchクリップビューア",
+    "version": "1.6.4",
+    "description": "Twitchページにクリップ検索やお気に入りクリップの機能を追加します。",
+    "permissions": [
+        "storage",
+        "alarms",
+        "identity",
+        "downloads"
+    ],
+    "host_permissions": [
+        "https://api.twitch.tv/*",
+        "https://asia-northeast1-my-extension-analytics.cloudfunctions.net/log",
+        "https://id.twitch.tv/*",
+        "https://*.twitch.tv/*"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.twitch.tv/*",
+                "https://clips.twitch.tv/*",
+                "https://dashboard.twitch.tv/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "icons/icon48.png"
+            ],
+            "matches": [
+                "https://www.twitch.tv/*",
+                "https://clips.twitch.tv/*",
+                "https://dashboard.twitch.tv/*"
+            ]
+        }
+    ]
+}
