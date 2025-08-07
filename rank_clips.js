@@ -5,6 +5,11 @@ const fetch = require('node-fetch');
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
 
+// ★★★★★ 取得上限を1000件に設定 ★★★★★
+const MAX_CLIPS_TO_FETCH = 1000;
+const CLIPS_PER_PAGE = 100; // 一度のAPIリクエストで取得する件数
+const API_REQUEST_DELAY = 200; // APIへの過度な負荷を防ぐための待機時間(ミリ秒)
+
 // --- clips_page.js から持ってきた定義 ---
 const FIXED_POPULAR_GAME_IDS = [
     '509658', // 雑談 (Just Chatting)
@@ -28,7 +33,9 @@ const POPULAR_CATEGORIES = [
 ];
 // -----------------------------------------
 
+
 /**
+ * ★★★★★ ページネーションを実装し、最大1000件取得するよう修正 ★★★★★
  * 指定されたゲームIDリストのクリップを取得し、ランキング化する
  * @param {string[]} gameIds - TwitchのゲームIDの配列
  * @param {number} days - 何日前までのクリップを取得するか
@@ -36,19 +43,58 @@ const POPULAR_CATEGORIES = [
  * @returns {Promise<object[]>} ランキング化され、情報が付与されたクリップの配列
  */
 async function getRankedClipsForGames(gameIds, days, accessToken) {
-    console.log(`[${gameIds.join(', ')}] の過去${days}日間のクリップを取得中...`);
+    console.log(`[${gameIds.join(', ')}] の過去${days}日間のクリップを取得中... (最大${MAX_CLIPS_TO_FETCH}件)`);
     const startDate = new Date();
     startDate.setDate(startDate.getDate() - days);
     const startedAtISO = startDate.toISOString();
 
-    // 各ゲームIDに対して並行してAPIリクエストを送信
-    const clipPromises = gameIds.map(id =>
-        fetch(`https://api.twitch.tv/helix/clips?game_id=${id}&started_at=${startedAtISO}&first=100`, { // 取得件数を100に増やす
-            headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
-        })
-            .then(res => res.ok ? res.json() : Promise.resolve({ data: [] })) // エラー時も空配列を返す
-            .then(data => data.data || [])
-    );
+    let allClipsForCategory = [];
+
+    // 各ゲームIDに対して並行してページネーション処理を実行
+    const clipPromises = gameIds.map(async (id) => {
+        let clipsForGame = [];
+        let cursor = null;
+        let hasNextPage = true;
+
+        while (hasNextPage && clipsForGame.length < MAX_CLIPS_TO_FETCH) {
+            let url = `https://api.twitch.tv/helix/clips?game_id=${id}&started_at=${startedAtISO}&first=${CLIPS_PER_PAGE}`;
+            if (cursor) {
+                url += `&after=${cursor}`;
+            }
+
+            try {
+                const response = await fetch(url, {
+                    headers: { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${accessToken}` }
+                });
+
+                if (!response.ok) {
+                    console.error(`API Error for game_id ${id}: ${response.status}`);
+                    break; // エラーが発生したらこのゲームのループを抜ける
+                }
+
+                const data = await response.json();
+
+                if (data.data && data.data.length > 0) {
+                    clipsForGame.push(...data.data);
+                }
+
+                // 次のページがあるか、または取得件数が上限に達したか
+                if (data.pagination && data.pagination.cursor) {
+                    cursor = data.pagination.cursor;
+                } else {
+                    hasNextPage = false;
+                }
+
+                // APIへの負荷軽減のためのディレイ
+                await new Promise(resolve => setTimeout(resolve, API_REQUEST_DELAY));
+
+            } catch (error) {
+                console.error(`Fetch failed for game_id ${id}:`, error);
+                break;
+            }
+        }
+        return clipsForGame;
+    });
 
     const allClipsNested = await Promise.all(clipPromises);
     const allClips = allClipsNested.flat().filter(clip => clip && clip.language === 'ja');
@@ -64,7 +110,7 @@ async function getRankedClipsForGames(gameIds, days, accessToken) {
 }
 
 /**
- * クリップ配列にVOD情報とゲーム名情報を付与するヘルパー関数
+ * クリップ配列にVOD情報とゲーム名情報を付与するヘルパー関数 (この関数は変更なし)
  * @param {object[]} clips - クリップの配列
  * @param {string} accessToken - Twitch APIのアクセストークン
  * @returns {Promise<object[]>} 情報が付与されたクリップの配列

@@ -58,7 +58,7 @@ let currentView = 'channelSearch';
 
 //【変更点】キャッシュ戦略の実装
 let clipsCache = {}; // ビューごとのクリップを保存するオブジェクト
-let popularClipsCache = {}; // 【追加】人気クリップタブのデータを保存するキャッシュ
+let popularClipsCache = null; // 【正】
 let cachedAllClips = []; // 現在アクティブなビューのクリップを保持する作業用配列
 let cachedVideoDetails = new Map();
 let cachedGameDetails = new Map();
